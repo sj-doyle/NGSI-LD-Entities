@@ -1,0 +1,48 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://example.com/contexts/vehicle.jsonld"
+    ],
+    "id": "urn:ngsi-ld:Vehicle:1fa179a6-b507-4857-ad72-eb5513ef05c6",
+    "type": "Vehicle",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "vehicleType": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:VehicleType:23821045-33d4-46ec-b777-98f461bf4856"
+    },
+    "fuelType": {
+        "type": "Property",
+        "value": "Diesel"
+    },
+    "displacement": {
+        "type": "Property",
+        "value": 3,
+        "unitCode": "LTR"
+    },
+    "fuelEfficiency": {
+        "type": "Property",
+        "value": 10.4,
+        "unitCode": "km/l"
+    },
+    "vehicleModelDate": {
+        "type": "TemporalProperty",
+        "value": "2016-08-18T10:18:16Z"
+    },
+    "dateDiscontinued": {
+        "type": "TemporalProperty",
+        "value": "2016-08-23T10:18:16Z"
+    },
+    "vehicleIdentificationNumber": {
+        "type": "Property",
+        "value": "2T2GK31U08C041124"
+    },
+    "mileageFromOdometer": {
+        "value": 33015,
+        "type": "Property",
+        "unitCode": "SMI",
+        "observedAt": "2016-08-23T10:18:16Z"
+    }
+}

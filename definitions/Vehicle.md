@@ -21,7 +21,9 @@ This entity contains a harmonised description of a Vehicle. This entity is prima
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Vehicle** entity
 
-```
+[Download context definition.](../examples/Vehicle-context.jsonld)
+
+```JavaScript
 {
     "id": "@id",
     "type": "@type",
@@ -42,7 +44,9 @@ The following NGSI-LD context definition applies to the **Vehicle** entity
 ## Example of Vehicle Entity
 The following is an example instance of the **Vehicle** entity
 
-```
+[Download example entity definition.](../examples/Vehicle.jsonld)
+
+```JavaScript
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
