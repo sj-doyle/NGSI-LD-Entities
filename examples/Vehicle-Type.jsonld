@@ -1,0 +1,25 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://example.com/contexts/vehicle-type.jsonld"
+    ],
+    "id": "urn:ngsi-ld:VehicleType:33253089-9cea-4227-889e-61950965f6f9",
+    "type": "VehicleType",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "model": {
+        "type": "Property",
+        "value": "M Class"
+    },
+    "category": {
+        "type": "Property",
+        "value": "SUV"
+    },
+    "manufacturer": {
+        "type": "Property",
+        "value": "Mercedes Benz"
+    }
+}

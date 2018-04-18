@@ -9,6 +9,7 @@ This entity contains a harmonised description of a Vehicle. This entity is prima
 | modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
+| entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | vehicleType | Relationship | Reference to the type of the vehicle entity. | Mandatory |
 | fuelType | Property | A choice from an enumerated list describing the power source. One of: **gasoline, petrol(unleaded), petrol(leaded), petrol, diesel, electric, hydrogen, lpg autogas, cng, biodiesel, ethanol, hybrid electric/petrol, hybrid electric/diesel, other** | Optional |
 | displacement | Property | A number indicating the cylinder capacity of the engine nominally in litres. | Optional |
@@ -58,9 +59,10 @@ The following is an example instance of the **Vehicle** entity
     "modifiedAt": "2017-05-04T12:30:00Z",
     "source": "https://source.example.com",
     "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
     "vehicleType": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:VehicleType:23821045-33d4-46ec-b777-98f461bf4856"
+        "object": "urn:ngsi-ld:VehicleType:33253089-9cea-4227-889e-61950965f6f9"
     },
     "fuelType": {
         "type": "Property",

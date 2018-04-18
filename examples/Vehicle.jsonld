@@ -9,9 +9,10 @@
     "modifiedAt": "2017-05-04T12:30:00Z",
     "source": "https://source.example.com",
     "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
     "vehicleType": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:VehicleType:23821045-33d4-46ec-b777-98f461bf4856"
+        "object": "urn:ngsi-ld:VehicleType:33253089-9cea-4227-889e-61950965f6f9"
     },
     "fuelType": {
         "type": "Property",
