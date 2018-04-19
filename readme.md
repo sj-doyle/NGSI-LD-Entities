@@ -26,6 +26,8 @@ The harmonised data entities below originate from and are used in the following 
 
 | Entity Name | Specification | Context Definition | Example Entity |
 |:--- |:--- |:--- |:--- |
+| **Agri Crop** | [*Agri Crop* entity specification.](definitions/Agri-Crop.md) | [*Agri Crop* context example.](examples/Agri-Crop-context.jsonld) | [*Agri Crop* entity example.](examples/Agri-Crop.jsonld) |
+| **Agri Greenhouse** | [*Agri Greenhouse* entity specification.](definitions/Agri-Greenhouse.md) | [*Agri Greenhouse* context example.](examples/Agri-Greenhouse-context.jsonld) | [*Agri Greenhouse* entity example.](examples/Agri-Greenhouse.jsonld) |
 | **Vehicle** | [*Vehicle* entity specification.](definitions/Vehicle.md) | [*Vehicle* context example.](examples/Vehicle-context.jsonld) | [*Vehicle* entity example.](examples/Vehicle.jsonld) |
 | **Vehicle Fault** | [*Vehicle Fault* entity specification.](definitions/Vehicle-Fault.md) | [*Vehicle Fault* context example.](examples/Vehicle-Fault-context.jsonld) | [*Vehicle Fault* entity example.](examples/Vehicle-Fault.jsonld) |
 | **Vehicle Type** | [*Vehicle Type* entity specification.](definitions/Vehicle-Type.md) | [*Vehicle Type* context example.](examples/Vehicle-Type-context.jsonld) | [*Vehicle Type* entity example.](examples/Vehicle-Type.jsonld) |
