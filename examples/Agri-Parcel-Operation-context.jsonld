@@ -1,0 +1,16 @@
+{
+    "id": "@id",
+    "type": "@type",
+    "DateTime": "http://uri.etsi.org/ngsi-ld/DateTime",
+    "createdAt": {
+        "@id": "http://uri.etsi.org/ngsi-ld/createdAt",
+        "@type": "DateTime"
+    },
+    "modifiedAt": {
+        "@id": "http://uri.etsi.org/ngsi-ld/modifiedAt",
+        "@type": "DateTime"
+    },
+    "Property": "http://etsi.org/nsgi-ld/Property",
+    "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship",
+    "TemporalProperty": "http://uri.etsi.org/ngsi-ld/TemporalProperty"
+}

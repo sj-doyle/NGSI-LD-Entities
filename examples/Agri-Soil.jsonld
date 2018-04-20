@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://example.com/contexts/agri-soil.jsonld"
+    ],
+    "id": "urn:ngsi-ld:AgriSoil:789363b4-c771-43d6-8505-ca582efe8fcd",
+    "type": "AgriSoil",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "name": {
+        "type": "Property",
+        "value": "Clay"
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "Heavy soil"
+    },
+    "description": {
+        "type": "Property",
+        "value": "Fine grained, poor draining soil. Particle size less than 0.002mm"
+    },
+    "agriProduct": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:AgriProduct:ea54eedf-d5a7-4e44-bddd-50e9935237c0",
+            "urn:ngsi-ld:AgriProduct:275b4c08-5e52-4bb7-8523-74ce5d0007de"
+        ]
+    }
+}

@@ -19,6 +19,7 @@ This entity contains a harmonised description of the conditions recorded within 
 | co2 | Property | The measured interior C02 concentration nominally in mg/L. | Optional |
 | dailyLight | Property | Daily Accumulated light measured in kW per square metre | Optional |
 | drainFlow | Property | The observed drain flow rate in litres per second | Optional |
+| devices | Relationship | Reference to the IoT devices associated with this greenhouse i.e. sensors, controls. | Optional |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Agri Greenhouse** entity
@@ -114,6 +115,15 @@ The following is an example instance of the **Agri Greenhouse** entity
         "unitCode": "G51",
         "unitText": "Litre per second",
         "observedAt": "2016-08-22T19:20Z"
+    },
+    "devices": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:Device:4a40aeba-4474-11e8-86bf-03d82e958ce6",
+            "urn:ngsi-ld:Device:63217d24-4474-11e8-9da2-c3dd3c36891b",
+            "urn:ngsi-ld:Device:68e091dc-4474-11e8-a398-df010c53b416",
+            "urn:ngsi-ld:6f44b54e-4474-11e8-8577-d7ff6a8ef551"
+        ]
     }
 }
 ```
