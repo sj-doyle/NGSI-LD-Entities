@@ -46,7 +46,7 @@ The following is an example instance of the **Agri Pest** entity
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://example.com/contexts/agri-pest.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Pest.jsonld"
     ],
     "id": "urn:ngsi-ld:AgriPest:fb3f1295-500c-4aa3-b995-c909097d5c01",
     "type": "AgriPest",

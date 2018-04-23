@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://example.com/contexts/vehicle-fault.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Vehicle-Fault.jsonld"
     ],
     "id": "urn:ngsi-ld:VehicleFault:4939200a-5ef5-4266-8c91-1f82ad3b543b",
     "type": "VehicleFault",

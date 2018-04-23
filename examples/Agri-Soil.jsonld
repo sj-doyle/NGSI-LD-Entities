@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://example.com/contexts/agri-soil.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Soil.jsonld"
     ],
     "id": "urn:ngsi-ld:AgriSoil:789363b4-c771-43d6-8505-ca582efe8fcd",
     "type": "AgriSoil",

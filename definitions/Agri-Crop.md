@@ -51,7 +51,7 @@ The following is an example instance of the **Agri Crop** entity
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://example.com/contexts/agri-crop.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Crop.jsonld"
     ],
     "id": "urn:ngsi-ld:AgriCrop:df72dc57-1eb9-42a3-88a9-8647ecc954b4",
     "type": "AgriCrop",

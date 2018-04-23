@@ -1,0 +1,106 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Air-Quality-Observed.jsonld"
+    ],
+    "id": "urn:ngsi-ld:AirQualityObserved:c9f32b35-a185-48e2-835f-c521efc294ab",
+    "type": "AirQualityObserved",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "POIs": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:POI:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
+            "urn:ngsi-ld:POI:42dcd5ea-46db-11e8-bea0-772aba733f93",
+            "urn:ngsi-ld:POI:4912d78e-46db-11e8-8572-ab2b8e55590b"
+        ]
+    },
+    "devices": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:Device:e8bbad7e-46db-11e8-b23a-8bb626923249",
+            "urn:ngsi-ld:Device:ef379c6c-46db-11e8-90ae-d3c85fee58c1",
+            "urn:ngsi-ld:Device:f581d088-46db-11e8-96f8-33f0aaf9d24d",
+            "urn:ngsi-ld:0be5c6ea-46dc-11e8-b16b-0ff93e4638ff"
+        ]
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -104.99404,
+                39.75621
+            ]
+        }
+    },
+    "observedAt": {
+        "type": "TemporalProperty",
+        "value": "2017-05-04T10:18:16Z"
+    },
+    "AQI": {
+        "type": "Property",
+        "value": 238,
+        "unitText": "US EPA AQI",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "CO": {
+        "type": "Property",
+        "value": 0.8,
+        "unitCode": "GQ",
+        "unitText": "microgramme per cubic metre",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "NO": {
+        "type": "Property",
+        "value": 137,
+        "unitCode": "GQ",
+        "unitText": "microgramme per cubic metre",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "NO2": {
+        "type": "Property",
+        "value": 63,
+        "unitCode": "GQ",
+        "unitText": "microgramme per cubic metre",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "NOx": {
+        "type": "Property",
+        "value": 273,
+        "unitCode": "GQ",
+        "unitText": "microgramme per cubic metre",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "O3": {
+        "type": "Property",
+        "value": 300,
+        "unitCode": "GQ",
+        "unitText": "microgramme per cubic metre",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "PM2.5": {
+        "type": "Property",
+        "value": 187,
+        "unitCode": "GQ",
+        "unitText": "microgramme per cubic metre",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "PM10": {
+        "type": "Property",
+        "value": 50,
+        "unitCode": "GQ",
+        "unitText": "microgramme per cubic metre",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "SO2": {
+        "type": "Property",
+        "value": 7,
+        "unitCode": "GQ",
+        "unitText": "microgramme per cubic metre",
+        "observedAt": "2017-05-04T12:30:00Z"
+    }
+}
