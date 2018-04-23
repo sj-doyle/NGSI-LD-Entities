@@ -46,7 +46,7 @@ The following is an example instance of the **Agri Product Type** entity
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Product-Type.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Product-Type-context.jsonld"
     ],
     "id": "urn:ngsi-ld:AgriProductType:398aa5f4-6a81-4dea-9f85-e9869441a257",
     "type": "AgriProductType",

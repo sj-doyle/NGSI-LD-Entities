@@ -56,7 +56,7 @@ The following is an example instance of the **Agri Parcel Operation** entity
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Parcel-Operation.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Parcel-Operation-context.jsonld"
     ],
     "id": "urn:ngsi-ld:AgriParcelOperation:e1e9d3a3-074f-46f1-9375-52000d05a62b",
     "type": "AgriParcelOperation",

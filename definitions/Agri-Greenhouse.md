@@ -52,7 +52,7 @@ The following is an example instance of the **Agri Greenhouse** entity
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Greenhouse.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Greenhouse-context.jsonld"
     ],
     "id": "urn:ngsi-ld:AgriGreenhouse:df72dc57-1eb9-42a3-88a9-8647ecc954b4",
     "type": "AgriGreenhouse",

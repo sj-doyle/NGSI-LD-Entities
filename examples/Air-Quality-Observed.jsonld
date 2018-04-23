@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Air-Quality-Observed.jsonld"
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Air-Quality-Observed-context.jsonld"
     ],
     "id": "urn:ngsi-ld:AirQualityObserved:c9f32b35-a185-48e2-835f-c521efc294ab",
     "type": "AirQualityObserved",

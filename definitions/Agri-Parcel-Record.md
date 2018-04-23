@@ -53,7 +53,7 @@ The following is an example instance of the **Agri Parcel Record** entity
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Parcel-Record.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Parcel-Record-context.jsonld"
     ],
     "id": "urn:ngsi-ld:AgriParcelRecord:8f5445e6-f49b-496e-833b-e65fc97fcab7",
     "type": "AgriParcelRecord",

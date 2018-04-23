@@ -60,7 +60,7 @@ The following is an example instance of the **Air Quality Observed** entity
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Air-Quality-Observed.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Air-Quality-Observed-context.jsonld"
     ],
     "id": "urn:ngsi-ld:AirQualityObserved:c9f32b35-a185-48e2-835f-c521efc294ab",
     "type": "AirQualityObserved",

@@ -46,7 +46,7 @@ The following is an example instance of the **Agri Soil** entity
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Soil.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Soil-context.jsonld"
     ],
     "id": "urn:ngsi-ld:AgriSoil:789363b4-c771-43d6-8505-ca582efe8fcd",
     "type": "AgriSoil",

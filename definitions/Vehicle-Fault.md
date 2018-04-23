@@ -56,7 +56,7 @@ The following is an example instance of the **Vehicle Fault** entity
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Vehicle-Fault.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Vehicle-Fault-context.jsonld"
     ],
     "id": "urn:ngsi-ld:VehicleFault:4939200a-5ef5-4266-8c91-1f82ad3b543b",
     "type": "VehicleFault",

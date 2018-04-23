@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Vehicle.jsonld"
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Vehicle-context.jsonld"
     ],
     "id": "urn:ngsi-ld:Vehicle:1fa179a6-b507-4857-ad72-eb5513ef05c6",
     "type": "Vehicle",

@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Agri-Product-Type.jsonld"
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Agri-Product-Type-context.jsonld"
     ],
     "id": "urn:ngsi-ld:AgriProductType:398aa5f4-6a81-4dea-9f85-e9869441a257",
     "type": "AgriProductType",

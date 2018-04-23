@@ -44,7 +44,7 @@ The following is an example instance of the **Vehicle Type** entity
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Vehicle-Type.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Vehicle-Type-context.jsonld"
     ],
     "id": "urn:ngsi-ld:VehicleType:33253089-9cea-4227-889e-61950965f6f9",
     "type": "VehicleType",
