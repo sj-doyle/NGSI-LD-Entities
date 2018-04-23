@@ -1,0 +1,111 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Device-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:Device:ba2d4fd9-f57f-4610-a589-2d52670d14f3",
+    "type": "Device",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "deviceModel": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:DeviceModel:d1be2e61-d9e7-43cd-9c68-51e0861b3a49"
+    },
+    "serialNumber": {
+        "type": "Property",
+        "value": "X123456789C"
+    },
+    "supplierName": {
+        "type": "Property",
+        "value": "ACME Direct, Inc."
+    },
+    "countryOfManufacture": {
+        "type": "Property",
+        "value": "UK"
+    },
+    "factory": {
+        "type": "Property",
+        "value": "56A8"
+    },
+    "dateLastCalibration": {
+        "type": "TemporalProperty",
+        "value": "2017-05-04T10:18:16Z"
+    },
+    "dateInstalled": {
+        "type": "TemporalProperty",
+        "value": "2017-05-04T10:18:16Z"
+    },
+    "dateManufactured": {
+        "type": "TemporalProperty",
+        "value": "2017-05-04T10:18:16Z"
+    },
+    "description": {
+        "type": "Property",
+        "value": "Thermocouple"
+    },
+    "owner": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:Person:6babd63c-46e6-11e8-aaf6-abd6d570d4ec",
+            "urn:ngsi-ld:Organization:76f72898-46e6-11e8-8340-53a92642d82a"
+        ]
+    },
+    "hardwareVersion": {
+        "type": "Property",
+        "value": "1.2"
+    },
+    "firmwareVersion": {
+        "type": "Property",
+        "value": "2.8.56"
+    },
+    "softwareVersion": {
+        "type": "Property",
+        "value": "2.5.11"
+    },
+    "osVersion": {
+        "type": "Property",
+        "value": "8.1"
+    },
+    "supportedProtocols": {
+        "type": "Property",
+        "value": [
+            "HTTP",
+            "HTTPS",
+            "FTP"
+        ],
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -104.99404,
+                39.75621
+            ]
+        }
+    },
+    "online": {
+        "type": "Property",
+        "value": true,
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "status": {
+        "type": "Property",
+        "value": "SC1001",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "batteryLevel": {
+        "type": "Property",
+        "value": 0.7,
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "value": {
+        "type": "Property",
+        "value": 0.885,
+        "observedAt": "2017-05-04T12:30:00Z"
+    }
+}
