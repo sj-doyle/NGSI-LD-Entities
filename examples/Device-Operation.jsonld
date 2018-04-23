@@ -1,26 +1,28 @@
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Agri-Parcel-Operation-context.jsonld"
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Device-Operation-context.jsonld"
     ],
-    "id": "urn:ngsi-ld:AgriParcelOperation:e1e9d3a3-074f-46f1-9375-52000d05a62b",
-    "type": "AgriParcelOperation",
+    "id": "urn:ngsi-ld:DeviceOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",
+    "type": "DeviceOperation",
     "createdAt": "2017-01-01T01:20:00Z",
     "modifiedAt": "2017-05-04T12:30:00Z",
     "source": "https://source.example.com",
     "dataProvider": "https://provider.example.com",
     "entityVersion": 2.0,
-    "agriParcel": {
+    "device": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:AgriParcel:318366a9-7643-4d8e-9a11-c76a8c29d8eb"
+        "object": "urn:ngsi-ld:Device:2033a7c7-d31b-48e7-91c2-014dc426c29e"
     },
     "operationType": {
         "type": "Property",
-        "value": "fertiliser"
+        "value": [
+            "fault"
+        ]
     },
     "description": {
         "type": "Property",
-        "value": "Monthly fertiliser application"
+        "value": "Backup battery needs replacement"
     },
     "result": {
         "type": "Property",
@@ -36,11 +38,11 @@
     },
     "status": {
         "type": "Property",
-        "value": "finished"
+        "value": "ongoing"
     },
     "operator": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:Person:fce9dcbc-4479-11e8-9de1-cb228de7a15c"
+        "object": "urn:ngsi-ld:Person:fe018d4e-46f8-11e8-ae6b-df5577f85836"
     },
     "startedAt": {
         "type": "TemporalProperty",
@@ -54,17 +56,8 @@
         "type": "TemporalProperty",
         "value": "2016-08-28T10:18:16Z"
     },
-    "agriProduct": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:AgriProduct:a8f616b8-13fb-473a-8e61-b7a80c6c93ec"
-    },
-    "quantity": {
-        "type": "Property",
-        "value": 40,
-        "unitCode": "KGM"
-    },
-    "waterSource": {
-        "type": "Property",
-        "value": "arable"
+    "addressedAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-28T10:18:16Z"
     }
 }

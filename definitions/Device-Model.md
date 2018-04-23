@@ -1,0 +1,98 @@
+# Device Model
+This entity contains a harmonised description of a generic device model and is therefore applicable to all IoT segments and related IoT applications. The Device Model includes an optional hierarchical structure that allows device types to be grouped in a flexible way.
+
+| Attribute Name | Attribute Type | Description | Constraint |
+|:--- |:--- |:--- |:---:|
+| id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
+| type | @type | Defines the type of the entity. | Mandatory |
+| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
+| dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
+| entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
+| name | Property | The name of this DeviceModel. | Mandatory |
+| doc | uri | Reference to Product Data Sheet or other manufacturer’s documentation about this device model including where relevant, details of the accuracy, trueness, precision and units of measure. | Recommended |
+| category | Property | A choice from an enumerated list defining the category of this device including: **sensor, actuator, meter, appliance, heater, chiller, lighting, boiler, vessel, airHandlingUnit, consumer, other.** | Optional |
+| description | Property | Monomatics All Weather Temperature Sensor. | Recommended |
+| manufacturerName | Property | The name of manufacturer of this DeviceModel. | Recommended |
+| brandName | Property | The brand name of this DeviceModel. | Recommended |
+| root | Property | A logical indicator that this DeviceModel is the root of a DeviceModel hierarchy. True indicates it is the root, false indicates that it is not the root. | Recommended |
+| parentDeviceModel | Relationship | References any higher level Device Model that this device model is based on. | Optional |
+
+## NGSI-LD Context Definition
+The following NGSI-LD context definition applies to the **Device Model** entity
+
+[Download context definition.](../examples/Device-Model-context.jsonld)
+
+```JavaScript
+{
+    "id": "@id",
+    "type": "@type",
+    "DateTime": "http://uri.etsi.org/ngsi-ld/DateTime",
+    "createdAt": {
+        "@id": "http://uri.etsi.org/ngsi-ld/createdAt",
+        "@type": "DateTime"
+    },
+    "modifiedAt": {
+        "@id": "http://uri.etsi.org/ngsi-ld/modifiedAt",
+        "@type": "DateTime"
+    },
+    "Property": "http://etsi.org/nsgi-ld/Property",
+    "uri": "http://uri.etsi.org/ngsi-ld/uri",
+    "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship"
+}
+```
+## Example of Device Model Entity
+The following is an example instance of the **Device Model** entity
+
+[Download example entity definition.](../examples/Device-Model.jsonld)
+
+```JavaScript
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Device-Model-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:DeviceModel:ba2d4fd9-f57f-4610-a589-2d52670d14f3",
+    "type": "DeviceModel",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "name": {
+        "type": "Property",
+        "value": "Sensor Model 501"
+    },
+    "doc": {
+        "type": "uri",
+        "value": "http://www.example.com"
+    },
+    "category": {
+        "type": "Property",
+        "value": [
+            "sensor"
+        ]
+    },
+    "description": {
+        "type": "Property",
+        "value": "Thermocouple"
+    },
+    "manufacturerName": {
+        "type": "Property",
+        "value": "ACME Manufacturing, Inc."
+    },
+    "brandName": {
+        "type": "Property",
+        "value": "SuperWidgets"
+    },
+    "root": {
+        "type": "Property",
+        "value": false
+    },
+    "parentDeviceModel": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:DeviceModel:29477bba-46f6-11e8-9ebe-979a9513bf23"
+    }
+}
+```

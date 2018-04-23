@@ -1,0 +1,47 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Device-Model-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:DeviceModel:ba2d4fd9-f57f-4610-a589-2d52670d14f3",
+    "type": "DeviceModel",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "name": {
+        "type": "Property",
+        "value": "Sensor Model 501"
+    },
+    "doc": {
+        "type": "uri",
+        "value": "http://www.example.com"
+    },
+    "category": {
+        "type": "Property",
+        "value": [
+            "sensor"
+        ]
+    },
+    "description": {
+        "type": "Property",
+        "value": "Thermocouple"
+    },
+    "manufacturerName": {
+        "type": "Property",
+        "value": "ACME Manufacturing, Inc."
+    },
+    "brandName": {
+        "type": "Property",
+        "value": "SuperWidgets"
+    },
+    "root": {
+        "type": "Property",
+        "value": false
+    },
+    "parentDeviceModel": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:DeviceModel:29477bba-46f6-11e8-9ebe-979a9513bf23"
+    }
+}
