@@ -1,0 +1,71 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Machine-Operation-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:MachineOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",
+    "type": "MachineOperation",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "machine": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Machine:2033a7c7-d31b-48e7-91c2-014dc426c29e"
+    },
+    "operationType": {
+        "type": "Property",
+        "value": [
+            "process"
+        ]
+    },
+    "description": {
+        "type": "Property",
+        "value": "Printing of 1000 T-shirts"
+    },
+    "result": {
+        "type": "Property",
+        "value": "ok"
+    },
+    "plannedStartAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-22T10:18:16Z"
+    },
+    "plannedEndAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-28T10:18:16Z"
+    },
+    "status": {
+        "type": "Property",
+        "value": "finished"
+    },
+    "operator": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Person:fd6f0070-47d7-11e8-a26c-0784612b9393"
+    },
+    "startedAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-22T10:18:16Z"
+    },
+    "endedAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-28T10:18:16Z"
+    },
+    "commandSequence": {
+        "type": "Property",
+        "value": [
+            "Select inks",
+            "Prepare print masks",
+            "Print shirts",
+            "Clean print heads and rollers"
+        ]
+    },
+    "operationOutput": {
+        "type": "Property",
+        "value": {
+            "Units Printed": 1000,
+            "Faults": 0
+        }
+    }
+}

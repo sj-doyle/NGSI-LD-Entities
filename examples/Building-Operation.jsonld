@@ -1,0 +1,75 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Building-Operation-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:BuildingOperation:57b912ab-eb47-4cd5-bc9d-73abece1f1b3",
+    "type": "BuildingOperation",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "building": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Building:f59e2074-0032-4ccd-b0dd-f06370ffb6af"
+    },
+    "operationType": {
+        "type": "Property",
+        "value": "Air Conditioning Switch To Low Power"
+    },
+    "description": {
+        "type": "Property",
+        "value": "Air conditioning levels reduced due to out of hours"
+    },
+    "result": {
+        "type": "Property",
+        "value": "ok"
+    },
+    "plannedStartAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-22T10:18:16Z"
+    },
+    "plannedEndAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-28T10:18:16Z"
+    },
+    "status": {
+        "type": "Property",
+        "value": "finished"
+    },
+    "operator": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Person:3ac33d78-4716-11e8-b332-3bfc33a871b7"
+    },
+    "startedAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-22T10:18:16Z"
+    },
+    "endedAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-28T10:18:16Z"
+    },
+    "operationSequence": {
+        "type": "Property",
+        "value": [
+            "Fan levels reduced to minimum",
+            "Target temperature set to 24 degrees Celsius"
+        ]
+    },
+    "relatedBuildingOperations": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:BuildingOperation:b4fb8bff-1a8f-455f-8cc0-ca43c069f865",
+            "urn:ngsi-ld:BuildingOperation:55c24793-3437-4157-9bda-667c9e1531fc",
+            "urn:ngsi-ld:BuildingOperation:714b95f2-4716-11e8-b488-7f92794ea9de"
+        ]
+    },
+    "relatedOperations": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:Device:7a464b84-4716-11e8-8b3f-bbe95bc73eb2",
+            "urn:ngsi-ld:Machine:8304a16c-4716-11e8-86c5-2b1c5e248f62"
+        ]
+    }
+}

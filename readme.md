@@ -23,7 +23,7 @@ The harmonised data entities below originate from and are used in the following 
 * Industry
 * Smart City
 * Smart Home
-
+I 
 | Entity Name | Specification | Context Definition | Example Entity |
 |:--- |:--- |:--- |:--- |
 | **Agri Crop** | [*Agri Crop* entity specification.](definitions/Agri-Crop.md) | [*Agri Crop* context example.](examples/Agri-Crop-context.jsonld) | [*Agri Crop* entity example.](examples/Agri-Crop.jsonld) |
@@ -35,10 +35,16 @@ The harmonised data entities below originate from and are used in the following 
 | **Agri Product Type** | [*Agri Product Type* entity specification.](definitions/Agri-Product-Type.md) | [*Agri Product Type* context example.](examples/Agri-Product-Type-context.jsonld) | [*Agri Product Type* entity example.](examples/Agri-Product-Type.jsonld) |
 | **Agri Soil** | [*Agri Soil* entity specification.](definitions/Agri-Soil.md) | [*Agri Soil* context example.](examples/Agri-Soil-context.jsonld) | [*Agri Soil* entity example.](examples/Agri-Soil.jsonld) |
 | **Air Quality Observed** | [*Air Quality Observed* entity specification.](definitions/Air-Quality-Observed.md) | [*Air Quality Observed* context example.](examples/Air-Quality-Observed-context.jsonld) | [*Air Quality Observed* entity example.](examples/Air-Quality-Observed.jsonld) |
+| **Building** | [*Building* entity specification.](definitions/Building.md) | [*Building* context example.](examples/Building-context.jsonld) | [*Building* entity example.](examples/Building.jsonld) |
+| **Building Operation** | [*Building Operation* entity specification.](definitions/Building-Operation.md) | [*Building Operation* context example.](examples/Building-Operation-context.jsonld) | [*Building Operation* entity example.](examples/Building-Operation.jsonld) |
+| **Building Type** | [*Building Type* entity specification.](definitions/Building-Type.md) | [*Building Type* context example.](examples/Building-Type-context.jsonld) | [*Building Type* entity example.](examples/Building-Type.jsonld) |
 | **Device** | [*Device* entity specification.](definitions/Device.md) | [*Device* context example.](examples/Device-context.jsonld) | [*Device* entity example.](examples/Device.jsonld) |
 | **Device Model** | [*Device Model* entity specification.](definitions/Device-Model.md) | [*Device Model* context example.](examples/Device-Model-context.jsonld) | [*Device Model* entity example.](examples/Device-Model.jsonld) |
 | **Device Operation** | [*Device Operation* entity specification.](definitions/Device-Operation.md) | [*Device Operation* context example.](examples/Device-Operation-context.jsonld) | [*Device Operation* entity example.](examples/Device-Operation.jsonld) |
 | **Environment Observed** | [*Environment Observed* entity specification.](definitions/Environment-Observed.md) | [*Environment Observed* context example.](examples/Environment-Observed-context.jsonld) | [*Environment Observed* entity example.](examples/Environment-Observed.jsonld) |
+| **Machine** | [*Machine* entity specification.](definitions/Machine.md) | [*Machine* context example.](examples/Machine-context.jsonld) | [*Machine* entity example.](examples/Machine.jsonld) |
+| **Machine Model** | [*Machine Model* entity specification.](definitions/Machine-Model.md) | [*Machine Model* context example.](examples/Machine-Model-context.jsonld) | [*Machine Model* entity example.](examples/Machine-Model.jsonld) |
+| **Machine Operation** | [*Machine Operation* entity specification.](definitions/Machine-Operation.md) | [*Machine Operation* context example.](examples/Machine-Operation-context.jsonld) | [*Machine Operation* entity example.](examples/Machine-Operation.jsonld) |
 | **Vehicle** | [*Vehicle* entity specification.](definitions/Vehicle.md) | [*Vehicle* context example.](examples/Vehicle-context.jsonld) | [*Vehicle* entity example.](examples/Vehicle.jsonld) |
 | **Vehicle Fault** | [*Vehicle Fault* entity specification.](definitions/Vehicle-Fault.md) | [*Vehicle Fault* context example.](examples/Vehicle-Fault-context.jsonld) | [*Vehicle Fault* entity example.](examples/Vehicle-Fault.jsonld) |
 | **Vehicle Type** | [*Vehicle Type* entity specification.](definitions/Vehicle-Type.md) | [*Vehicle Type* context example.](examples/Vehicle-Type-context.jsonld) | [*Vehicle Type* entity example.](examples/Vehicle-Type.jsonld) |

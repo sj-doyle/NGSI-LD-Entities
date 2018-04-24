@@ -13,7 +13,7 @@ This entity contains a harmonised description of a generic device model and is t
 | name | Property | The name of this DeviceModel. | Mandatory |
 | doc | uri | Reference to Product Data Sheet or other manufacturer’s documentation about this device model including where relevant, details of the accuracy, trueness, precision and units of measure. | Recommended |
 | category | Property | A choice from an enumerated list defining the category of this device including: **sensor, actuator, meter, appliance, heater, chiller, lighting, boiler, vessel, airHandlingUnit, consumer, other.** | Optional |
-| description | Property | Monomatics All Weather Temperature Sensor. | Recommended |
+| description | Property | Description of this device model. | Recommended |
 | manufacturerName | Property | The name of manufacturer of this DeviceModel. | Recommended |
 | brandName | Property | The brand name of this DeviceModel. | Recommended |
 | root | Property | A logical indicator that this DeviceModel is the root of a DeviceModel hierarchy. True indicates it is the root, false indicates that it is not the root. | Recommended |
@@ -76,7 +76,7 @@ The following is an example instance of the **Device Model** entity
     },
     "description": {
         "type": "Property",
-        "value": "Thermocouple"
+        "value": "Monomatics All Weather Temperature Sensor."
     },
     "manufacturerName": {
         "type": "Property",

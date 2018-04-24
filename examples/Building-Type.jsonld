@@ -1,0 +1,29 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Building-Type-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:BuildingType:57b912ab-eb47-4cd5-bc9d-73abece1f1b3",
+    "type": "BuildingType",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "name": {
+        "type": "Property",
+        "value": "House"
+    },
+    "description": {
+        "type": "Property",
+        "value": "Standard building type definition for a domestic house"
+    },
+    "root": {
+        "type": "Property",
+        "value": false
+    },
+    "parentBuildingType": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:BuildingType:4146335f-839f-4ff9-a575-6b4e6232b734"
+    }
+}

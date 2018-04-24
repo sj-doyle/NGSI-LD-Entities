@@ -1,0 +1,130 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Building-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:Building:ba2d4fd9-f57f-4610-a589-2d52670d14f3",
+    "type": "Building",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "buildingType": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:BuildingType:8b1f2bf0-5093-4182-ad4b-224182bb3b9f"
+    },
+    "category": {
+        "type": "Property",
+        "value": [
+            "house"
+        ]
+    },
+    "containedInPlace": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    100,
+                    0
+                ],
+                [
+                    101,
+                    0
+                ],
+                [
+                    101,
+                    1
+                ],
+                [
+                    100,
+                    1
+                ],
+                [
+                    100,
+                    0
+                ]
+            ]
+        }
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    100,
+                    0
+                ],
+                [
+                    101,
+                    0
+                ],
+                [
+                    101,
+                    1
+                ],
+                [
+                    100,
+                    1
+                ],
+                [
+                    100,
+                    0
+                ]
+            ]
+        }
+    },
+    "address": {
+        "type": "Property",
+        "addressLocality": "London",
+        "postalCode": "EC4N 8AF",
+        "streetAddress": "25 Walbrook"
+    },
+    "owner": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:Person:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
+            "urn:ngsi-ld:Organization:1be9cd61-ef59-421f-a326-4b6c84411ad4"
+        ]
+    },
+    "occupier": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:Person:9830f692-7677-11e6-838b-4f9fb3dc5a4f",
+            "urn:ngsi-ld:Organization:837e7a18-4712-11e8-b005-d7042eb57989"
+        ]
+    },
+    "subscriptionServices": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:SubscriptionService:8ecc19fc-4712-11e8-a717-0be3ca52406e",
+            "urn:ngsi-ld:SubscriptionService:a3adbfa6-4712-11e8-a80e-2bf67e7617bf"
+        ]
+    },
+    "floorsAboveGround": {
+        "type": "Property",
+        "value": 14
+    },
+    "floorsBelowGround": {
+        "type": "Property",
+        "value": 2
+    },
+    "description": {
+        "type": "Property",
+        "value": "Multi-tenant office block"
+    },
+    "mapUri": {
+        "type": "uri",
+        "value": "https://www.google.co.uk/maps/place/The+Walbrook,+Walbrook,+London+EC4N+8AF/@51.5120758,-0.0920769"
+    },
+    "notes": {
+        "type": "Property",
+        "value": [
+            "Intelligent entry barrier system",
+            "Intelligent air conditioning units",
+            "Normal opening 07:00 – 20:00"
+        ]
+    }
+}

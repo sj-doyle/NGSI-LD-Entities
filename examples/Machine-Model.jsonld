@@ -1,0 +1,61 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Machine-Model-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:MachineModel:e01f13d1-fea4-4cc4-92c9-0d9fadb2c509",
+    "type": "MachineModel",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "name": {
+        "type": "Property",
+        "value": "CA1256b"
+    },
+    "doc": {
+        "type": "uri",
+        "value": "http://www.example.com"
+    },
+    "description": {
+        "type": "Property",
+        "value": "Machine to screen print t-shirts"
+    },
+    "manufacturerName": {
+        "type": "Property",
+        "value": "ScreenOPrint, Inc."
+    },
+    "brandName": {
+        "type": "Property",
+        "value": "QuickT"
+    },
+    "version": {
+        "type": "Property",
+        "value": "v1"
+    },
+    "category": {
+        "type": "Property",
+        "value": [
+            "2dPrinter"
+        ]
+    },
+    "root": {
+        "type": "Property",
+        "value": false
+    },
+    "parentMachineModel": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:MachineModel:4146335f-839f-4ff9-a575-6b4e6232b734"
+    },
+    "processDescription": {
+        "type": "Property",
+        "value": "Industrial printer used to mass print t-shirts"
+    },
+    "standardOperations": {
+        "type": "Property",
+        "value": [
+            "print"
+        ]
+    }
+}

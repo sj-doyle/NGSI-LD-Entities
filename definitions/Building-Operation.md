@@ -1,5 +1,5 @@
-# Device Operation
-This entity contains a harmonised description of a generic device operation entity. The device operation entity contains dynamic data reported by a device and is therefore applicable to all IoT segments and related IoT applications.
+# Building Operation
+This entity contains a harmonised description of a generic operation (related to smart buildings) applied to the referenced building. The building operation contains dynamic data reported by, or associated with a building or operations applicable to the building. This entity is associated with the vertical segments of smart homes, smart cities, industry and related IoT applications.
 
 | Attribute Name | Attribute Type | Description | Constraint |
 |:--- |:--- |:--- |:---:|
@@ -10,8 +10,8 @@ This entity contains a harmonised description of a generic device operation enti
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
-| device | Relationship | A reference to the associated Device for this device operation. | Mandatory |
-| operationType | Property | A choice from an enumerated list including: **event, maintenance, fault, installation, upgrade, other.** | Recommended |
+| building | Relationship | A reference to the associated Building entity for this Building Operation. | Mandatory |
+| operationType | Property | Defines the type of operation conducted/ requested. This will be one of a defined list of operation types specific to the building. | Recommended |
 | description | Property | A description of the operation. | Recommended |
 | result | Property | The result of the operation. One of **ok, aborted, failed.** | Recommended |
 | plannedStartAt | TemporalProperty | The planned start date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start. | Mandatory |
@@ -20,13 +20,14 @@ This entity contains a harmonised description of a generic device operation enti
 | operator | Relationship | Reference to the operator conducting the operation | Recommended |
 | startedAt | TemporalProperty | Timestamp when the operation actually started to be performed. | Recommended |
 | endedAt | TemporalProperty | Timestamp when the operation actually finished. | Recommended |
-| reportedAt | TemporalProperty | Timestamp when the event/ fault was reported. | Optional |
-| addressedAt | TemporalProperty | The timestamp when an event or fault was addressed or cleared. | Optional |
+| operationSequence | Property | The sequence of operations executed/ requested for the building in a representation format relevant to the building. | Optional |
+| relatedBuildingOperations | Relationship | Optional references to any related building operations. | Optional |
+| relatedOperations | Relationship | Optional references to any related operations (device, machine etc). | Optional |
 
 ## NGSI-LD Context Definition
-The following NGSI-LD context definition applies to the **Device Operation** entity
+The following NGSI-LD context definition applies to the **Building Operation** entity
 
-[Download context definition.](../examples/Device-Operation-context.jsonld)
+[Download context definition.](../examples/Building-Operation-context.jsonld)
 
 ```JavaScript
 {
@@ -46,37 +47,35 @@ The following NGSI-LD context definition applies to the **Device Operation** ent
     "TemporalProperty": "http://uri.etsi.org/ngsi-ld/TemporalProperty"
 }
 ```
-## Example of Device Operation Entity
-The following is an example instance of the **Device Operation** entity
+## Example of Building Operation Entity
+The following is an example instance of the **Building Operation** entity
 
-[Download example entity definition.](../examples/Device-Operation.jsonld)
+[Download example entity definition.](../examples/Building-Operation.jsonld)
 
 ```JavaScript
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Device-Operation-context.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Building-Operation-context.jsonld"
     ],
-    "id": "urn:ngsi-ld:DeviceOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",
-    "type": "DeviceOperation",
+    "id": "urn:ngsi-ld:BuildingOperation:57b912ab-eb47-4cd5-bc9d-73abece1f1b3",
+    "type": "BuildingOperation",
     "createdAt": "2017-01-01T01:20:00Z",
     "modifiedAt": "2017-05-04T12:30:00Z",
     "source": "https://source.example.com",
     "dataProvider": "https://provider.example.com",
     "entityVersion": 2.0,
-    "device": {
+    "building": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:Device:2033a7c7-d31b-48e7-91c2-014dc426c29e"
+        "object": "urn:ngsi-ld:Building:f59e2074-0032-4ccd-b0dd-f06370ffb6af"
     },
     "operationType": {
         "type": "Property",
-        "value": [
-            "fault"
-        ]
+        "value": "Air Conditioning Switch To Low Power"
     },
     "description": {
         "type": "Property",
-        "value": "Backup battery needs replacement"
+        "value": "Air conditioning levels reduced due to out of hours"
     },
     "result": {
         "type": "Property",
@@ -92,11 +91,11 @@ The following is an example instance of the **Device Operation** entity
     },
     "status": {
         "type": "Property",
-        "value": "ongoing"
+        "value": "finished"
     },
     "operator": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:Person:fe018d4e-46f8-11e8-ae6b-df5577f85836"
+        "object": "urn:ngsi-ld:Person:3ac33d78-4716-11e8-b332-3bfc33a871b7"
     },
     "startedAt": {
         "type": "TemporalProperty",
@@ -106,13 +105,27 @@ The following is an example instance of the **Device Operation** entity
         "type": "TemporalProperty",
         "value": "2016-08-28T10:18:16Z"
     },
-    "reportedAt": {
-        "type": "TemporalProperty",
-        "value": "2016-08-28T10:18:16Z"
+    "operationSequence": {
+        "type": "Property",
+        "value": [
+            "Fan levels reduced to minimum",
+            "Target temperature set to 24 degrees Celsius"
+        ]
     },
-    "addressedAt": {
-        "type": "TemporalProperty",
-        "value": "2016-08-28T10:18:16Z"
+    "relatedBuildingOperations": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:BuildingOperation:b4fb8bff-1a8f-455f-8cc0-ca43c069f865",
+            "urn:ngsi-ld:BuildingOperation:55c24793-3437-4157-9bda-667c9e1531fc",
+            "urn:ngsi-ld:BuildingOperation:714b95f2-4716-11e8-b488-7f92794ea9de"
+        ]
+    },
+    "relatedOperations": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:Device:7a464b84-4716-11e8-8b3f-bbe95bc73eb2",
+            "urn:ngsi-ld:Machine:8304a16c-4716-11e8-86c5-2b1c5e248f62"
+        ]
     }
 }
 ```

@@ -26,7 +26,7 @@
     },
     "description": {
         "type": "Property",
-        "value": "Thermocouple"
+        "value": "Monomatics All Weather Temperature Sensor."
     },
     "manufacturerName": {
         "type": "Property",
