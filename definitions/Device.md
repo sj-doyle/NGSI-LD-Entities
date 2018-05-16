@@ -15,6 +15,7 @@ This entity contains a harmonised description of a generic device. This entity p
 | supplierName | Property | The name of the supplier of this device. | Recommended |
 | countryOfManufacture | Property | The country where this device was manufactured. | Recommended |
 | factory | Property | The factory name/code manufacturing this device. | Optional |
+| dateFirstUsed | TemporalProperty | Indicates the date/time at which date and time the device was first used (nominally in UTC). | Recommended |
 | dateLastCalibration | TemporalProperty | Indicates the date/time at which date and time the device was last calibrated (nominally in UTC). | Recommended |
 | dateInstalled | TemporalProperty | Indicates the date/time at which date and time the device was installed (nominally in UTC). | Recommended |
 | dateManufactured | TemporalProperty | Indicates the date/time at which date and time the device was manufactured (nominally in UTC). | Recommended |
@@ -92,6 +93,10 @@ The following is an example instance of the **Device** entity
     "factory": {
         "type": "Property",
         "value": "56A8"
+    },
+    "dateFirstUsed": {
+        "type": "TemporalProperty",
+        "value": "2017-05-04T11:18:16Z"
     },
     "dateLastCalibration": {
         "type": "TemporalProperty",

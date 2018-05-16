@@ -1,0 +1,35 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Subscriber-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:Subscriber:c1716dea-6a4d-4171-a733-916123942f09",
+    "type": "Subscriber",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "subscription": {
+        "type": "Relationship",
+        "value": "urn:ngsi-ld:SubscriptionService:65b1ccb0-ee32-41c1-9746-7ba83fb0f0f1"
+    },
+    "startAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-22T10:18:16Z"
+    },
+    "endAt": {
+        "type": "TemporalProperty",
+        "value": "2017-08-22T23:59:59Z"
+    },
+    "category": {
+        "type": "Property",
+        "value": "utility"
+    },
+    "users": {
+        "type": "Relationship",
+        "value": [
+            "urn:ngsi-ld:Person:10f59922-5919-11e8-a93b-1fea12b786c2"
+        ]
+    }
+}

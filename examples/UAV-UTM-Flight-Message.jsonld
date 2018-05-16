@@ -1,0 +1,38 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/UAV-UTM-Flight-Message-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:UAVUTMFlightMessage:4de63bda-592c-11e8-a603-234826e9b9fe",
+    "type": "UAVUTMFlightMessage",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "uav": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
+    },
+    "observedAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-23T10:18:16Z"
+    },
+    "originatedByUAV": {
+        "type": "Property",
+        "value": false
+    },
+    "originator": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec"
+    },
+    "flightMessage": {
+        "type": "Property",
+        "value": {
+            "flightId": "3ce68ac8-5932-11e8-9a8d-ef74eb0fb0a2",
+            "sequenceNumber": 0,
+            "flightDeclaration": {},
+            "version": "1.0.0"
+        }
+    }
+}

@@ -1,5 +1,5 @@
-# Agri Parcel Record
-This entity contains a harmonised description of the conditions recorded on a generic parcel of land. This entity is primarily associated with the agricultural vertical and related IoT applications.
+# Product Record
+This entity contains a harmonised description of the conditions recorded as a product (generally a physical instance of a product) moves through the supply chain. This entity is primarily associated with the retail supply vertical and related IoT applications.
 
 | Attribute Name | Attribute Type | Description | Constraint |
 |:--- |:--- |:--- |:---:|
@@ -10,23 +10,24 @@ This entity contains a harmonised description of the conditions recorded on a ge
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
-| agriParcel | Relationship | Reference to the AgriParcel to which this entity relates. | Mandatory |
-| location | GeoProperty | The geo:json encoded polygon / multi-polygon describing the parcel which this record relates to. | Mandatory |
-| soilTemperature | Property | The observed soil temperature nominally in degrees centigrade. | Optional |
-| soilMoistureVwc | Property | Measured as Volumetric Water Content, VWC as a percentage.<br/><br/>0 ≤soilMoistureVwc ≤ 1 | Optional |
-| soilMoistureEc | Property | Measured as Electrical Conductivity, EC nominally in units of Siemens per meter (S/m) | Optional |
-| airTemperature | Property | The observed air temperature (in the shade) nominally in degrees centigrade. | Optional |
-| solarRadiation | Property | Instantaneous solar radiation measured in kW/m2 | Optional |
+| product | Relationship | Reference to the Product to which this record relates. | Mandatory |
+| location | GeoProperty | The geo:json encoded point / polygon / multi-polygon describing the location this record relates to. | Mandatory |
+| temperature | Property | The observed local air temperature nominally in degrees centigrade. | Optional |
 | relativeHumidity | Property | Relative Humidity a number between 0 and 1 representing the range of 0% to 100%<br/><br/>0 ≤ relativeHumidity ≤ 1  | Optional |
 | atmosphericPressure | Property | Atmospheric Pressure nominally in units of hecto Pascals  | Optional |
-| description | Property | A description of this record | Recommended |
-| devices | Relationship | Reference to the IoT devices associated with this greenhouse i.e. sensors, controls. | Optional |
+| description | Property | Description of this ProductRecord. | Recommended |
+| weight | Property | Current (i.e. measured) weight of the product including packaging. This may differ from the original weight due to additional packaging or losses during shipment e.g. evaporation | Optional |
+| netWeight | Property | Weight of the Agri-Product itself in a package with GS1 code
+
+Used to identify the net weight of the product. Net Weight excludes all packaging material, including the packaging material of all lower-level GTINs. Example:11.5 kg | Optional |
+| volume | Property | The current volume of the product including packaging. | Optional |
 | observedAt | TemporalProperty | Indicates the date/time the record was observed/ last observed. | Recommended |
+| O2 | Property | The level of gaseous oxygen (O2) present in the atmosphere as measured around the product. | Optional |
 
 ## NGSI-LD Context Definition
-The following NGSI-LD context definition applies to the **Agri Parcel Record** entity
+The following NGSI-LD context definition applies to the **Product Record** entity
 
-[Download context definition.](../examples/Agri-Parcel-Record-context.jsonld)
+[Download context definition.](../examples/Product-Record-context.jsonld)
 
 ```JavaScript
 {
@@ -50,114 +51,90 @@ The following NGSI-LD context definition applies to the **Agri Parcel Record** e
     }
 }
 ```
-## Example of Agri Parcel Record Entity
-The following is an example instance of the **Agri Parcel Record** entity
+## Example of Product Record Entity
+The following is an example instance of the **Product Record** entity
 
-[Download example entity definition.](../examples/Agri-Parcel-Record.jsonld)
+[Download example entity definition.](../examples/Product-Record.jsonld)
 
 ```JavaScript
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Parcel-Record-context.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Product-Record-context.jsonld"
     ],
-    "id": "urn:ngsi-ld:AgriParcelRecord:8f5445e6-f49b-496e-833b-e65fc97fcab7",
-    "type": "AgriParcelRecord",
+    "id": "urn:ngsi-ld:ProductRecord:85d05a21-6907-44b3-83d8-85d8a713d003",
+    "type": "ProductRecord",
     "createdAt": "2017-01-01T01:20:00Z",
     "modifiedAt": "2017-05-04T12:30:00Z",
     "source": "https://source.example.com",
     "dataProvider": "https://provider.example.com",
     "entityVersion": 2.0,
-    "agriParcel": {
+    "product": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:AgriParcel:d3676010-d815-468c-9e01-25739c5a25ed"
+        "object": "urn:ngsi-ld:Product:d3676010-d815-468c-9e01-25739c5a25ed"
     },
     "location": {
         "type": "GeoProperty",
         "value": {
-            "type": "Polygon",
+            "type": "Point",
             "coordinates": [
-                [
-                    100,
-                    0
-                ],
-                [
-                    101,
-                    0
-                ],
-                [
-                    101,
-                    1
-                ],
-                [
-                    100,
-                    1
-                ],
-                [
-                    100,
-                    0
-                ]
+                -104.99404,
+                39.75621
             ]
         }
     },
-    "soilTemperature": {
+    "temperature": {
         "type": "Property",
-        "value": 27,
+        "value": 3.823,
         "unitCode": "CEL",
-        "observedAt": "2017-05-04T12:30:00Z"
-    },
-    "soilMoistureVwc": {
-        "type": "Property",
-        "value": 0.08,
-        "unitCode": "C62",
-        "observedAt": "2017-05-04T12:30:00Z"
-    },
-    "soilMoistureEc": {
-        "type": "Property",
-        "value": 17,
-        "unitCode": "D10",
-        "observedAt": "2017-05-04T12:30:00Z"
-    },
-    "airTemperature": {
-        "type": "Property",
-        "value": 20,
-        "unitCode": "CEL",
-        "observedAt": "2017-05-04T12:30:00Z"
-    },
-    "solarRadiation": {
-        "type": "Property",
-        "value": 15,
-        "unitCode": "N78",
         "observedAt": "2017-05-04T12:30:00Z"
     },
     "relativeHumidity": {
         "type": "Property",
-        "value": 0.15,
+        "value": 0.7,
         "unitCode": "C62",
         "observedAt": "2017-05-04T12:30:00Z"
     },
     "atmosphericPressure": {
         "type": "Property",
-        "value": 1013.25,
+        "value": 1006.19,
         "unitCode": "A97",
         "observedAt": "2017-05-04T12:30:00Z"
     },
     "description": {
         "type": "Property",
-        "value": "Monthly fertiliser application"
+        "value": "Palm oil consignment arrived at port for shipment"
     },
-    "devices": {
-        "type": "Relationship",
-        "object": [
-            "urn:ngsi-ld:Device:4a40aeba-4474-11e8-86bf-03d82e958ce6",
-            "urn:ngsi-ld:Device:63217d24-4474-11e8-9da2-c3dd3c36891b",
-            "urn:ngsi-ld:Device:68e091dc-4474-11e8-a398-df010c53b416",
-            "urn:ngsi-ld:6f44b54e-4474-11e8-8577-d7ff6a8ef551"
-        ]
+    "weight": {
+        "type": "Property",
+        "unitText": "grammes",
+        "unitCode": "GRM",
+        "value": 2550,
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "netWeight": {
+        "type": "Property",
+        "unitText": "grammes",
+        "unitCode": "GRM",
+        "value": 2500,
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "volume": {
+        "type": "Property",
+        "unitCode": "MTQ",
+        "value": 1.7,
+        "observedAt": "2017-05-04T12:30:00Z"
     },
     "observedAt": {
         "type": "TemporalProperty",
         "value": "2017-05-04T10:18:16Z"
+    },
+    "O2": {
+        "type": "Property",
+        "value": 300,
+        "unitCode": "GQ",
+        "unitText": "microgramme per cubic metre",
+        "observedAt": "2017-05-04T12:30:00Z"
     }
 }
 ```

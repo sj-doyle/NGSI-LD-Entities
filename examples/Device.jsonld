@@ -30,6 +30,10 @@
         "type": "Property",
         "value": "56A8"
     },
+    "dateFirstUsed": {
+        "type": "TemporalProperty",
+        "value": "2017-05-04T11:18:16Z"
+    },
     "dateLastCalibration": {
         "type": "TemporalProperty",
         "value": "2017-05-04T10:18:16Z"

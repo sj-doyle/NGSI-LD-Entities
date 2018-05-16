@@ -19,6 +19,7 @@ This entity contains a harmonised description of a generic machine model. This e
 | category | Property | A List of functional categories which this machineModel supports. Examples include: **robot, cnc, 2dPrinter, 3dPrinter, 3dScanner, lathe, injectionMolding, laserCutter, millingMachine, grindingMachine, stampingMachine, oven, kiln, packaging, mixer, dryer, fan, saw.** | Optional |
 | root | Property | A logical indicator that this MachineModel is the root of a MachineModel hierarchy. True indicates it is the root, false indicates that it is not the root. | Recommended |
 | parentMachineModel | Relationship | References any higher level MachineModel that this machine model is based on. | Optional |
+| childrenMachineModel | Relationship | References any lower level MachineModel entities that are based on this machine model. | Optional |
 | processDescription | Property | A description of the industrial process carried out by this machine. | Optional |
 | standardOperations | Property | Lists the standard set of operations supported by this machineModel. | Optional |
 
@@ -100,6 +101,13 @@ The following is an example instance of the **Machine Model** entity
     "parentMachineModel": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:MachineModel:4146335f-839f-4ff9-a575-6b4e6232b734"
+    },
+    "childrenMachineModel": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:MachineModel:a74fcf24-58fa-11e8-ae3e-df1abd78f83f",
+            "urn:ngsi-ld:MachineModel:b29330f6-58fa-11e8-93b5-1379ded6eef6"
+        ]
     },
     "processDescription": {
         "type": "Property",

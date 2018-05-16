@@ -1,0 +1,90 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Product-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:Product:6223903a-d8c5-4e7e-af24-cc90967feb61",
+    "type": "Product",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "productType": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:ProductType:27242396-032d-11e7-83f3-83fdf070a882"
+    },
+    "supplierName": {
+        "type": "Property",
+        "value": "ACME Direct, Inc."
+    },
+    "gtin": {
+        "type": "Property",
+        "value": "01234567890"
+    },
+    "productName": {
+        "type": "Property",
+        "value": "Paprika, dried, powdered"
+    },
+    "description": {
+        "type": "Property",
+        "value": "Natural paprika grown in Suffolk"
+    },
+    "brand": {
+        "type": "Property",
+        "value": "All natural Suffolk spice"
+    },
+    "inPackageWidth": {
+        "type": "Property",
+        "unitText": "inch",
+        "unitCode": "INH",
+        "value": 25
+    },
+    "inPackageDepth": {
+        "type": "Property",
+        "unitText": "inch",
+        "unitCode": "INH",
+        "value": 5
+    },
+    "inPackageHeight": {
+        "type": "Property",
+        "unitText": "inch",
+        "unitCode": "INH",
+        "value": 15
+    },
+    "netWeight": {
+        "type": "Property",
+        "unitText": "grammes",
+        "unitCode": "GRM",
+        "value": 2500
+    },
+    "grossWeight": {
+        "type": "Property",
+        "unitText": "grammes",
+        "unitCode": "GRM",
+        "value": 3000
+    },
+    "countryOfOrigin": {
+        "type": "Property",
+        "value": "UK"
+    },
+    "gpcCategoryCode": {
+        "type": "Property",
+        "value": "10000271"
+    },
+    "images": {
+        "type": "uri",
+        "value": [
+            "http://example.com/productImg1.jpg",
+            "http://example.com/productImg2.jpg"
+        ]
+    },
+    "producerURI": {
+        "type": "uri",
+        "value": "http://www.example.com"
+    },
+    "manufacturer": {
+        "type": "Property",
+        "name": "ACME Suffolk Spice Company"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Road-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:Road:19b6f4b7-a9b4-4114-8391-3133bf96aedc",
+    "type": "Road",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "country": {
+        "type": "Property",
+        "value": "United Kingdom"
+    },
+    "roadSegments": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:RoadSegment:2a982120-4d98-425b-a8db-1de5563db6a8",
+            "urn:ngsi-ld:RoadSegment:43e255c7-262e-4d6d-95a1-69a53e37dcc0"
+        ]
+    },
+    "roadClass": {
+        "type": "Property",
+        "value": "Motorway"
+    },
+    "name": {
+        "type": "Property",
+        "value": "M1"
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "M1 Motorway"
+    }
+}

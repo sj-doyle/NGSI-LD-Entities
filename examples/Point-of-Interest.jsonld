@@ -1,0 +1,44 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Point-of-Interest-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:PointOfInterest:44e47705-90c3-4dbc-a0ae-7810306de5e9",
+    "type": "PointOfInterest",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -104.99404,
+                39.75621
+            ]
+        }
+    },
+    "category": {
+        "type": "Property",
+        "value": [
+            "36"
+        ]
+    },
+    "description": {
+        "type": "Relationship",
+        "value": "Learn all about mobile at the GSMA Academy"
+    },
+    "place": {
+        "type": "Property",
+        "name": "GSMA Academy",
+        "address": {
+            "type": "PostalAddress",
+            "addressLocality": "London",
+            "postalCode": "EC4N 8AF",
+            "streetAddress": "25 Walbrook"
+        },
+        "telephone": "0212345678"
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/UAV-TMS-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",
+    "type": "UAVTMS",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "name": {
+        "type": "Property",
+        "value": "PowerTMS"
+    },
+    "softwareApplication": {
+        "type": "Property",
+        "operatingSystem": "Linux",
+        "softwareVersion": "8.3",
+        "applicationCategory": "Guidance"
+    },
+    "operationalInstance": {
+        "type": "url",
+        "value": "http://example.com/uavtms "
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",
+            "urn:ngsi-ld:Organization:c5d75a1c-592b-11e8-8a09-3bd13644426b"
+        ]
+    },
+    "operator": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",
+            "urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852"
+        ]
+    }
+}

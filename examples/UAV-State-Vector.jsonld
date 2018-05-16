@@ -1,0 +1,87 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/UAV-State-Vector-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:UAVStateVector:920c304c-5929-11e8-a3c5-9bf25506b64a",
+    "type": "UAVStateVector",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "uav": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
+    },
+    "observedAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-23T10:18:16Z"
+    },
+    "originator": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec"
+    },
+    "stateVector": {
+        "type": "Property",
+        "value": [
+            [
+                "ac90e7",
+                "DAL2136",
+                "United States",
+                1526489909,
+                1526489909,
+                -92.1652,
+                32.0335,
+                9144,
+                false,
+                224.88,
+                262.11,
+                0,
+                null,
+                9525,
+                "2272",
+                false,
+                0
+            ],
+            [
+                "8000fd",
+                "JAI384",
+                "India",
+                1526489893,
+                1526489905,
+                76.993,
+                28.4104,
+                1882.14,
+                false,
+                149.13,
+                190.53,
+                5.2,
+                null,
+                1821.18,
+                "0504",
+                false,
+                0
+            ],
+            [
+                "4caa1c",
+                "AZA1291",
+                "Ireland",
+                1526489909,
+                1526489909,
+                11.1718,
+                43.9226,
+                10668,
+                false,
+                242.45,
+                137.24,
+                0.33,
+                null,
+                10713.72,
+                "7454",
+                false,
+                0
+            ]
+        ]
+    }
+}

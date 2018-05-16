@@ -1,0 +1,57 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Market-Price-Observed-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:MarketPriceObserved:398aa5f4-6a81-4dea-9f85-e9869441a257",
+    "type": "MarketPriceObserved",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "entity": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:AgriProduct:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84"
+    },
+    "priceAverage5Year": {
+        "type": "Property",
+        "value": 15,
+        "priceCurrency": "USD",
+        "validFrom": {
+            "value": "2012-08-23T10:18:16Z",
+            "type": "DateTime"
+        },
+        "validThrough": {
+            "value": "2017-08-23T10:18:16Z",
+            "type": "DateTime"
+        }
+    },
+    "priceObserved": {
+        "type": "Property",
+        "value": 5,
+        "priceCurrency": "USD",
+        "validFrom": {
+            "value": "2017-08-22T10:18:16Z",
+            "type": "DateTime"
+        },
+        "validThrough": {
+            "value": "2017-08-22T10:18:16Z",
+            "type": "DateTime"
+        }
+    },
+    "address": {
+        "type": "Property",
+        "addressCountry": "UK",
+        "addressLocality\"": "London"
+    },
+    "marketScale": {
+        "type": "Property",
+        "value": "02",
+        "marketType": "Wholesale"
+    },
+    "weatherForecast": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:WeatherForecast:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c85"
+    }
+}

@@ -1,10 +1,10 @@
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Agri-Product-Type-context.jsonld"
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Product-Type-context.jsonld"
     ],
-    "id": "urn:ngsi-ld:AgriProductType:398aa5f4-6a81-4dea-9f85-e9869441a257",
-    "type": "AgriProductType",
+    "id": "urn:ngsi-ld:ProductType:8bd39518-041d-4a9a-8c0c-0bf15d5f07f1",
+    "type": "ProductType",
     "createdAt": "2017-01-01T01:20:00Z",
     "modifiedAt": "2017-05-04T12:30:00Z",
     "source": "https://source.example.com",
@@ -22,16 +22,16 @@
         "type": "Property",
         "value": true
     },
-    "agriProductParent": {
+    "parentType": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:AgriProductType:b99c940d-7156-4280-9a2b-4a9e533cd20e"
+        "object": "urn:ngsi-ld:ProductType:66edbb59-90ea-4757-aa06-5a5b95675092"
     },
-    "agriProductChildren": {
+    "childrenTypes": {
         "type": "Relationship",
         "object": [
-            "urn:ngsi-ld:AgriProductType:836258d0-448b-11e8-84ec-ef61d9425fe8",
-            "urn:ngsi-ld:AgriProductType:83d607f8-448b-11e8-9fe3-0fd5140ae8db",
-            "urn:ngsi-ld:AgriProductType:90cbac88-448b-11e8-acb0-a78dab9d0555"
+            "urn:ngsi-ld:ProductType:5d4fcc9e-590e-11e8-ae23-3f2d135d7537",
+            "urn:ngsi-ld:ProductType:625c4ffa-590e-11e8-b3bf-17a3afd2e135",
+            "urn:ngsi-ld:ProductType:682b48f0-590e-11e8-a107-d3709d55a369"
         ]
     }
 }

@@ -1,0 +1,75 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/UAV-Model-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:UAVModel:6f4439d2-5925-11e8-a0ef-53719253dbbd",
+    "type": "UAVModel",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "model": {
+        "type": "Property",
+        "value": "ACME Recon"
+    },
+    "doc": {
+        "type": "uri",
+        "value": "http://example.com/products-services/aircraft/the-recon.html "
+    },
+    "description": {
+        "type": "Property",
+        "value": "The Recon was constructed and designed to offer a clear payload view, with the motor and propeller system aft of the payload. It is smaller and more versatile than many drones, yet robust enough for harsh environment operations. The wingspan is 2.3 meters. An affordable, versatile, and flexible drone for a multitude of uses."
+    },
+    "manufacturerName": {
+        "type": "Property",
+        "value": "ACME UAVs"
+    },
+    "brandName": {
+        "type": "Property",
+        "value": "Airv"
+    },
+    "category": {
+        "type": "Property",
+        "value": "Aerial_photography"
+    },
+    "rotors": {
+        "type": "Property",
+        "value": 4
+    },
+    "fuelType": {
+        "type": "Property",
+        "value": "gasoline"
+    },
+    "maxFlightTime": {
+        "type": "Property",
+        "value": 100,
+        "unitCode": "HUR"
+    },
+    "maxFlightAltitude": {
+        "type": "Property",
+        "value": 1000,
+        "unitCode": "MTR"
+    },
+    "maxGroundVelocity": {
+        "type": "Property",
+        "value": 100,
+        "unitCode": "MTS"
+    },
+    "minWeight": {
+        "type": "Property",
+        "value": 1,
+        "unitCode": "KGM"
+    },
+    "minUnladenWeight": {
+        "type": "Property",
+        "value": 1.5,
+        "unitCode": "KGM"
+    },
+    "maxLoad": {
+        "type": "Property",
+        "value": 0.8,
+        "unitCode": "KGM"
+    }
+}

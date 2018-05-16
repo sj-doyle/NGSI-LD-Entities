@@ -1,0 +1,76 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/UAV-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:UAV:1fa179a6-b507-4857-ad72-eb5513ef05c6",
+    "type": "UAV",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "uavModel": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:UAVModel:23821045-33d4-46ec-b777-98f461bf4856"
+    },
+    "name": {
+        "type": "Property",
+        "value": "Yellow1"
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Person:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
+            "urn:ngsi-ld:Organization:1be9cd61-ef59-421f-a326-4b6c84411ad4"
+        ]
+    },
+    "operator": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:Person:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
+            "urn:ngsi-ld:Person:3d5f533e-5920-11e8-871b-534f1ae5f35d"
+        ]
+    },
+    "operationMode": {
+        "type": "Property",
+        "value": "vlos"
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -103.9904,
+                39.7564
+            ]
+        }
+    },
+    "elevation": {
+        "type": "Property",
+        "value": 1000,
+        "unitCode": "MTR"
+    },
+    "observedAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-23T10:18:16Z"
+    },
+    "flightStatus": {
+        "type": "Property",
+        "value": "takeoff"
+    },
+    "workStatus": {
+        "type": "Property",
+        "value": "finish"
+    },
+    "groundSpeed": {
+        "type": "Property",
+        "value": 50,
+        "unitText": "MTS"
+    },
+    "fuel": {
+        "type": "Property",
+        "value": 50,
+        "unitCode": "GLI"
+    }
+}

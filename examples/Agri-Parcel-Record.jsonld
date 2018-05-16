@@ -60,6 +60,12 @@
         "unitCode": "D10",
         "observedAt": "2017-05-04T12:30:00Z"
     },
+    "airTemperature": {
+        "type": "Property",
+        "value": 20,
+        "unitCode": "CEL",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
     "solarRadiation": {
         "type": "Property",
         "value": 15,
@@ -90,5 +96,9 @@
             "urn:ngsi-ld:Device:68e091dc-4474-11e8-a398-df010c53b416",
             "urn:ngsi-ld:6f44b54e-4474-11e8-8577-d7ff6a8ef551"
         ]
+    },
+    "observedAt": {
+        "type": "TemporalProperty",
+        "value": "2017-05-04T10:18:16Z"
     }
 }

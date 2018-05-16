@@ -48,6 +48,13 @@
         "type": "Relationship",
         "object": "urn:ngsi-ld:MachineModel:4146335f-839f-4ff9-a575-6b4e6232b734"
     },
+    "childrenMachineModel": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:MachineModel:a74fcf24-58fa-11e8-ae3e-df1abd78f83f",
+            "urn:ngsi-ld:MachineModel:b29330f6-58fa-11e8-93b5-1379ded6eef6"
+        ]
+    },
     "processDescription": {
         "type": "Property",
         "value": "Industrial printer used to mass print t-shirts"

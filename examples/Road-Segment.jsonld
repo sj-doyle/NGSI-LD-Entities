@@ -1,0 +1,80 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Road-Segment-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:RoadSegment:27109fe0-0c60-4302-a9eb-e7065eca876e",
+    "type": "RoadSegment",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "road": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Road:19b6f4b7-a9b4-4114-8391-3133bf96aedc"
+    },
+    "startPoint": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                52.026536,
+                0.603404
+            ]
+        }
+    },
+    "endPoint": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                52.058727,
+                0.700214
+            ]
+        }
+    },
+    "roadSegments": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:RoadSegment:75460f68-5911-11e8-abc1-2f5262349650",
+            "urn:ngsi-ld:RoadSegment:7b2c9d70-5911-11e8-8484-7704bd54bf6b"
+        ]
+    },
+    "roadClass": {
+        "type": "Property",
+        "value": "Motorway"
+    },
+    "name": {
+        "type": "Property",
+        "value": "M1 J13 to J14"
+    },
+    "path": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "LineString",
+            "coordinates": [
+                [
+                    52.026536,
+                    0.603404
+                ],
+                [
+                    52.034828,
+                    0.637166
+                ],
+                [
+                    52.037105,
+                    0.643839
+                ],
+                [
+                    52.048449,
+                    0.669202
+                ],
+                [
+                    52.058727,
+                    0.700214
+                ]
+            ]
+        }
+    }
+}

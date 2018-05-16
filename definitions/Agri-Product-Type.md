@@ -12,6 +12,7 @@ This entity contains a harmonised description of a generic agricultural product 
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | name | Property | The name of this product type. | Mandatory |
 | description | Property | A description of this product type. | Mandatory |
+| root | Property | A logical indicator that this product is the root of an AgriProductType hierarchy. Logical true indicates it is the root. | Mandatory |
 | agriProductParent | Relationship | Reference to the parent product type i.e. immediately above the entity in the hierarchy. | Optional |
 | agriProductChildren | Relationship | Reference to child product types i.e. immediately below this entity in the hierarchy. | Optional |
 
@@ -63,6 +64,10 @@ The following is an example instance of the **Agri Product Type** entity
         "type": "Property",
         "value": "Soft edible fruits"
     },
+    "root": {
+        "type": "Property",
+        "value": true
+    },
     "agriProductParent": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:AgriProductType:b99c940d-7156-4280-9a2b-4a9e533cd20e"
@@ -71,8 +76,8 @@ The following is an example instance of the **Agri Product Type** entity
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:AgriProductType:836258d0-448b-11e8-84ec-ef61d9425fe8",
-            "urn:ngsi-ld:AgriProduct:83d607f8-448b-11e8-9fe3-0fd5140ae8db",
-            "urn:ngsi-ld:AgriProduct:90cbac88-448b-11e8-acb0-a78dab9d0555"
+            "urn:ngsi-ld:AgriProductType:83d607f8-448b-11e8-9fe3-0fd5140ae8db",
+            "urn:ngsi-ld:AgriProductType:90cbac88-448b-11e8-acb0-a78dab9d0555"
         ]
     }
 }

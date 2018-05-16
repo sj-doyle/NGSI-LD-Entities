@@ -1,0 +1,56 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/UAV-Event-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:UAVEvent:85df05a8-5922-11e8-ad9c-d7fa968d409d",
+    "type": "UAVEvent",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "uav": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
+    },
+    "originator": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -103.9904,
+                39.7564
+            ]
+        }
+    },
+    "elevation": {
+        "type": "Property",
+        "value": 1000,
+        "unitCode": "MTR"
+    },
+    "startAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-23T10:18:16Z"
+    },
+    "endAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-23T10:19:16Z"
+    },
+    "eventType": {
+        "type": "Property",
+        "value": "over height"
+    },
+    "description": {
+        "type": "Property",
+        "value": "The UAV is flying over a mandatory height limit"
+    },
+    "eventResult": {
+        "type": "Property",
+        "value": "force back"
+    }
+}

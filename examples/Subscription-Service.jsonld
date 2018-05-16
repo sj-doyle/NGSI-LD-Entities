@@ -1,0 +1,23 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Subscription-Service-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:SubscriptionService:a1e76f95-c627-4ec4-86dc-483431d25352",
+    "type": "SubscriptionService",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "description": {
+        "type": "Property",
+        "value": "Broadband supply service"
+    },
+    "offer": {
+        "type": "Property",
+        "priceCurrency": "USD",
+        "price": 50,
+        "description": "100 mbps fibre broadband service"
+    }
+}

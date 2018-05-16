@@ -1,5 +1,5 @@
-# Building Type
-This entity contains a harmonised description of a generic building type. This entity is associated with the vertical segments of smart home, smart cities, industry and related IoT applications. The building type includes a hierarchical structure that allows building types to be grouped in a flexible way.
+# Product Type
+This entity contains a harmonised description of a generic product type. This entity is primarily associated with the product supply chain verticals and related IoT applications. The ProductType includes a hierarchical structure that allows product types to be grouped in a flexible way.
 
 | Attribute Name | Attribute Type | Description | Constraint |
 |:--- |:--- |:--- |:---:|
@@ -10,16 +10,16 @@ This entity contains a harmonised description of a generic building type. This e
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
-| name | Property | The name of this BuildingType. | Mandatory |
-| description | Property | A description for this BuildingType. | Recommended |
-| root | Property | A logical indicator that this is the root of a BuildingType hierarchy. True indicates it is the root, false indicates that it is not the root. | Recommended |
-| parentBuildingType | Relationship | References any higher level Building Type entities that this type is based on. | Optional |
-| childrenBuildingType | Relationship | Reference to child building types i.e. immediately below this entity in the hierarchy. | Optional |
+| name | Property | The name of this product type. | Mandatory |
+| description | Property | A description of this product type. | Mandatory |
+| root | Property | A logical indicator that this product is the root of the ProductType hierarchy. Logical true indicates it is the root. | Mandatory |
+| parentType | Relationship | Reference to the parent product type i.e. immediately above the entity in the hierarchy. | Optional |
+| childrenTypes | Relationship | Reference to child product types i.e. immediately below this entity in the hierarchy. | Optional |
 
 ## NGSI-LD Context Definition
-The following NGSI-LD context definition applies to the **Building Type** entity
+The following NGSI-LD context definition applies to the **Product Type** entity
 
-[Download context definition.](../examples/Building-Type-context.jsonld)
+[Download context definition.](../examples/Product-Type-context.jsonld)
 
 ```JavaScript
 {
@@ -38,19 +38,19 @@ The following NGSI-LD context definition applies to the **Building Type** entity
     "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship"
 }
 ```
-## Example of Building Type Entity
-The following is an example instance of the **Building Type** entity
+## Example of Product Type Entity
+The following is an example instance of the **Product Type** entity
 
-[Download example entity definition.](../examples/Building-Type.jsonld)
+[Download example entity definition.](../examples/Product-Type.jsonld)
 
 ```JavaScript
 {
     "@context": [
         "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Building-Type-context.jsonld"
+        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Product-Type-context.jsonld"
     ],
-    "id": "urn:ngsi-ld:BuildingType:57b912ab-eb47-4cd5-bc9d-73abece1f1b3",
-    "type": "BuildingType",
+    "id": "urn:ngsi-ld:ProductType:8bd39518-041d-4a9a-8c0c-0bf15d5f07f1",
+    "type": "ProductType",
     "createdAt": "2017-01-01T01:20:00Z",
     "modifiedAt": "2017-05-04T12:30:00Z",
     "source": "https://source.example.com",
@@ -58,26 +58,26 @@ The following is an example instance of the **Building Type** entity
     "entityVersion": 2.0,
     "name": {
         "type": "Property",
-        "value": "House"
+        "value": "Soft Fruits"
     },
     "description": {
         "type": "Property",
-        "value": "Standard building type definition for a domestic house"
+        "value": "Soft edible fruits"
     },
     "root": {
         "type": "Property",
-        "value": false
+        "value": true
     },
-    "parentBuildingType": {
+    "parentType": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:BuildingType:4146335f-839f-4ff9-a575-6b4e6232b734"
+        "object": "urn:ngsi-ld:ProductType:66edbb59-90ea-4757-aa06-5a5b95675092"
     },
-    "childrenBuildingType": {
+    "childrenTypes": {
         "type": "Relationship",
         "object": [
-            "urn:ngsi-ld:BuildingType:e4291e84-58f8-11e8-84c3-77e4f1f8c4f1",
-            "urn:ngsi-ld:BuildingType:a71c7a08-58f9-11e8-a41e-4bcb7249360e",
-            "urn:ngsi-ld:BuildingType:afac9bbc-58f9-11e8-b587-1f0d57b81bb4"
+            "urn:ngsi-ld:ProductType:5d4fcc9e-590e-11e8-ae23-3f2d135d7537",
+            "urn:ngsi-ld:ProductType:625c4ffa-590e-11e8-b3bf-17a3afd2e135",
+            "urn:ngsi-ld:ProductType:682b48f0-590e-11e8-a107-d3709d55a369"
         ]
     }
 }

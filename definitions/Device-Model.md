@@ -18,6 +18,7 @@ This entity contains a harmonised description of a generic device model and is t
 | brandName | Property | The brand name of this DeviceModel. | Recommended |
 | root | Property | A logical indicator that this DeviceModel is the root of a DeviceModel hierarchy. True indicates it is the root, false indicates that it is not the root. | Recommended |
 | parentDeviceModel | Relationship | References any higher level Device Model that this device model is based on. | Optional |
+| childrenDeviceModel | Relationship | References any lower level Device Models that are based on this device model. | Optional |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Device Model** entity
@@ -93,6 +94,14 @@ The following is an example instance of the **Device Model** entity
     "parentDeviceModel": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:DeviceModel:29477bba-46f6-11e8-9ebe-979a9513bf23"
+    },
+    "childrenDeviceModel": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:DeviceModel:95051122-58f9-11e8-85ac-07519c4f0770",
+            "urn:ngsi-ld:DeviceModel:9a76da28-58f9-11e8-b59c-2bc9949dfc9e",
+            "urn:ngsi-ld:DeviceModel:a0b87360-58f9-11e8-80a3-4373f857494b"
+        ]
     }
 }
 ```

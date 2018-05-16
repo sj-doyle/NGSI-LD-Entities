@@ -41,7 +41,7 @@
         "type": "TemporalProperty",
         "value": "2017-05-04T10:18:16Z"
     },
-    "AQI": {
+    "airQualityIndex": {
         "type": "Property",
         "value": 238,
         "unitText": "US EPA AQI",

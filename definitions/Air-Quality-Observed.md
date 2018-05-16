@@ -14,7 +14,7 @@ This entity contains a harmonised description of the air quality observed at a p
 | devices | Relationship | Reference to the IoT devices (i.e. sensors) which generated the air quality observations. | Optional |
 | location | GeoProperty | The geo location (point/ polygon) for this observation. | Mandatory |
 | observedAt | TemporalProperty | Indicates the date/time the fault was detected or identified. | Recommended |
-| AQI | Property | Indicates the subjective Air Quality Index nominally according to a specified standard such as the US EPA (https://www3.epa.gov/airnow/aqi_brochure_02_14.pdf). | Optional |
+| airQualityIndex | Property | Indicates the subjective Air Quality Index nominally according to a specified standard such as the US EPA (https://www3.epa.gov/airnow/aqi_brochure_02_14.pdf). | Optional |
 | CO | Property | Indicates the level of observed Carbon Monoxide nominally in units of microgrammes per cubic metre. | Optional |
 | NO | Property | Indicates the level of observed Nitrogen Monoxide nominally in units of microgrammes per cubic metre. | Optional |
 | NO2 | Property | Indicates the level of observed Nitrogen Dioxide nominally in units of microgrammes per cubic metre. | Optional |
@@ -100,7 +100,7 @@ The following is an example instance of the **Air Quality Observed** entity
         "type": "TemporalProperty",
         "value": "2017-05-04T10:18:16Z"
     },
-    "AQI": {
+    "airQualityIndex": {
         "type": "Property",
         "value": 238,
         "unitText": "US EPA AQI",

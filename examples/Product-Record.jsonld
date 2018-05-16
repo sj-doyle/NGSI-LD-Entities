@@ -1,0 +1,80 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Product-Record-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:ProductRecord:85d05a21-6907-44b3-83d8-85d8a713d003",
+    "type": "ProductRecord",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "product": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Product:d3676010-d815-468c-9e01-25739c5a25ed"
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -104.99404,
+                39.75621
+            ]
+        }
+    },
+    "temperature": {
+        "type": "Property",
+        "value": 3.823,
+        "unitCode": "CEL",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "relativeHumidity": {
+        "type": "Property",
+        "value": 0.7,
+        "unitCode": "C62",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "atmosphericPressure": {
+        "type": "Property",
+        "value": 1006.19,
+        "unitCode": "A97",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "description": {
+        "type": "Property",
+        "value": "Palm oil consignment arrived at port for shipment"
+    },
+    "weight": {
+        "type": "Property",
+        "unitText": "grammes",
+        "unitCode": "GRM",
+        "value": 2550,
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "netWeight": {
+        "type": "Property",
+        "unitText": "grammes",
+        "unitCode": "GRM",
+        "value": 2500,
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "volume": {
+        "type": "Property",
+        "unitCode": "MTQ",
+        "value": 1.7,
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "observedAt": {
+        "type": "TemporalProperty",
+        "value": "2017-05-04T10:18:16Z"
+    },
+    "O2": {
+        "type": "Property",
+        "value": 300,
+        "unitCode": "GQ",
+        "unitText": "microgramme per cubic metre",
+        "observedAt": "2017-05-04T12:30:00Z"
+    }
+}

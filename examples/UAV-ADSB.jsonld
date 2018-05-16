@@ -1,0 +1,33 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/UAV-ADSB-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:UAVADSB:1fa179a6-b507-4857-ad72-eb5513ef05c8",
+    "type": "UAVADSB",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "uav": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
+    },
+    "observedAt": {
+        "type": "TemporalProperty",
+        "value": "2016-08-23T10:18:16Z"
+    },
+    "originatedByUAV": {
+        "type": "Property",
+        "value": false
+    },
+    "originator": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec"
+    },
+    "UAVADSBroadcast": {
+        "type": "Property",
+        "value": "8D4840D6202CC371C32CE0576098"
+    }
+}

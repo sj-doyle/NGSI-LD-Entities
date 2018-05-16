@@ -43,5 +43,13 @@
     "parentDeviceModel": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:DeviceModel:29477bba-46f6-11e8-9ebe-979a9513bf23"
+    },
+    "childrenDeviceModel": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:DeviceModel:95051122-58f9-11e8-85ac-07519c4f0770",
+            "urn:ngsi-ld:DeviceModel:9a76da28-58f9-11e8-b59c-2bc9949dfc9e",
+            "urn:ngsi-ld:DeviceModel:a0b87360-58f9-11e8-80a3-4373f857494b"
+        ]
     }
 }
