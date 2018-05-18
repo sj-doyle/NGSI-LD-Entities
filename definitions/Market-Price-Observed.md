@@ -73,11 +73,11 @@ The following is an example instance of the **Market Price Observed** entity
         "priceCurrency": "USD",
         "validFrom": {
             "value": "2012-08-23T10:18:16Z",
-            "type": "DateTime"
+            "type": "TemporalProperty"
         },
         "validThrough": {
             "value": "2017-08-23T10:18:16Z",
-            "type": "DateTime"
+            "type": "TemporalProperty"
         }
     },
     "priceObserved": {
@@ -86,11 +86,11 @@ The following is an example instance of the **Market Price Observed** entity
         "priceCurrency": "USD",
         "validFrom": {
             "value": "2017-08-22T10:18:16Z",
-            "type": "DateTime"
+            "type": "TemporalProperty"
         },
         "validThrough": {
             "value": "2017-08-22T10:18:16Z",
-            "type": "DateTime"
+            "type": "TemporalProperty"
         }
     },
     "address": {

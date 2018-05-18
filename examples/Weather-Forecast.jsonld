@@ -1,0 +1,126 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Weather-Forecast-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:WeatherForecast:7453c443-290d-44ef-a60f-d4c087010c88",
+    "type": "WeatherForecast",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "POIs": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:POI:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
+            "urn:ngsi-ld:POI:42dcd5ea-46db-11e8-bea0-772aba733f93",
+            "urn:ngsi-ld:POI:4912d78e-46db-11e8-8572-ab2b8e55590b"
+        ]
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -104.99404,
+                39.75621
+            ]
+        }
+    },
+    "retrievedAt": {
+        "type": "TemporalProperty",
+        "value": "2017-05-04T10:18:16Z"
+    },
+    "issuedAt": {
+        "type": "TemporalProperty",
+        "value": "2017-05-04T10:18:16Z"
+    },
+    "weatherType": {
+        "type": "Property",
+        "value": "sunnyDay"
+    },
+    "visibility": {
+        "type": "Property",
+        "value": 1500,
+        "unitCode": "MTR"
+    },
+    "name": {
+        "type": "Property",
+        "value": "London City"
+    },
+    "validFrom": {
+        "type": "TemporalProperty",
+        "value": "2016-08-10T10:18:16Z"
+    },
+    "validThrough": {
+        "type": "TemporalProperty",
+        "value": "2016-08-29T10:18:16Z"
+    },
+    "dayMinimum": {
+        "type": "Property",
+        "temperature": {
+            "value": 30,
+            "unitCode": "CEL"
+        },
+        "feelsLikeTemperature": {
+            "value": 32,
+            "unitCode": "CEL"
+        },
+        "relativeHumidity": {
+            "value": 0.22,
+            "unitCode": "C62"
+        }
+    },
+    "dayMaximum": {
+        "type": "Property",
+        "temperature": {
+            "value": 33,
+            "unitCode": "CEL"
+        },
+        "feelsLikeTemperature": {
+            "value": 38,
+            "unitCode": "CEL"
+        },
+        "relativeHumidity": {
+            "value": 0.52,
+            "unitCode": "C62"
+        }
+    },
+    "address": {
+        "type": "Property",
+        "addressLocality": "London",
+        "postalCode": "EC4N 8AF",
+        "streetAddress": "25 Walbrook"
+    },
+    "temperature": {
+        "type": "Property",
+        "value": 30,
+        "unitCode": "CEL"
+    },
+    "windDirection": {
+        "type": "Property",
+        "value": 122,
+        "unitCode": "DD"
+    },
+    "windSpeed": {
+        "type": "Property",
+        "value": 3,
+        "unitCode": "MTS"
+    },
+    "uVIndexMax": {
+        "type": "Property",
+        "value": 5,
+        "unitCode": "C62"
+    },
+    "relativeHumidity": {
+        "type": "Property",
+        "value": 0.1,
+        "unitCode": "C62"
+    },
+    "precipitationProbability": {
+        "type": "Property",
+        "value": 0.05,
+        "unitCode": "C62"
+    }
+}

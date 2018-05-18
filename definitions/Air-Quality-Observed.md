@@ -10,10 +10,12 @@ This entity contains a harmonised description of the air quality observed at a p
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
-| POIs | Relationship | A reference to associated Points of Interest (e.g. monitoring station) that this observation is related to. | Optional |
-| devices | Relationship | Reference to the IoT devices (i.e. sensors) which generated the air quality observations. | Optional |
+| name | Property | The name of the air quality observation location. | Optional |
 | location | GeoProperty | The geo location (point/ polygon) for this observation. | Mandatory |
-| observedAt | TemporalProperty | Indicates the date/time the fault was detected or identified. | Recommended |
+| POI | Relationship | A reference to the Point of Interest (i.e. monitoring station) that this observation was reported from. | Optional |
+| stationCode | Property | The station code for the air quality monitoring device/ station. | Optional |
+| devices | Relationship | Reference to the IoT devices (i.e. sensors) which generated the air quality observations. | Optional |
+| observedAt | TemporalProperty | Indicates the date/time the observation was recorded. | Mandatory |
 | airQualityIndex | Property | Indicates the subjective Air Quality Index nominally according to a specified standard such as the US EPA (https://www3.epa.gov/airnow/aqi_brochure_02_14.pdf). | Optional |
 | CO | Property | Indicates the level of observed Carbon Monoxide nominally in units of microgrammes per cubic metre. | Optional |
 | NO | Property | Indicates the level of observed Nitrogen Monoxide nominally in units of microgrammes per cubic metre. | Optional |
@@ -43,8 +45,8 @@ The following NGSI-LD context definition applies to the **Air Quality Observed**
         "@type": "DateTime"
     },
     "Property": "http://etsi.org/nsgi-ld/Property",
-    "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship",
     "GeoProperty": "http://uri.etsi.org/ngsi-ld/GeoProperty",
+    "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship",
     "observedAt": {
         "@id": "http://uri.etsi.org/ngsi-ld/observedAt",
         "@type": "DateTime"
@@ -69,22 +71,9 @@ The following is an example instance of the **Air Quality Observed** entity
     "source": "https://source.example.com",
     "dataProvider": "https://provider.example.com",
     "entityVersion": 2.0,
-    "POIs": {
-        "type": "Relationship",
-        "object": [
-            "urn:ngsi-ld:POI:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
-            "urn:ngsi-ld:POI:42dcd5ea-46db-11e8-bea0-772aba733f93",
-            "urn:ngsi-ld:POI:4912d78e-46db-11e8-8572-ab2b8e55590b"
-        ]
-    },
-    "devices": {
-        "type": "Relationship",
-        "object": [
-            "urn:ngsi-ld:Device:e8bbad7e-46db-11e8-b23a-8bb626923249",
-            "urn:ngsi-ld:Device:ef379c6c-46db-11e8-90ae-d3c85fee58c1",
-            "urn:ngsi-ld:Device:f581d088-46db-11e8-96f8-33f0aaf9d24d",
-            "urn:ngsi-ld:0be5c6ea-46dc-11e8-b16b-0ff93e4638ff"
-        ]
+    "name": {
+        "type": "Property",
+        "value": "London Walbrook Building"
     },
     "location": {
         "type": "GeoProperty",
@@ -95,6 +84,23 @@ The following is an example instance of the **Air Quality Observed** entity
                 39.75621
             ]
         }
+    },
+    "POI": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:POI:b16f4666-5a6b-11e8-be71-3b0aa1fc6248"
+    },
+    "stationCode": {
+        "type": "Property",
+        "value": "LW101"
+    },
+    "devices": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:Device:e8bbad7e-46db-11e8-b23a-8bb626923249",
+            "urn:ngsi-ld:Device:ef379c6c-46db-11e8-90ae-d3c85fee58c1",
+            "urn:ngsi-ld:Device:f581d088-46db-11e8-96f8-33f0aaf9d24d",
+            "urn:ngsi-ld:0be5c6ea-46dc-11e8-b16b-0ff93e4638ff"
+        ]
     },
     "observedAt": {
         "type": "TemporalProperty",

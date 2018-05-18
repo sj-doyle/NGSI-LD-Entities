@@ -1,0 +1,180 @@
+{
+    "@context": [
+        "https://example.com/contexts/coreContext.jsonld",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Water-Quality-Observed-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:WaterQualityObserved:72a30ca8-888e-49a2-8d8d-a5bebc19e98b",
+    "type": "WaterQualityObserved",
+    "createdAt": "2017-01-01T01:20:00Z",
+    "modifiedAt": "2017-05-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "POIs": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:POI:2f578c8c-59ae-11e8-be5d-eb00d5850710",
+            "urn:ngsi-ld:POI:350d5b2a-59ae-11e8-afac-7b08447a9507",
+            "urn:ngsi-ld:POI:3b154be0-59ae-11e8-a97d-9b0e9854e167"
+        ]
+    },
+    "devices": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:Device:4514d07a-59ae-11e8-8d8d-8fb340a9451f",
+            "urn:ngsi-ld:Device:4bdbd926-59ae-11e8-a29d-1f6336c78c14",
+            "urn:ngsi-ld:Device:52890d20-59ae-11e8-8449-ef9315a0a3ca",
+            "urn:ngsi-ld:581fc4e0-59ae-11e8-99fe-17206cbbcec7"
+        ]
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -104.99404,
+                39.75621
+            ]
+        }
+    },
+    "observedAt": {
+        "type": "TemporalProperty",
+        "value": "2017-05-04T10:18:16Z"
+    },
+    "depth": {
+        "type": "Property",
+        "value": 4,
+        "unitCode": "MTR",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "pressure": {
+        "type": "Property",
+        "value": 1020.2,
+        "unitCode": "A97",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "conductivity": {
+        "type": "Property",
+        "value": 10,
+        "unitCode": "D10",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "conductance": {
+        "type": "Property",
+        "value": 25,
+        "unitCode": "SIE",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "temperature": {
+        "type": "Property",
+        "value": 15,
+        "unitCode": "CEL",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "tss": {
+        "type": "Property",
+        "value": 200,
+        "unitCode": "M1",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "tds": {
+        "type": "Property",
+        "value": 150,
+        "unitCode": "M1",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "turbidity": {
+        "type": "Property",
+        "value": 343,
+        "unitCode": "M1",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "salinity": {
+        "type": "Property",
+        "value": 220,
+        "unitCode": "NX",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "pH": {
+        "type": "Property",
+        "value": 5,
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "orp": {
+        "type": "Property",
+        "value": 210,
+        "unitCode": "2Z",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "cdom": {
+        "type": "Property",
+        "value": 22,
+        "unitCode": "RFU",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "Chla": {
+        "type": "Property",
+        "value": null,
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "Cl": {
+        "type": "Property",
+        "value": 11,
+        "unitCode": "H29",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "CO": {
+        "type": "Property",
+        "value": 40,
+        "unitCode": "M1",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "CO2": {
+        "type": "Property",
+        "value": 1,
+        "unitCode": "M1",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "Hg": {
+        "type": "Property",
+        "value": 0.2,
+        "unitCode": "M1",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "NH3": {
+        "type": "Property",
+        "value": 0.03,
+        "unitCode": "M1",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "NH4": {
+        "type": "Property",
+        "value": 0.02,
+        "unitCode": "M1",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "NO3": {
+        "type": "Property",
+        "value": 1,
+        "unitCode": "M1",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "O2": {
+        "type": "Property",
+        "value": 50,
+        "unitCode": "M1",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "PC": {
+        "type": "Property",
+        "value": 52,
+        "unitCode": "H29",
+        "observedAt": "2017-05-04T12:30:00Z"
+    },
+    "PE": {
+        "type": "Property",
+        "value": 66,
+        "unitCode": "H29",
+        "observedAt": "2017-05-04T12:30:00Z"
+    }
+}

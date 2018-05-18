@@ -11,10 +11,7 @@
         "@type": "DateTime"
     },
     "Property": "http://etsi.org/nsgi-ld/Property",
-    "GeoProperty": "http://uri.etsi.org/ngsi-ld/GeoProperty",
     "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship",
-    "observedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/observedAt",
-        "@type": "DateTime"
-    }
+    "GeoProperty": "http://uri.etsi.org/ngsi-ld/GeoProperty",
+    "TemporalProperty": "http://uri.etsi.org/ngsi-ld/TemporalProperty"
 }

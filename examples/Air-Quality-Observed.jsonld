@@ -10,22 +10,9 @@
     "source": "https://source.example.com",
     "dataProvider": "https://provider.example.com",
     "entityVersion": 2.0,
-    "POIs": {
-        "type": "Relationship",
-        "object": [
-            "urn:ngsi-ld:POI:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
-            "urn:ngsi-ld:POI:42dcd5ea-46db-11e8-bea0-772aba733f93",
-            "urn:ngsi-ld:POI:4912d78e-46db-11e8-8572-ab2b8e55590b"
-        ]
-    },
-    "devices": {
-        "type": "Relationship",
-        "object": [
-            "urn:ngsi-ld:Device:e8bbad7e-46db-11e8-b23a-8bb626923249",
-            "urn:ngsi-ld:Device:ef379c6c-46db-11e8-90ae-d3c85fee58c1",
-            "urn:ngsi-ld:Device:f581d088-46db-11e8-96f8-33f0aaf9d24d",
-            "urn:ngsi-ld:0be5c6ea-46dc-11e8-b16b-0ff93e4638ff"
-        ]
+    "name": {
+        "type": "Property",
+        "value": "London Walbrook Building"
     },
     "location": {
         "type": "GeoProperty",
@@ -36,6 +23,23 @@
                 39.75621
             ]
         }
+    },
+    "POI": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:POI:b16f4666-5a6b-11e8-be71-3b0aa1fc6248"
+    },
+    "stationCode": {
+        "type": "Property",
+        "value": "LW101"
+    },
+    "devices": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:Device:e8bbad7e-46db-11e8-b23a-8bb626923249",
+            "urn:ngsi-ld:Device:ef379c6c-46db-11e8-90ae-d3c85fee58c1",
+            "urn:ngsi-ld:Device:f581d088-46db-11e8-96f8-33f0aaf9d24d",
+            "urn:ngsi-ld:0be5c6ea-46dc-11e8-b16b-0ff93e4638ff"
+        ]
     },
     "observedAt": {
         "type": "TemporalProperty",
