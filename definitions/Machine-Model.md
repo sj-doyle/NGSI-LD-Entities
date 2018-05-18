@@ -15,11 +15,11 @@ This entity contains a harmonised description of a generic machine model. This e
 | description | Property | A description of this MachineModel. | Recommended |
 | manufacturerName | Property | The name of manufacturer of this MachineModel. | Recommended |
 | brandName | Property | The brand name of this MachineModel. | Recommended |
-| version | Property | The manufacturer defined version number for the machine model. | Optional |
+| version | Property | The manufacturer defined version number for the machine model. | Recommended |
 | category | Property | A List of functional categories which this machineModel supports. Examples include: **robot, cnc, 2dPrinter, 3dPrinter, 3dScanner, lathe, injectionMolding, laserCutter, millingMachine, grindingMachine, stampingMachine, oven, kiln, packaging, mixer, dryer, fan, saw.** | Optional |
-| root | Property | A logical indicator that this MachineModel is the root of a MachineModel hierarchy. True indicates it is the root, false indicates that it is not the root. | Recommended |
-| parentMachineModel | Relationship | References any higher level MachineModel that this machine model is based on. | Optional |
-| childrenMachineModel | Relationship | References any lower level MachineModel entities that are based on this machine model. | Optional |
+| root | Property | A logical indicator that this MachineModel is the root of a MachineModel hierarchy. True indicates it is the root, false indicates that it is not the root. | Mandatory |
+| machineModelParent | Relationship | References any higher level MachineModel that this machine model is based on. | Optional |
+| machineModelChildren | Relationship | References any lower level MachineModel entities that are based on this machine model. | Optional |
 | processDescription | Property | A description of the industrial process carried out by this machine. | Optional |
 | standardOperations | Property | Lists the standard set of operations supported by this machineModel. | Optional |
 
@@ -98,11 +98,11 @@ The following is an example instance of the **Machine Model** entity
         "type": "Property",
         "value": false
     },
-    "parentMachineModel": {
+    "machineModelParent": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:MachineModel:4146335f-839f-4ff9-a575-6b4e6232b734"
     },
-    "childrenMachineModel": {
+    "machineModelChildren": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:MachineModel:a74fcf24-58fa-11e8-ae3e-df1abd78f83f",

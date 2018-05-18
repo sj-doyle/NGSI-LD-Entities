@@ -21,7 +21,7 @@
         "applicationCategory": "Guidance"
     },
     "operationalInstance": {
-        "type": "url",
+        "type": "uri",
         "value": "http://example.com/uavtms "
     },
     "owner": {

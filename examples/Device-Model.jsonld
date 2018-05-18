@@ -40,11 +40,11 @@
         "type": "Property",
         "value": false
     },
-    "parentDeviceModel": {
+    "deviceModelParent": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:DeviceModel:29477bba-46f6-11e8-9ebe-979a9513bf23"
     },
-    "childrenDeviceModel": {
+    "deviceModelChildren": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:DeviceModel:95051122-58f9-11e8-85ac-07519c4f0770",

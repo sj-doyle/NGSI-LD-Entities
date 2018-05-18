@@ -11,11 +11,11 @@ This entity contains a harmonised description of an industrial machine for examp
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | machineModel | Relationship | A reference to the associated Machine Model for this machine. | Mandatory |
-| serialNumber | Property | The serial number assigned by the manufacturer. | Mandatory |
+| serialNumber | Property | The serial number assigned by the manufacturer. | Recommended |
 | assetIdentifier | Property | An asset identifier (e.g. asset tag number) assigned by the owner. | Optional |
 | supplierName | Property | The name of the supplier of this machine. | Recommended |
 | countryOfManufacture | Property | The country where this machine was manufactured. | Recommended |
-| factory | Property | The factory name/code manufacturing this machine. | Optional |
+| factory | Property | The factory name/code manufacturing this machine. | Recommended |
 | dateFirstUsed | TemporalProperty | Indicates the date/time at which date and time the machine was first used (nominally in UTC). | Recommended |
 | dateInstalled | TemporalProperty | Indicates the date/time at which date and time the machine was installed (nominally in UTC). | Recommended |
 | dateManufactured | TemporalProperty | Indicates the date/time at which date and time the machine was manufactured (nominally in UTC). | Recommended |

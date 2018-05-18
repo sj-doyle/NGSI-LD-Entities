@@ -11,7 +11,7 @@ This entity contains a harmonised description of a generic machine operation. Th
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | machine | Relationship | A reference to the associated Machine for this machine operation. | Mandatory |
-| operationType | Property | Defines the type of operation conducted/ requested. This will be one of a defined list of operation types specific to the machine/ machineModel.<br/><br/>Including: **process, setup，maintenance, repair，breakdown.**<br/<br/>The list of operation types highly depends on the machine model.  | Recommended |
+| operationType | Property | Defines the type of operation conducted/ requested. This will be one of a defined list of operation types specific to the machine/ machineModel.<br/><br/>Including: **process, setup，maintenance, repair，breakdown.**<br/<br/>The list of operation types highly depends on the machine model.  | Mandatory |
 | description | Property | A description of the operation conducted or applied. | Recommended |
 | result | Property | The result of the operation. One of **ok, success, suspended, aborted, failed.** | Recommended |
 | plannedStartAt | TemporalProperty | The planned start date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start. | Mandatory |

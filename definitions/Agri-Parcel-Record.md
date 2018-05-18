@@ -14,13 +14,13 @@ This entity contains a harmonised description of the conditions recorded on a ge
 | location | GeoProperty | The geo:json encoded polygon / multi-polygon describing the parcel which this record relates to. | Mandatory |
 | soilTemperature | Property | The observed soil temperature nominally in degrees centigrade. | Optional |
 | soilMoistureVwc | Property | Measured as Volumetric Water Content, VWC as a percentage.<br/><br/>0 ≤soilMoistureVwc ≤ 1 | Optional |
-| soilMoistureEc | Property | Measured as Electrical Conductivity, EC nominally in units of Siemens per meter (S/m) | Optional |
-| airTemperature | Property | The observed air temperature (in the shade) nominally in degrees centigrade. | Optional |
-| solarRadiation | Property | Instantaneous solar radiation measured in kW/m2 | Optional |
-| relativeHumidity | Property | Relative Humidity a number between 0 and 1 representing the range of 0% to 100%<br/><br/>0 ≤ relativeHumidity ≤ 1  | Optional |
-| atmosphericPressure | Property | Atmospheric Pressure nominally in units of hecto Pascals  | Optional |
+| soilMoistureEc | Property | Measured as Electrical Conductivity, EC nominally in units of Siemens per meter (S/m). | Optional |
+| airTemperature | Property | The observed air temperature (in the shade) nominally in degrees centigrade. | Recommended |
+| solarRadiation | Property | Instantaneous solar radiation measured in kW/m2. | Optional |
+| relativeHumidity | Property | Relative Humidity a number between 0 and 1 representing the range of 0% to 100%.<br/><br/>0 ≤ relativeHumidity ≤ 1  | Optional |
+| atmosphericPressure | Property | Atmospheric Pressure nominally in units of hecto Pascals. | Recommended |
 | description | Property | A description of this record | Recommended |
-| devices | Relationship | Reference to the IoT devices associated with this greenhouse i.e. sensors, controls. | Optional |
+| devices | Relationship | Reference to the IoT devices associated with this greenhouse i.e. sensors, controls. | Recommended |
 | observedAt | TemporalProperty | Indicates the date/time the record was observed/ last observed. | Recommended |
 
 ## NGSI-LD Context Definition

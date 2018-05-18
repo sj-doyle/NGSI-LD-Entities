@@ -22,11 +22,11 @@
         "type": "Property",
         "value": false
     },
-    "parentBuildingType": {
+    "buildingTypeParent": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:BuildingType:4146335f-839f-4ff9-a575-6b4e6232b734"
     },
-    "childrenBuildingType": {
+    "buildingTypeChildren": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:BuildingType:e4291e84-58f8-11e8-84c3-77e4f1f8c4f1",

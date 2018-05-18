@@ -12,10 +12,10 @@ This entity contains a harmonised description of the air quality observed at a p
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | name | Property | The name of the air quality observation location. | Optional |
 | location | GeoProperty | The geo location (point/ polygon) for this observation. | Mandatory |
-| POI | Relationship | A reference to the Point of Interest (i.e. monitoring station) that this observation was reported from. | Optional |
+| POI | Relationship | A reference to the Point of Interest (i.e. monitoring station) that this observation was reported from. | Recommended |
 | stationCode | Property | The station code for the air quality monitoring device/ station. | Optional |
-| devices | Relationship | Reference to the IoT devices (i.e. sensors) which generated the air quality observations. | Optional |
-| observedAt | TemporalProperty | Indicates the date/time the observation was recorded. | Mandatory |
+| devices | Relationship | Reference to the IoT devices (i.e. sensors) which generated the air quality observations. | Recommended |
+| observedAt | TemporalProperty | Indicates the date/time the observation was recorded. | Recommended |
 | airQualityIndex | Property | Indicates the subjective Air Quality Index nominally according to a specified standard such as the US EPA (https://www3.epa.gov/airnow/aqi_brochure_02_14.pdf). | Optional |
 | CO | Property | Indicates the level of observed Carbon Monoxide nominally in units of microgrammes per cubic metre. | Optional |
 | NO | Property | Indicates the level of observed Nitrogen Monoxide nominally in units of microgrammes per cubic metre. | Optional |

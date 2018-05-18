@@ -10,8 +10,8 @@ This entity contains a harmonised description of the water quality at a particul
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
-| POIs | Relationship | A reference to associated Points of Interest (e.g. monitoring station, body of water) that this observation is related to. | Optional |
-| devices | Relationship | Reference to the IoT devices (i.e. sensors) which generated the water quality observations. | Optional |
+| POIs | Relationship | A reference to associated Points of Interest (e.g. monitoring station, body of water) that this observation is related to. | Recommended |
+| devices | Relationship | Reference to the IoT devices (i.e. sensors) which generated the water quality observations. | Recommended |
 | location | GeoProperty | The geo location (point/ polygon) for this observation. | Mandatory |
 | observedAt | TemporalProperty | Indicates the date/time the observation was recorded. | Mandatory |
 | depth | Property | Depth below surface level where the observation was taken, nominally in metres. | Optional |

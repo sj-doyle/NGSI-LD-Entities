@@ -10,15 +10,15 @@ This entity contains a harmonised description of a Weather Forecast. This entity
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
-| POIs | Relationship | A reference to associated Points of Interest (e.g. monitoring station) that this forecast is related to. | Optional |
+| POIs | Relationship | A reference to associated Points of Interest (e.g. monitoring station) that this forecast is related to. | Recommended |
 | location | GeoProperty | The geo location (point/ polygon) for this forecast. | Mandatory |
 | retrievedAt | TemporalProperty | Indicates the date/time the forecast was retrieved from the associated meteorological agency. | Mandatory |
-| issuedAt | TemporalProperty | Indicates the date/time the forecast was issued by the associated meteorological agency. | Mandatory |
-| weatherType | Property | The weather type. A choice from an enumerated list. One of: **notAvailable, clearNight, sunnyDay, partlyCloudy, mist, fog, cloudy, overcast, lightRainShower, drizzle, lightRain, heavy RainShower, heavyRain, sleetShower, sleet, hailShower, hail, lightSnow Shower, lightSnow, heavySnowShower,heavySnow, thunderShower, thunder.** | Optional |
-| visibility | Property | Defines the forecast visibility nominally in metres or in an alternative measurement according to specified unitCode | Optional |
-| name | Property | The name of the weather forecast location. | Optional |
-| validFrom | TemporalProperty | The date and time the forecast is valid from. | Optional |
-| validThrough | TemporalProperty | The date and time the forecast is valid to. | Optional |
+| issuedAt | TemporalProperty | Indicates the date/time the forecast was issued by the associated meteorological agency. | Recommended |
+| weatherType | Property | The weather type. A choice from an enumerated list. One of: **notAvailable, clearNight, sunnyDay, partlyCloudy, mist, fog, cloudy, overcast, lightRainShower, drizzle, lightRain, heavy RainShower, heavyRain, sleetShower, sleet, hailShower, hail, lightSnow Shower, lightSnow, heavySnowShower,heavySnow, thunderShower, thunder.** | Recommended |
+| visibility | Property | Defines the forecast visibility nominally in metres or in an alternative measurement according to specified unitCode | Recommended |
+| name | Property | The name of the weather forecast location. | Mandatory |
+| validFrom | TemporalProperty | The date and time the forecast is valid from. | Recommended |
+| validThrough | TemporalProperty | The date and time the forecast is valid to. | Recommended |
 | dayMinimum | Property | Defines the minimum forecast values for defined attributes.
 
 Supports the inclusion of the nested attribute values, each of which will be a number. The units of the respective values will match the respective main attributes for temperature/ relative humidity.
@@ -41,8 +41,8 @@ Supports the inclusion of the nested attribute values, each of which will be a n
 **feelsLikeTemperature** – The forecasted feels like temperature for the period in degrees Celsius.
 
 **relativeHumidity** -- The relative humidity expressed a number between 0 ≤ RelativeHumidity ≤ 1 representing the range 0% to 100% | Optional |
-| address | Property | The weather forecast location encoded as a Schema.org PostalAddress. https://schema.org/PostalAddress | Optional |
-| temperature | Property | The temperature expressed in degrees Celsius. | Optional |
+| address | Property | The weather forecast location encoded as a Schema.org PostalAddress. https://schema.org/PostalAddress | Recommended |
+| temperature | Property | The temperature expressed in degrees Celsius. | Recommended |
 | windDirection | Property | The wind direction expressed in degrees compared to geographic North (measured clockwise). | Optional |
 | windSpeed | Property | The forecasted wind speed in meters per second. | Optional |
 | uVIndexMax | Property | The maximum UV index for the period, based on the World Health Organization's UV Index measure. | Optional |

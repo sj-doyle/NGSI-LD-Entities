@@ -20,7 +20,7 @@ Corresponds to a Schema.org person or organization.
 
 https://schema.org/Person
 
-https://schema.org/Organization | Mandatory |
+https://schema.org/Organization | Optional |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Subscriber** entity

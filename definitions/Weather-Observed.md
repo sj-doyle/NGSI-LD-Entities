@@ -12,24 +12,24 @@ This entity contains a harmonised description of the weather at a particular loc
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | name | Property | The name of the weather observation location. | Optional |
 | location | GeoProperty | The geo location (point/ polygon) of this weather observation. | Mandatory |
-| POI | Relationship | A reference to the Point of Interest (i.e. monitoring station) that this observation was reported from. | Optional |
+| POI | Relationship | A reference to the Point of Interest (i.e. monitoring station) that this observation was reported from. | Recommended |
 | stationCode | Property | The station code for the weather monitoring device/ station. | Optional |
-| devices | Relationship | Reference to the IoT devices (i.e. sensors) which generated the weather observations. | Optional |
+| devices | Relationship | Reference to the IoT devices (i.e. sensors) which generated the weather observations. | Recommended |
 | observedAt | TemporalProperty | Indicates the date/time the observation was observed by the associated meteorological agency. | Mandatory |
-| weatherType | Property | The weather type. A choice from an enumerated list. One of: **notAvailable, clearNight, sunnyDay, partlyCloudy, mist, fog, cloudy, overcast, lightRainShower, drizzle, lightRain, heavy RainShower, heavyRain, sleetShower, sleet, hailShower, hail, lightSnow Shower, lightSnow, heavySnowShower,heavySnow, thunderShower, thunder.** | Optional |
-| visibility | Property | Defines the observed visibility nominally in metres or in an alternative measurement according to specified unitCode | Optional |
-| address | Property | The weather forecast location encoded as a Schema.org PostalAddress. https://schema.org/PostalAddress | Optional |
-| temperature | Property | The temperature expressed in degrees Celsius. | Optional |
-| windDirection | Property | The wind direction expressed in degrees compared to geographic North (measured clockwise). | Optional |
-| windSpeed | Property | The forecasted wind speed in meters per second. | Optional |
-| relativeHumidity | Property | The relative humidity expressed a number between\n\n0 ≤ RelativeHumidity ≤ 1 representing the range 0% to 100% | Optional |
+| weatherType | Property | The weather type. A choice from an enumerated list. One of: **notAvailable, clearNight, sunnyDay, partlyCloudy, mist, fog, cloudy, overcast, lightRainShower, drizzle, lightRain, heavy RainShower, heavyRain, sleetShower, sleet, hailShower, hail, lightSnow Shower, lightSnow, heavySnowShower,heavySnow, thunderShower, thunder.** | Recommended |
+| visibility | Property | Defines the observed visibility nominally in metres or in an alternative measurement according to specified unitCode | Recommended |
+| address | Property | The weather forecast location encoded as a Schema.org PostalAddress. https://schema.org/PostalAddress | Recommended |
+| temperature | Property | The temperature expressed in degrees Celsius. | Recommended |
+| windDirection | Property | The wind direction expressed in degrees compared to geographic North (measured clockwise). | Recommended |
+| windSpeed | Property | The forecasted wind speed in meters per second. | Recommended |
+| relativeHumidity | Property | The relative humidity expressed a number between\n\n0 ≤ RelativeHumidity ≤ 1 representing the range 0% to 100% | Recommended |
 | dewPoint | Property | The dew point expressed in degrees Celsius. | Optional |
-| atmosphericPressure | Property | The measured barometric or atmospheric pressure in units of hecto Pascals. | Optional |
-| pressureTendency | Property | Indicates the change in atomospheric pressure. A choice from an enumerated list: **rising, falling, steady** | Optional |
-| rainRate | Property | The current rate of precipitation nominally in milli litres per hour | Optional |
-| rainFall | Property | Is the accumulated rain as is defined in the station (since rain started, since day started, since month started). referencePeriod enumerates the basis - one of **rainStart, dayStart, monthStart** | Optional |
-| evapoTranspiration | Property | The sum of evaporation and plant transpiration from the Earth's land and ocean surface to the atmosphere. | Optional |
-| referenceEvapoTranspiration | Property | Environmental demand for evapotranspiration. Represents the evapotranspiration rate of a short green crop (grass), completely shading the ground, of uniform height and with adequate water status in the soil profile | Optional |
+| atmosphericPressure | Property | The measured barometric or atmospheric pressure in units of hecto Pascals. | Recommended |
+| pressureTendency | Property | Indicates the change in atomospheric pressure. A choice from an enumerated list: **rising, falling, steady** | Recommended |
+| rainRate | Property | The current rate of precipitation nominally in milli litres per hour | Recommended |
+| rainFall | Property | Is the accumulated rain as is defined in the station (since rain started, since day started, since month started). referencePeriod enumerates the basis - one of **rainStart, dayStart, monthStart** | Recommended |
+| evapoTranspiration | Property | The sum of evaporation and plant transpiration from the Earth's land and ocean surface to the atmosphere. | Recommended |
+| referenceEvapoTranspiration | Property | Environmental demand for evapotranspiration. Represents the evapotranspiration rate of a short green crop (grass), completely shading the ground, of uniform height and with adequate water status in the soil profile | Recommended |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Weather Observed** entity

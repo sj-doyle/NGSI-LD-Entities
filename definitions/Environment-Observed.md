@@ -10,11 +10,11 @@ This entity contains a harmonised description of the environmental conditions ob
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
-| POIs | Relationship | A reference to associated Points of Interest (e.g. monitoring station) that the associated observations are related to. | Optional |
 | location | GeoProperty | The geo location (point/ polygon) that the associated observations are related to. | Mandatory |
-| weatherObserved | Relationship | A reference to associated WeatherObserved entities | Optional |
-| airQualityObserved | Relationship | A reference to associated AirQualityObserved entities | Optional |
-| waterQualityObserved | Relationship | A reference to associated WaterQualityObserved entities | Optional |
+| POIs | Relationship | A reference to associated Points of Interest (e.g. monitoring stations) that the associated observations are related to. | Recommended |
+| weatherObserved | Relationship | A reference to associated WeatherObserved entities. | Optional |
+| airQualityObserved | Relationship | A reference to associated AirQualityObserved entities. | Optional |
+| waterQualityObserved | Relationship | A reference to associated WaterQualityObserved entities. | Optional |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Environment Observed** entity
@@ -35,8 +35,8 @@ The following NGSI-LD context definition applies to the **Environment Observed**
         "@type": "DateTime"
     },
     "Property": "http://etsi.org/nsgi-ld/Property",
-    "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship",
-    "GeoProperty": "http://uri.etsi.org/ngsi-ld/GeoProperty"
+    "GeoProperty": "http://uri.etsi.org/ngsi-ld/GeoProperty",
+    "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship"
 }
 ```
 ## Example of Environment Observed Entity
@@ -57,14 +57,6 @@ The following is an example instance of the **Environment Observed** entity
     "source": "https://source.example.com",
     "dataProvider": "https://provider.example.com",
     "entityVersion": 2.0,
-    "POIs": {
-        "type": "Relationship",
-        "object": [
-            "urn:ngsi-ld:POI:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
-            "urn:ngsi-ld:POI:42dcd5ea-46db-11e8-bea0-772aba733f93",
-            "urn:ngsi-ld:POI:4912d78e-46db-11e8-8572-ab2b8e55590b"
-        ]
-    },
     "location": {
         "type": "GeoProperty",
         "value": {
@@ -74,6 +66,14 @@ The following is an example instance of the **Environment Observed** entity
                 39.75621
             ]
         }
+    },
+    "POIs": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:POI:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
+            "urn:ngsi-ld:POI:42dcd5ea-46db-11e8-bea0-772aba733f93",
+            "urn:ngsi-ld:POI:4912d78e-46db-11e8-8572-ab2b8e55590b"
+        ]
     },
     "weatherObserved": {
         "type": "Relationship",

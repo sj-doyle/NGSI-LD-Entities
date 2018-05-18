@@ -22,6 +22,9 @@ There are four GTIN formats. A uniform 14-digit format is required for this harm
 000000nnnnnnnn (GTIN-8) 
 00nnnnnnnnnnnn (GTIN-12) 
 0nnnnnnnnnnnnn (GTIN-13) | Optional |
+| gpcCategoryCode | Property | Product category code
+
+8-digit code (GPC "Brick Value") specifying a product category according to the GS1 Global Product Classification (GPC) standard. For more information see http://www.gs1.org/gpc | Recommended |
 | productName | Property | The name of this product. | Recommended |
 | description | Property | A description of this product. | Recommended |
 | brand | Property | The brand name for this product. | Recommended |
@@ -31,9 +34,6 @@ There are four GTIN formats. A uniform 14-digit format is required for this harm
 | netWeight | Property | Used to identify the net weight of the product. Net Weight excludes all packaging material, including the packaging material of all lower-level GTINs. Example:11.5 kg | Optional |
 | grossWeight | Property | Used to identify the gross weight of the product. The gross weight includes all packaging materials of the product. At pallet level the gross weight includes the weight of the pallet itself. For example, 200 GRM, value - total pounds, total grams, etc. | Optional |
 | countryOfOrigin | Property | Country where the product was manufactured, harvested, mined etc. Code indicating the country of origin of the product. | Optional |
-| gpcCategoryCode | Property | Product category code
-
-8-digit code (GPC "Brick Value") specifying a product category according to the GS1 Global Product Classification (GPC) standard. For more information see http://www.gs1.org/gpc | Optional |
 | images | uri | List of URIs (URNs/URLs) of images of the product.
 
 Each URI links to a resource containing a visual representation of the product either as catalogue images or as actual images of the specific product. | Optional |
@@ -93,6 +93,10 @@ The following is an example instance of the **Product** entity
         "type": "Property",
         "value": "01234567890"
     },
+    "gpcCategoryCode": {
+        "type": "Property",
+        "value": "10000271"
+    },
     "productName": {
         "type": "Property",
         "value": "Paprika, dried, powdered"
@@ -138,10 +142,6 @@ The following is an example instance of the **Product** entity
     "countryOfOrigin": {
         "type": "Property",
         "value": "UK"
-    },
-    "gpcCategoryCode": {
-        "type": "Property",
-        "value": "10000271"
     },
     "images": {
         "type": "uri",

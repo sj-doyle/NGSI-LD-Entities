@@ -12,14 +12,14 @@ This entity contains a harmonised description of the conditions recorded within 
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | agriParcelParent | Relationship | Reference to the AgriParcel entity to which this entity relates. | Mandatory |
 | agriParcelChildren | Relationship | Related sub AgriParcel records to which this entity relates. | Optional |
-| weatherObserved | Relationship | Reference to the weather observation record current for this entity. | Mandatory |
-| waterQualityObserved | Relationship | Reference to one or more water quality observation records current for this entity. | Optional |
+| weatherObserved | Relationship | Reference to the weather observation record current for this entity. | Recommended |
+| waterQualityObserved | Relationship | Reference to one or more water quality observation records current for this entity. | Recommended |
 | relativeHumidity | Property | The inside relative humidity expressed as a number between 0 and 1 representing the range 0% to 100 (%).<br/><br/>0 ≤ relativeHumidity ≤ 1 | Recommended |
 | leafTemperature | Property | The average greenhouse air temperature nominally in degrees centigrade. | Recommended |
 | co2 | Property | The measured interior C02 concentration nominally in mg/L. | Optional |
 | dailyLight | Property | Daily Accumulated light measured in kW per square metre | Optional |
 | drainFlow | Property | The observed drain flow rate in litres per second | Optional |
-| devices | Relationship | Reference to the IoT devices associated with this greenhouse i.e. sensors, controls. | Optional |
+| devices | Relationship | Reference to the IoT devices associated with this greenhouse i.e. sensors, controls. | Recommended |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Agri Greenhouse** entity

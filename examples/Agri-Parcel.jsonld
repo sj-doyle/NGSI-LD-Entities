@@ -40,7 +40,8 @@
     },
     "area": {
         "type": "Property",
-        "value": 200
+        "value": 200,
+        "unitCode": "MTK"
     },
     "description": {
         "type": "Property",

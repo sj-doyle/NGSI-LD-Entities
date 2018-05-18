@@ -15,8 +15,8 @@ This entity contains a harmonised description of a building. This entity is asso
 | containedInPlace | GeoProperty | The geo:json encoded polygon/ multi-polygon of the building plot in which this building sits. | Recommended |
 | location | GeoProperty | The geo:json encoded polygon/ multi-polygon of this building. | Mandatory |
 | address | Property | One or more categories relevant to the building with choices based on for example<br/><br/> http://wiki.openstreetmap.org/wiki/Map_Features#Building | Recommended |
-| owner | Relationship | Reference to the owner or owners of the building as either a Schema.org person or organization.<br/><br/>https://schema.org/Person<br/><br/>https://schema.org/Organization | Optional |
-| occupier | Relationship | Reference to the occupier or occupiers of the building as either a Schema.org person or organization.<br/><br/>https://schema.org/Person<br/><br/>https://schema.org/Organization | Optional |
+| owner | Relationship | Reference to the owner or owners of the building as either a Schema.org person or organization.<br/><br/>https://schema.org/Person<br/><br/>https://schema.org/Organization | Recommended |
+| occupier | Relationship | Reference to the occupier or occupiers of the building as either a Schema.org person or organization.<br/><br/>https://schema.org/Person<br/><br/>https://schema.org/Organization | Recommended |
 | subscriptionServices | Relationship | Reference to service subscriptions related to this building e.g. energy supplies, Internet Service Providers etc | Optional |
 | floorsAboveGround | Property | The number of floors above ground level in this building. | Optional |
 | floorsBelowGround | Property | The number of floors above ground level in this building. | Optional |

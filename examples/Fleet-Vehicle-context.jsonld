@@ -11,5 +11,5 @@
         "@type": "DateTime"
     },
     "Property": "http://etsi.org/nsgi-ld/Property",
-    "uri": "http://uri.etsi.org/ngsi-ld/uri"
+    "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship"
 }

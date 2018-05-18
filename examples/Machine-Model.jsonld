@@ -44,11 +44,11 @@
         "type": "Property",
         "value": false
     },
-    "parentMachineModel": {
+    "machineModelParent": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:MachineModel:4146335f-839f-4ff9-a575-6b4e6232b734"
     },
-    "childrenMachineModel": {
+    "machineModelChildren": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:MachineModel:a74fcf24-58fa-11e8-ae3e-df1abd78f83f",

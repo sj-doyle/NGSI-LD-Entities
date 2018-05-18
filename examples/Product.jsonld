@@ -22,6 +22,10 @@
         "type": "Property",
         "value": "01234567890"
     },
+    "gpcCategoryCode": {
+        "type": "Property",
+        "value": "10000271"
+    },
     "productName": {
         "type": "Property",
         "value": "Paprika, dried, powdered"
@@ -67,10 +71,6 @@
     "countryOfOrigin": {
         "type": "Property",
         "value": "UK"
-    },
-    "gpcCategoryCode": {
-        "type": "Property",
-        "value": "10000271"
     },
     "images": {
         "type": "uri",

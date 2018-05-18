@@ -13,7 +13,7 @@ This entity contains a harmonised geographic description of a Point of Interest.
 | location | GeoProperty | The geo:json encoded location (point, polygon, multi-polygon etc) of this point of interest. | Mandatory |
 | category | Property | One or more category codes relating to this point of interest as per the taxonomy definition at https://github.com/Factual/places/blob/master/categories/factual_taxonomy.json | Mandatory |
 | description | Relationship | An optional description of the entity. | Recommended |
-| place | Property | The definition of the place for this Point Of Interest. See https://schema.org/Place | Optional |
+| place | Property | The definition of the place for this Point Of Interest. See https://schema.org/Place | Recommended |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Point of Interest** entity

@@ -16,11 +16,11 @@ This entity contains a harmonised description of a generic parcel of land. This 
 | category | Property | The category of the parcel of land e.g.: **arable, grassland, vineyard, orchard, mixed crop, lowland, upland, set-aside, forestry, wetland.** | Recommended |
 | agriParcelParent | Relationship | An optional reference to a higher level (parent) AgriParcel entity to which this entity relates. | Optional |
 | agriParcelChildren | Relationship | An optional reference to lower level (child) AgriParcel records to which this entity relates. | Optional |
-| agriCrop | Relationship | Reference to the crop associated with this parcel | Recommended |
+| agriCrop | Relationship | Reference to the crop associated with this parcel | Mandatory |
 | cropStatus | Property | A choice from an enumerated list describing the crop planting status One of: **seeded, justBorn, growing, maturing, readyForHarvesting.** | Recommended |
-| lastPlantedAt | TemporalProperty | Indicates the date when the crop was last planted. | Optional |
+| lastPlantedAt | TemporalProperty | Indicates the date when the crop was last planted. | Recommended |
 | agriSoil | Relationship | Reference to the soil associated with this parcel of land. | Optional |
-| devices | Relationship | Reference to the IoT devices associated with this parcel i.e. sensors, controls. | Optional |
+| devices | Relationship | Reference to the IoT devices associated with this parcel i.e. sensors, controls. | Recommended |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Agri Parcel** entity
@@ -94,7 +94,8 @@ The following is an example instance of the **Agri Parcel** entity
     },
     "area": {
         "type": "Property",
-        "value": 200
+        "value": 200,
+        "unitCode": "MTK"
     },
     "description": {
         "type": "Property",

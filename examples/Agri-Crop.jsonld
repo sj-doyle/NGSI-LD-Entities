@@ -46,15 +46,27 @@
     "plantingFrom": {
         "type": "Property",
         "value": [
-            "-09-28/-10-12, Best Season",
-            "-10-11/-10-18, Season OK"
+            {
+                "dateRange": "-09-28/-10-12",
+                "description": "Best Season"
+            },
+            {
+                "dateRange": "-10-11/-10-18",
+                "description": "Season OK"
+            }
         ]
     },
     "harvestingInterval": {
         "type": "Property",
         "value": [
-            "-03-21/-04-01, Best Season",
-            "-04-02/-04-15, Season OK"
+            {
+                "dateRange": "-03-21/-04-01",
+                "description": "Best Season"
+            },
+            {
+                "dateRange": "-04-02/-04-15",
+                "description": "Season OK"
+            }
         ]
     },
     "wateringFrequency": {

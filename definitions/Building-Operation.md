@@ -22,7 +22,7 @@ This entity contains a harmonised description of a generic operation (related to
 | endedAt | TemporalProperty | Timestamp when the operation actually finished. | Recommended |
 | operationSequence | Property | The sequence of operations executed/ requested for the building in a representation format relevant to the building. | Optional |
 | relatedBuildingOperations | Relationship | Optional references to any related building operations. | Optional |
-| relatedOperations | Relationship | Optional references to any related operations (device, machine etc). | Optional |
+| relatedOperations | Relationship | Optional references to any related operations (on devices, machines etc). | Optional |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Building Operation** entity
@@ -123,8 +123,8 @@ The following is an example instance of the **Building Operation** entity
     "relatedOperations": {
         "type": "Relationship",
         "object": [
-            "urn:ngsi-ld:Device:7a464b84-4716-11e8-8b3f-bbe95bc73eb2",
-            "urn:ngsi-ld:Machine:8304a16c-4716-11e8-86c5-2b1c5e248f62"
+            "urn:ngsi-ld:DeviceOperation:7a464b84-4716-11e8-8b3f-bbe95bc73eb2",
+            "urn:ngsi-ld:MachineOperation:8304a16c-4716-11e8-86c5-2b1c5e248f62"
         ]
     }
 }

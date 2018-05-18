@@ -11,15 +11,15 @@ This entity contains a harmonised description of a generic commodity, crop or pr
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | entity | Relationship | Reference to the entity this price forecast relates to e.g. an AgriProduct entity. | Mandatory |
-| priceForecast | Property | The market price forecast represented using schema.org PriceSpecification attributes http://schema.org/PriceSpecification | Optional |
-| address | Property | The market location for this forecast encoded as a Schema.org PostalAddress. https://schema.org/PostalAddress | Optional |
+| priceForecast | Property | The market price forecast represented using schema.org PriceSpecification attributes http://schema.org/PriceSpecification | Mandatory |
+| address | Property | The market location for this forecast encoded as a Schema.org PostalAddress. https://schema.org/PostalAddress | Mandatory |
 | marketScale | Property | Unique code assigned to market scale type. The content includes both a name and a value.
 
  "Wholesale":Wholesale market price 
 "Retail":Retail market price for example
 {"name":"Wholesale", 'value':"02"}
 or
-{"name":"Retail", "value":"01"} | Optional |
+{"name":"Retail", "value":"01"} | Mandatory |
 | weatherForecast | Relationship | A reference to a related weather forecast record | Optional |
 
 ## NGSI-LD Context Definition

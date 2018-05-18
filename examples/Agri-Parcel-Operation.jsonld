@@ -65,6 +65,6 @@
     },
     "waterSource": {
         "type": "Property",
-        "value": "arable"
+        "value": "rainwater capture"
     }
 }

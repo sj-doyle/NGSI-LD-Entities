@@ -14,8 +14,8 @@ This entity contains a harmonised description of a generic operations performed 
 | operationType | Property | A choice from an enumerated list describing the operation performed on the parcel. One of: **fertiliser, inspection, pesticide, water, other.** | Recommended |
 | description | Property | A description of the operation. | Recommended |
 | result | Property | A description of the results of the operation. One of: **ok, aborted, failed.** | Recommended |
-| plannedStartAt | TemporalProperty | The planned start date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start. | Recommended |
-| plannedEndAt | TemporalProperty | The planned end date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation finishes may be before or after the planned end. | Recommended |
+| plannedStartAt | TemporalProperty | The planned start date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start. | Mandatory |
+| plannedEndAt | TemporalProperty | The planned end date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation finishes may be before or after the planned end. | Mandatory |
 | status | Property | A choice from an enumerated list describing the status. One of: **planned, ongoing, finished, scheduled, cancelled.** | Recommended |
 | operator | Relationship | Reference to the operator conducting the operation | Recommended |
 | startedAt | TemporalProperty | Timestamp when the operation actually started to be performed. | Recommended |
@@ -121,7 +121,7 @@ The following is an example instance of the **Agri Parcel Operation** entity
     },
     "waterSource": {
         "type": "Property",
-        "value": "arable"
+        "value": "rainwater capture"
     }
 }
 ```

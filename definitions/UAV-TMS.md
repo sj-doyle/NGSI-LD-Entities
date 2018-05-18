@@ -12,7 +12,7 @@ This entity contains a harmonised description of a specific Unmanned Aerial Vehi
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | name | Property | The name of this software application. | Recommended |
 | softwareApplication | Property | Details about the software application using the Schema.org definition https://schema.org/SoftwareApplication | Mandatory |
-| operationalInstance | url | None | Mandatory |
+| operationalInstance | uri | None | Mandatory |
 | owner | Property | A list detailing the owner or owners of the TMS software.
 
 Refers to one or more Schema.org person or organization.
@@ -46,7 +46,8 @@ The following NGSI-LD context definition applies to the **UAV TMS** entity
         "@id": "http://uri.etsi.org/ngsi-ld/modifiedAt",
         "@type": "DateTime"
     },
-    "Property": "http://etsi.org/nsgi-ld/Property"
+    "Property": "http://etsi.org/nsgi-ld/Property",
+    "uri": "http://uri.etsi.org/ngsi-ld/uri"
 }
 ```
 ## Example of UAV TMS Entity
@@ -78,7 +79,7 @@ The following is an example instance of the **UAV TMS** entity
         "applicationCategory": "Guidance"
     },
     "operationalInstance": {
-        "type": "url",
+        "type": "uri",
         "value": "http://example.com/uavtms "
     },
     "owner": {

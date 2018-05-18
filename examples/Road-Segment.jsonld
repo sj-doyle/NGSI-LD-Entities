@@ -34,7 +34,7 @@
             ]
         }
     },
-    "roadSegments": {
+    "relatedSegments": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:RoadSegment:75460f68-5911-11e8-abc1-2f5262349650",
@@ -76,5 +76,12 @@
                 ]
             ]
         }
+    },
+    "POIs": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:POI:b8873fb6-5aad-11e8-abb2-5b6a411669cd",
+            "urn:ngsi-ld:POI:c1ac7a0c-5aad-11e8-86f2-97ddd7d561f4"
+        ]
     }
 }

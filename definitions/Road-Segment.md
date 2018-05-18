@@ -13,10 +13,11 @@ This entity contains a harmonised geographic and contextual description of a Roa
 | road | Relationship | Refers to the Road entity that this RoadSegment relates to. | Recommended |
 | startPoint | GeoProperty | The geo:json encoded start point for this RoadSegment. | Mandatory |
 | endPoint | GeoProperty | The geo:json encoded end point for this RoadSegment. | Mandatory |
-| roadSegments | Relationship | Refers to related RoadSegment entities e.g. adjoining, junctions, opposite carriageway. | Recommended |
+| relatedSegments | Relationship | Refers to related RoadSegment entities e.g. adjoining, junctions, opposite carriageway. | Recommended |
 | roadClass | Property | The official classification of this road (relevant to the local country). | Recommended |
 | name | Property | The name for this road segment. | Recommended |
 | path | GeoProperty | The geo:json sequence of points that make up this RoadSegment (as a LineString). | Recommended |
+| POIs | Relationship | A reference to associated Points of Interest (e.g. service station) that are connected with this RoadSegment. | Recommended |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Road Segment** entity
@@ -83,7 +84,7 @@ The following is an example instance of the **Road Segment** entity
             ]
         }
     },
-    "roadSegments": {
+    "relatedSegments": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:RoadSegment:75460f68-5911-11e8-abc1-2f5262349650",
@@ -125,6 +126,13 @@ The following is an example instance of the **Road Segment** entity
                 ]
             ]
         }
+    },
+    "POIs": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:POI:b8873fb6-5aad-11e8-abb2-5b6a411669cd",
+            "urn:ngsi-ld:POI:c1ac7a0c-5aad-11e8-86f2-97ddd7d561f4"
+        ]
     }
 }
 ```
