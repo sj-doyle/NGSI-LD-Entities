@@ -23,7 +23,8 @@ The harmonised data entities below originate from and are used in the following 
 * Industry
 * Smart City
 * Smart Home
-I 
+
+
 | Entity Name | Specification | Context Definition | Example Entity |
 |:--- |:--- |:--- |:--- |
 | **Agri Crop** | [*Agri Crop* entity specification.](definitions/Agri-Crop.md) | [*Agri Crop* context example.](examples/Agri-Crop-context.jsonld) | [*Agri Crop* entity example.](examples/Agri-Crop.jsonld) |
