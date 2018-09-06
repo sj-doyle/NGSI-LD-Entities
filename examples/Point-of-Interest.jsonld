@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://example.com/contexts/coreContext.jsonld",
+        "https://forge.etsi.org/gitlab/NGSI-LD/NGSI-LD/raw/master/coreContext/ngsi-ld-core-context.json",
         "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Point-of-Interest-context.jsonld"
     ],
     "id": "urn:ngsi-ld:PointOfInterest:44e47705-90c3-4dbc-a0ae-7810306de5e9",

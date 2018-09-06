@@ -33,23 +33,65 @@ The following NGSI-LD context definition applies to the **Air Quality Observed**
 
 ```JavaScript
 {
-    "id": "@id",
-    "type": "@type",
-    "DateTime": "http://uri.etsi.org/ngsi-ld/DateTime",
-    "createdAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/createdAt",
-        "@type": "DateTime"
+    "source": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
     },
-    "modifiedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/modifiedAt",
-        "@type": "DateTime"
+    "dataProvider": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
     },
-    "Property": "http://etsi.org/nsgi-ld/Property",
-    "GeoProperty": "http://uri.etsi.org/ngsi-ld/GeoProperty",
-    "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship",
-    "observedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/observedAt",
-        "@type": "DateTime"
+    "entityVersion": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "POI": {
+        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@type": "Relationship"
+    },
+    "stationCode": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "devices": {
+        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@type": "Relationship"
+    },
+    "airQualityIndex": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "CO": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "NO": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "NO2": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "NOx": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "O3": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "PM2.5": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "PM10": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "SO2": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
     }
 }
 ```
@@ -61,8 +103,8 @@ The following is an example instance of the **Air Quality Observed** entity
 ```JavaScript
 {
     "@context": [
-        "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Air-Quality-Observed-context.jsonld"
+        "https://forge.etsi.org/gitlab/NGSI-LD/NGSI-LD/raw/master/coreContext/ngsi-ld-core-context.json",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Air-Quality-Observed-context.jsonld"
     ],
     "id": "urn:ngsi-ld:AirQualityObserved:c9f32b35-a185-48e2-835f-c521efc294ab",
     "type": "AirQualityObserved",

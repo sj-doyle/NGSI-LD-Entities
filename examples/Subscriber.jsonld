@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://example.com/contexts/coreContext.jsonld",
+        "https://forge.etsi.org/gitlab/NGSI-LD/NGSI-LD/raw/master/coreContext/ngsi-ld-core-context.json",
         "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Subscriber-context.jsonld"
     ],
     "id": "urn:ngsi-ld:Subscriber:c1716dea-6a4d-4171-a733-916123942f09",

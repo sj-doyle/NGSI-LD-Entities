@@ -1,16 +1,74 @@
 {
-    "id": "@id",
-    "type": "@type",
-    "DateTime": "http://uri.etsi.org/ngsi-ld/DateTime",
-    "createdAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/createdAt",
-        "@type": "DateTime"
+    "source": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
     },
-    "modifiedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/modifiedAt",
-        "@type": "DateTime"
+    "dataProvider": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
     },
-    "Property": "http://etsi.org/nsgi-ld/Property",
-    "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship",
-    "uri": "http://uri.etsi.org/ngsi-ld/uri"
+    "entityVersion": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "productType": {
+        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@type": "Relationship"
+    },
+    "supplierName": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "gtin": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "gpcCategoryCode": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "productName": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "brand": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "inPackageWidth": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "inPackageDepth": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "inPackageHeight": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "netWeight": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "grossWeight": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "countryOfOrigin": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "images": {
+        "@id": "http://uri.etsi.org/ngsi-ld/uri",
+        "@type": "uri"
+    },
+    "producerURI": {
+        "@id": "http://uri.etsi.org/ngsi-ld/uri",
+        "@type": "uri"
+    },
+    "manufacturer": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    }
 }

@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://example.com/contexts/coreContext.jsonld",
+        "https://forge.etsi.org/gitlab/NGSI-LD/NGSI-LD/raw/master/coreContext/ngsi-ld-core-context.json",
         "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/UAV-UTM-Flight-Message-context.jsonld"
     ],
     "id": "urn:ngsi-ld:UAVUTMFlightMessage:4de63bda-592c-11e8-a603-234826e9b9fe",

@@ -26,25 +26,42 @@ The following NGSI-LD context definition applies to the **Vehicle Fault** entity
 
 ```JavaScript
 {
-    "id": "@id",
-    "type": "@type",
-    "DateTime": "http://uri.etsi.org/ngsi-ld/DateTime",
-    "createdAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/createdAt",
-        "@type": "DateTime"
+    "source": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
     },
-    "modifiedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/modifiedAt",
-        "@type": "DateTime"
+    "dataProvider": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
     },
-    "Property": "http://etsi.org/nsgi-ld/Property",
-    "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship",
-    "observedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/observedAt",
-        "@type": "DateTime"
+    "entityVersion": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
     },
-    "GeoProperty": "http://uri.etsi.org/ngsi-ld/GeoProperty",
-    "TemporalProperty": "http://uri.etsi.org/ngsi-ld/TemporalProperty"
+    "vehicle": {
+        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@type": "Relationship"
+    },
+    "eventType": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "processingType": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "resolvedAt": {
+        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@type": "TemporalProperty"
+    },
+    "dtCode": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "faultLog": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    }
 }
 ```
 ## Example of Vehicle Fault Entity
@@ -55,8 +72,8 @@ The following is an example instance of the **Vehicle Fault** entity
 ```JavaScript
 {
     "@context": [
-        "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Vehicle-Fault-context.jsonld"
+        "https://forge.etsi.org/gitlab/NGSI-LD/NGSI-LD/raw/master/coreContext/ngsi-ld-core-context.json",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Vehicle-Fault-context.jsonld"
     ],
     "id": "urn:ngsi-ld:VehicleFault:4939200a-5ef5-4266-8c91-1f82ad3b543b",
     "type": "VehicleFault",

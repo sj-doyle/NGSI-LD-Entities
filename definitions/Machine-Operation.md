@@ -30,20 +30,58 @@ The following NGSI-LD context definition applies to the **Machine Operation** en
 
 ```JavaScript
 {
-    "id": "@id",
-    "type": "@type",
-    "DateTime": "http://uri.etsi.org/ngsi-ld/DateTime",
-    "createdAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/createdAt",
-        "@type": "DateTime"
+    "source": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
     },
-    "modifiedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/modifiedAt",
-        "@type": "DateTime"
+    "dataProvider": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
     },
-    "Property": "http://etsi.org/nsgi-ld/Property",
-    "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship",
-    "TemporalProperty": "http://uri.etsi.org/ngsi-ld/TemporalProperty"
+    "entityVersion": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "machine": {
+        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@type": "Relationship"
+    },
+    "operationType": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "result": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "plannedStartAt": {
+        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@type": "TemporalProperty"
+    },
+    "plannedEndAt": {
+        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@type": "TemporalProperty"
+    },
+    "operator": {
+        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@type": "Relationship"
+    },
+    "startedAt": {
+        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@type": "TemporalProperty"
+    },
+    "endedAt": {
+        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@type": "TemporalProperty"
+    },
+    "commandSequence": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "operationOutput": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    }
 }
 ```
 ## Example of Machine Operation Entity
@@ -54,8 +92,8 @@ The following is an example instance of the **Machine Operation** entity
 ```JavaScript
 {
     "@context": [
-        "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Machine-Operation-context.jsonld"
+        "https://forge.etsi.org/gitlab/NGSI-LD/NGSI-LD/raw/master/coreContext/ngsi-ld-core-context.json",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Machine-Operation-context.jsonld"
     ],
     "id": "urn:ngsi-ld:MachineOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",
     "type": "MachineOperation",

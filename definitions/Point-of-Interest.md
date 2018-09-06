@@ -22,20 +22,26 @@ The following NGSI-LD context definition applies to the **Point of Interest** en
 
 ```JavaScript
 {
-    "id": "@id",
-    "type": "@type",
-    "DateTime": "http://uri.etsi.org/ngsi-ld/DateTime",
-    "createdAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/createdAt",
-        "@type": "DateTime"
+    "source": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
     },
-    "modifiedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/modifiedAt",
-        "@type": "DateTime"
+    "dataProvider": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
     },
-    "Property": "http://etsi.org/nsgi-ld/Property",
-    "GeoProperty": "http://uri.etsi.org/ngsi-ld/GeoProperty",
-    "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship"
+    "entityVersion": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "category": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "place": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    }
 }
 ```
 ## Example of Point of Interest Entity
@@ -46,8 +52,8 @@ The following is an example instance of the **Point of Interest** entity
 ```JavaScript
 {
     "@context": [
-        "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Point-of-Interest-context.jsonld"
+        "https://forge.etsi.org/gitlab/NGSI-LD/NGSI-LD/raw/master/coreContext/ngsi-ld-core-context.json",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Point-of-Interest-context.jsonld"
     ],
     "id": "urn:ngsi-ld:PointOfInterest:44e47705-90c3-4dbc-a0ae-7810306de5e9",
     "type": "PointOfInterest",

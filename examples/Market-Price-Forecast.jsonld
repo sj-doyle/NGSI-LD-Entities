@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://example.com/contexts/coreContext.jsonld",
+        "https://forge.etsi.org/gitlab/NGSI-LD/NGSI-LD/raw/master/coreContext/ngsi-ld-core-context.json",
         "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Market-Price-Forecast-context.jsonld"
     ],
     "id": "urn:ngsi-ld:MarketPriceForecast:398aa5f4-6a81-4dea-9f85-e9869441a257",

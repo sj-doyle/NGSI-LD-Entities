@@ -32,20 +32,66 @@ The following NGSI-LD context definition applies to the **Agri Parcel Operation*
 
 ```JavaScript
 {
-    "id": "@id",
-    "type": "@type",
-    "DateTime": "http://uri.etsi.org/ngsi-ld/DateTime",
-    "createdAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/createdAt",
-        "@type": "DateTime"
+    "source": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
     },
-    "modifiedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/modifiedAt",
-        "@type": "DateTime"
+    "dataProvider": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
     },
-    "Property": "http://etsi.org/nsgi-ld/Property",
-    "Relationship": "http://uri.etsi.org/ngsi-ld/Relationship",
-    "TemporalProperty": "http://uri.etsi.org/ngsi-ld/TemporalProperty"
+    "entityVersion": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "agriParcel": {
+        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@type": "Relationship"
+    },
+    "operationType": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "result": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "plannedStartAt": {
+        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@type": "TemporalProperty"
+    },
+    "plannedEndAt": {
+        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@type": "TemporalProperty"
+    },
+    "operator": {
+        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@type": "Relationship"
+    },
+    "startedAt": {
+        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@type": "TemporalProperty"
+    },
+    "endedAt": {
+        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@type": "TemporalProperty"
+    },
+    "reportedAt": {
+        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@type": "TemporalProperty"
+    },
+    "agriProduct": {
+        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@type": "Relationship"
+    },
+    "quantity": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    },
+    "waterSource": {
+        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@type": "Property"
+    }
 }
 ```
 ## Example of Agri Parcel Operation Entity
@@ -56,8 +102,8 @@ The following is an example instance of the **Agri Parcel Operation** entity
 ```JavaScript
 {
     "@context": [
-        "https://example.com/contexts/coreContext.jsonld",
-        "https://github.com/GSMADeveloper/NGSI-LD-Entities/tree/master/examples/Agri-Parcel-Operation-context.jsonld"
+        "https://forge.etsi.org/gitlab/NGSI-LD/NGSI-LD/raw/master/coreContext/ngsi-ld-core-context.json",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Agri-Parcel-Operation-context.jsonld"
     ],
     "id": "urn:ngsi-ld:AgriParcelOperation:e1e9d3a3-074f-46f1-9375-52000d05a62b",
     "type": "AgriParcelOperation",

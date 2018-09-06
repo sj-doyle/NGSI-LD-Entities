@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://example.com/contexts/coreContext.jsonld",
+        "https://forge.etsi.org/gitlab/NGSI-LD/NGSI-LD/raw/master/coreContext/ngsi-ld-core-context.json",
         "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Water-Quality-Observed-context.jsonld"
     ],
     "id": "urn:ngsi-ld:WaterQualityObserved:72a30ca8-888e-49a2-8d8d-a5bebc19e98b",
