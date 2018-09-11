@@ -27,47 +27,47 @@ The following NGSI-LD context definition applies to the **Vehicle** entity
 ```JavaScript
 {
     "source": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "@type": "Property"
     },
     "dataProvider": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "@type": "Property"
     },
     "entityVersion": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "@type": "Property"
     },
     "vehicleType": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicletype",
         "@type": "Relationship"
     },
     "fuelType": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fueltype",
         "@type": "Property"
     },
     "displacement": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/displacement",
         "@type": "Property"
     },
     "fuelEfficiency": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fuelefficiency",
         "@type": "Property"
     },
     "vehicleModelDate": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehiclemodeldate",
         "@type": "TemporalProperty"
     },
     "dateDiscontinued": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datediscontinued",
         "@type": "TemporalProperty"
     },
     "vehicleIdentificationNumber": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicleidentificationnumber",
         "@type": "Property"
     },
     "mileageFromOdometer": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mileagefromodometer",
         "@type": "Property"
     }
 }

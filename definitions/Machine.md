@@ -46,111 +46,111 @@ The following NGSI-LD context definition applies to the **Machine** entity
 ```JavaScript
 {
     "source": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "@type": "Property"
     },
     "dataProvider": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "@type": "Property"
     },
     "entityVersion": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "@type": "Property"
     },
     "machineModel": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/machinemodel",
         "@type": "Relationship"
     },
     "serialNumber": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/serialnumber",
         "@type": "Property"
     },
     "assetIdentifier": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/assetidentifier",
         "@type": "Property"
     },
     "supplierName": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/suppliername",
         "@type": "Property"
     },
     "countryOfManufacture": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/countryofmanufacture",
         "@type": "Property"
     },
     "factory": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/factory",
         "@type": "Property"
     },
     "dateFirstUsed": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefirstused",
         "@type": "TemporalProperty"
     },
     "dateInstalled": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateinstalled",
         "@type": "TemporalProperty"
     },
     "dateManufactured": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datemanufactured",
         "@type": "TemporalProperty"
     },
     "owner": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
         "@type": "Relationship"
     },
     "hardwareVersion": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/hardwareversion",
         "@type": "Property"
     },
     "firmwareVersion": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/firmwareversion",
         "@type": "Property"
     },
     "softwareVersion": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/softwareversion",
         "@type": "Property"
     },
     "osVersion": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/osversion",
         "@type": "Property"
     },
     "supportedProtocols": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/supportedprotocols",
         "@type": "Property"
     },
     "building": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/building",
         "@type": "Relationship"
     },
     "subscriptionServices": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/subscriptionservices",
         "@type": "Relationship"
     },
     "online": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/online",
         "@type": "Property"
     },
     "batteryLevel": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/batterylevel",
         "@type": "Property"
     },
     "installationNotes": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/installationnotes",
         "@type": "Property"
     },
     "voltage": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/voltage",
         "@type": "Property"
     },
     "current": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/current",
         "@type": "Property"
     },
     "power": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/power",
         "@type": "Property"
     },
     "rotationalSpeed": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rotationalspeed",
         "@type": "Property"
     }
 }

@@ -27,43 +27,43 @@ The following NGSI-LD context definition applies to the **Road Segment** entity
 ```JavaScript
 {
     "source": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "@type": "Property"
     },
     "dataProvider": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "@type": "Property"
     },
     "entityVersion": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "@type": "Property"
     },
     "road": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/road",
         "@type": "Relationship"
     },
     "startPoint": {
-        "@id": "http://uri.etsi.org/ngsi-ld/GeoProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startpoint",
         "@type": "GeoProperty"
     },
     "endPoint": {
-        "@id": "http://uri.etsi.org/ngsi-ld/GeoProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endpoint",
         "@type": "GeoProperty"
     },
     "relatedSegments": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedsegments",
         "@type": "Relationship"
     },
     "roadClass": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/roadclass",
         "@type": "Property"
     },
     "path": {
-        "@id": "http://uri.etsi.org/ngsi-ld/GeoProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/path",
         "@type": "GeoProperty"
     },
     "POIs": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois",
         "@type": "Relationship"
     }
 }

@@ -39,83 +39,83 @@ The following NGSI-LD context definition applies to the **Weather Observed** ent
 ```JavaScript
 {
     "source": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "@type": "Property"
     },
     "dataProvider": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "@type": "Property"
     },
     "entityVersion": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "@type": "Property"
     },
     "POI": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/poi",
         "@type": "Relationship"
     },
     "stationCode": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/stationcode",
         "@type": "Property"
     },
     "devices": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
         "@type": "Relationship"
     },
     "weatherType": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weathertype",
         "@type": "Property"
     },
     "visibility": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/visibility",
         "@type": "Property"
     },
     "address": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
         "@type": "Property"
     },
     "temperature": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/temperature",
         "@type": "Property"
     },
     "windDirection": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/winddirection",
         "@type": "Property"
     },
     "windSpeed": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/windspeed",
         "@type": "Property"
     },
     "relativeHumidity": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
         "@type": "Property"
     },
     "dewPoint": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dewpoint",
         "@type": "Property"
     },
     "atmosphericPressure": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/atmosphericpressure",
         "@type": "Property"
     },
     "pressureTendency": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pressuretendency",
         "@type": "Property"
     },
     "rainRate": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rainrate",
         "@type": "Property"
     },
     "rainFall": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rainfall",
         "@type": "Property"
     },
     "evapoTranspiration": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/evapotranspiration",
         "@type": "Property"
     },
     "referenceEvapoTranspiration": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/referenceevapotranspiration",
         "@type": "Property"
     }
 }

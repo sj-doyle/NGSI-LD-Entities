@@ -27,39 +27,39 @@ The following NGSI-LD context definition applies to the **Vehicle Fault** entity
 ```JavaScript
 {
     "source": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "@type": "Property"
     },
     "dataProvider": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "@type": "Property"
     },
     "entityVersion": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "@type": "Property"
     },
     "vehicle": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicle",
         "@type": "Relationship"
     },
     "eventType": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventtype",
         "@type": "Property"
     },
     "processingType": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/processingtype",
         "@type": "Property"
     },
     "resolvedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/resolvedat",
         "@type": "TemporalProperty"
     },
     "dtCode": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dtcode",
         "@type": "Property"
     },
     "faultLog": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/faultlog",
         "@type": "Property"
     }
 }

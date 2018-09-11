@@ -1,54 +1,54 @@
 {
     "source": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "@type": "Property"
     },
     "dataProvider": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "@type": "Property"
     },
     "entityVersion": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "@type": "Property"
     },
     "device": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/device",
         "@type": "Relationship"
     },
     "operationType": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
         "@type": "Property"
     },
     "result": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
         "@type": "Property"
     },
     "plannedStartAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
         "@type": "TemporalProperty"
     },
     "plannedEndAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
         "@type": "TemporalProperty"
     },
     "operator": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
         "@type": "Relationship"
     },
     "startedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
         "@type": "TemporalProperty"
     },
     "endedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
         "@type": "TemporalProperty"
     },
     "reportedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/reportedat",
         "@type": "TemporalProperty"
     },
     "addressedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/addressedat",
         "@type": "TemporalProperty"
     }
 }

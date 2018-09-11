@@ -33,63 +33,63 @@ The following NGSI-LD context definition applies to the **Agri Parcel Operation*
 ```JavaScript
 {
     "source": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "@type": "Property"
     },
     "dataProvider": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "@type": "Property"
     },
     "entityVersion": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "@type": "Property"
     },
     "agriParcel": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcel",
         "@type": "Relationship"
     },
     "operationType": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
         "@type": "Property"
     },
     "result": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
         "@type": "Property"
     },
     "plannedStartAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
         "@type": "TemporalProperty"
     },
     "plannedEndAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
         "@type": "TemporalProperty"
     },
     "operator": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
         "@type": "Relationship"
     },
     "startedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
         "@type": "TemporalProperty"
     },
     "endedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
         "@type": "TemporalProperty"
     },
     "reportedAt": {
-        "@id": "http://uri.etsi.org/ngsi-ld/TemporalProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/reportedat",
         "@type": "TemporalProperty"
     },
     "agriProduct": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproduct",
         "@type": "Relationship"
     },
     "quantity": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/quantity",
         "@type": "Property"
     },
     "waterSource": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/watersource",
         "@type": "Property"
     }
 }

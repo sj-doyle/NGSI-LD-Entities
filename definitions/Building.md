@@ -32,59 +32,59 @@ The following NGSI-LD context definition applies to the **Building** entity
 ```JavaScript
 {
     "source": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "@type": "Property"
     },
     "dataProvider": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "@type": "Property"
     },
     "entityVersion": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "@type": "Property"
     },
     "buildingType": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/buildingtype",
         "@type": "Relationship"
     },
     "category": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
         "@type": "Property"
     },
     "containedInPlace": {
-        "@id": "http://uri.etsi.org/ngsi-ld/GeoProperty",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/containedinplace",
         "@type": "GeoProperty"
     },
     "address": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
         "@type": "Property"
     },
     "owner": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
         "@type": "Relationship"
     },
     "occupier": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/occupier",
         "@type": "Relationship"
     },
     "subscriptionServices": {
-        "@id": "http://uri.etsi.org/ngsi-ld/Relationship",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/subscriptionservices",
         "@type": "Relationship"
     },
     "floorsAboveGround": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/floorsaboveground",
         "@type": "Property"
     },
     "floorsBelowGround": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/floorsbelowground",
         "@type": "Property"
     },
     "mapUri": {
-        "@id": "http://uri.etsi.org/ngsi-ld/uri",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mapuri",
         "@type": "uri"
     },
     "notes": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/notes",
         "@type": "Property"
     }
 }

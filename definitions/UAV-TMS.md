@@ -36,31 +36,31 @@ The following NGSI-LD context definition applies to the **UAV TMS** entity
 ```JavaScript
 {
     "source": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "@type": "Property"
     },
     "dataProvider": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "@type": "Property"
     },
     "entityVersion": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "@type": "Property"
     },
     "softwareApplication": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/softwareapplication",
         "@type": "Property"
     },
     "operationalInstance": {
-        "@id": "http://uri.etsi.org/ngsi-ld/uri",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationalinstance",
         "@type": "uri"
     },
     "owner": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
         "@type": "Property"
     },
     "operator": {
-        "@id": "http://etsi.org/nsgi-ld/Property",
+        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
         "@type": "Property"
     }
 }
