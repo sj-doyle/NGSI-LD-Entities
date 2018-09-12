@@ -29,38 +29,14 @@ The following NGSI-LD context definition applies to the **Subscriber** entity
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "subscription": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/subscription",
-        "@type": "Relationship"
-    },
-    "startAt": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startat",
-        "@type": "TemporalProperty"
-    },
-    "endAt": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endat",
-        "@type": "TemporalProperty"
-    },
-    "category": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-        "@type": "Property"
-    },
-    "users": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/users",
-        "@type": "Relationship"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "subscription": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/subscription",
+    "startAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startat",
+    "endAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endat",
+    "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
+    "users": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/users"
 }
 ```
 ## Example of Subscriber Entity

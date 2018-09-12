@@ -1,50 +1,14 @@
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "agriParcel": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcel",
-        "@type": "Relationship"
-    },
-    "soilTemperature": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soiltemperature",
-        "@type": "Property"
-    },
-    "soilMoistureVwc": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soilmoisturevwc",
-        "@type": "Property"
-    },
-    "soilMoistureEc": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soilmoistureec",
-        "@type": "Property"
-    },
-    "airTemperature": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/airtemperature",
-        "@type": "Property"
-    },
-    "solarRadiation": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/solarradiation",
-        "@type": "Property"
-    },
-    "relativeHumidity": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
-        "@type": "Property"
-    },
-    "atmosphericPressure": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/atmosphericpressure",
-        "@type": "Property"
-    },
-    "devices": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
-        "@type": "Relationship"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "agriParcel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcel",
+    "soilTemperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soiltemperature",
+    "soilMoistureVwc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soilmoisturevwc",
+    "soilMoistureEc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soilmoistureec",
+    "airTemperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/airtemperature",
+    "solarRadiation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/solarradiation",
+    "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
+    "atmosphericPressure": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/atmosphericpressure",
+    "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices"
 }

@@ -1,50 +1,14 @@
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "area": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/area",
-        "@type": "Property"
-    },
-    "category": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-        "@type": "Property"
-    },
-    "agriParcelParent": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelparent",
-        "@type": "Relationship"
-    },
-    "agriParcelChildren": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelchildren",
-        "@type": "Relationship"
-    },
-    "agriCrop": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agricrop",
-        "@type": "Relationship"
-    },
-    "cropStatus": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/cropstatus",
-        "@type": "Property"
-    },
-    "lastPlantedAt": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastplantedat",
-        "@type": "TemporalProperty"
-    },
-    "agriSoil": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrisoil",
-        "@type": "Relationship"
-    },
-    "devices": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
-        "@type": "Relationship"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "area": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/area",
+    "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
+    "agriParcelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelparent",
+    "agriParcelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelchildren",
+    "agriCrop": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agricrop",
+    "cropStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/cropstatus",
+    "lastPlantedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastplantedat",
+    "agriSoil": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrisoil",
+    "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices"
 }

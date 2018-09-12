@@ -1,78 +1,21 @@
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "POIs": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois",
-        "@type": "Relationship"
-    },
-    "retrievedAt": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/retrievedat",
-        "@type": "TemporalProperty"
-    },
-    "issuedAt": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/issuedat",
-        "@type": "TemporalProperty"
-    },
-    "weatherType": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weathertype",
-        "@type": "Property"
-    },
-    "visibility": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/visibility",
-        "@type": "Property"
-    },
-    "validFrom": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/validfrom",
-        "@type": "TemporalProperty"
-    },
-    "validThrough": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/validthrough",
-        "@type": "TemporalProperty"
-    },
-    "dayMinimum": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dayminimum",
-        "@type": "Property"
-    },
-    "dayMaximum": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/daymaximum",
-        "@type": "Property"
-    },
-    "address": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
-        "@type": "Property"
-    },
-    "temperature": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/temperature",
-        "@type": "Property"
-    },
-    "windDirection": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/winddirection",
-        "@type": "Property"
-    },
-    "windSpeed": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/windspeed",
-        "@type": "Property"
-    },
-    "uVIndexMax": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uvindexmax",
-        "@type": "Property"
-    },
-    "relativeHumidity": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
-        "@type": "Property"
-    },
-    "precipitationProbability": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/precipitationprobability",
-        "@type": "Property"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "POIs": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois",
+    "retrievedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/retrievedat",
+    "issuedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/issuedat",
+    "weatherType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weathertype",
+    "visibility": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/visibility",
+    "validFrom": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/validfrom",
+    "validThrough": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/validthrough",
+    "dayMinimum": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dayminimum",
+    "dayMaximum": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/daymaximum",
+    "address": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
+    "temperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/temperature",
+    "windDirection": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/winddirection",
+    "windSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/windspeed",
+    "uVIndexMax": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uvindexmax",
+    "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
+    "precipitationProbability": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/precipitationprobability"
 }

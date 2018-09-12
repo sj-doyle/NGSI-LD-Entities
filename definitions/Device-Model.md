@@ -27,46 +27,16 @@ The following NGSI-LD context definition applies to the **Device Model** entity
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "doc": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/doc",
-        "@type": "uri"
-    },
-    "category": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-        "@type": "Property"
-    },
-    "manufacturerName": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturername",
-        "@type": "Property"
-    },
-    "brandName": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/brandname",
-        "@type": "Property"
-    },
-    "root": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
-        "@type": "Property"
-    },
-    "deviceModelParent": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devicemodelparent",
-        "@type": "Relationship"
-    },
-    "deviceModelChildren": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devicemodelchildren",
-        "@type": "Relationship"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "doc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/doc",
+    "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
+    "manufacturerName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturername",
+    "brandName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/brandname",
+    "root": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
+    "deviceModelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devicemodelparent",
+    "deviceModelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devicemodelchildren"
 }
 ```
 ## Example of Device Model Entity

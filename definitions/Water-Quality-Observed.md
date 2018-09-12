@@ -45,118 +45,34 @@ The following NGSI-LD context definition applies to the **Water Quality Observed
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "POIs": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois",
-        "@type": "Relationship"
-    },
-    "devices": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
-        "@type": "Relationship"
-    },
-    "depth": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/depth",
-        "@type": "Property"
-    },
-    "pressure": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pressure",
-        "@type": "Property"
-    },
-    "conductivity": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/conductivity",
-        "@type": "Property"
-    },
-    "conductance": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/conductance",
-        "@type": "Property"
-    },
-    "temperature": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/temperature",
-        "@type": "Property"
-    },
-    "tss": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/tss",
-        "@type": "Property"
-    },
-    "tds": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/tds",
-        "@type": "Property"
-    },
-    "turbidity": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/turbidity",
-        "@type": "Property"
-    },
-    "salinity": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/salinity",
-        "@type": "Property"
-    },
-    "pH": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/ph",
-        "@type": "Property"
-    },
-    "orp": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/orp",
-        "@type": "Property"
-    },
-    "cdom": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/cdom",
-        "@type": "Property"
-    },
-    "Chla": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/chla",
-        "@type": "Property"
-    },
-    "Cl": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/cl",
-        "@type": "Property"
-    },
-    "CO": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/co",
-        "@type": "Property"
-    },
-    "CO2": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/co2",
-        "@type": "Property"
-    },
-    "Hg": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/hg",
-        "@type": "Property"
-    },
-    "NH3": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/nh3",
-        "@type": "Property"
-    },
-    "NH4": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/nh4",
-        "@type": "Property"
-    },
-    "NO3": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/no3",
-        "@type": "Property"
-    },
-    "O2": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o2",
-        "@type": "Property"
-    },
-    "PC": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pc",
-        "@type": "Property"
-    },
-    "PE": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pe",
-        "@type": "Property"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "POIs": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois",
+    "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
+    "depth": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/depth",
+    "pressure": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pressure",
+    "conductivity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/conductivity",
+    "conductance": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/conductance",
+    "temperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/temperature",
+    "tss": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/tss",
+    "tds": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/tds",
+    "turbidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/turbidity",
+    "salinity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/salinity",
+    "pH": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/ph",
+    "orp": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/orp",
+    "cdom": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/cdom",
+    "Chla": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/chla",
+    "Cl": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/cl",
+    "CO": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/co",
+    "CO2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/co2",
+    "Hg": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/hg",
+    "NH3": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/nh3",
+    "NH4": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/nh4",
+    "NO3": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/no3",
+    "O2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o2",
+    "PC": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pc",
+    "PE": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pe"
 }
 ```
 ## Example of Water Quality Observed Entity

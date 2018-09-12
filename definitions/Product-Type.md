@@ -23,30 +23,12 @@ The following NGSI-LD context definition applies to the **Product Type** entity
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "root": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
-        "@type": "Property"
-    },
-    "parentType": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/parenttype",
-        "@type": "Relationship"
-    },
-    "childrenTypes": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/childrentypes",
-        "@type": "Relationship"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "root": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
+    "parentType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/parenttype",
+    "childrenTypes": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/childrentypes"
 }
 ```
 ## Example of Product Type Entity

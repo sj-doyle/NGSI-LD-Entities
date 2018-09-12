@@ -20,22 +20,10 @@ The following NGSI-LD context definition applies to the **Subscription Service**
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "offer": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/offer",
-        "@type": "Property"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "offer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/offer"
 }
 ```
 ## Example of Subscription Service Entity

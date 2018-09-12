@@ -25,34 +25,13 @@ The following NGSI-LD context definition applies to the **UAV ADSB** entity
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "uav": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uav",
-        "@type": "Relationship"
-    },
-    "originatedByUAV": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originatedbyuav",
-        "@type": "Property"
-    },
-    "originator": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
-        "@type": "Relationship"
-    },
-    "UAVADSBroadcast": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uavadsbroadcast",
-        "@type": "Property"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "uav": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uav",
+    "originatedByUAV": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originatedbyuav",
+    "originator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
+    "UAVADSBroadcast": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uavadsbroadcast"
 }
 ```
 ## Example of UAV ADSB Entity

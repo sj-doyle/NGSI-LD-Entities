@@ -1,26 +1,8 @@
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "model": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/model",
-        "@type": "Property"
-    },
-    "category": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-        "@type": "Property"
-    },
-    "manufacturer": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturer",
-        "@type": "Property"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "model": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/model",
+    "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
+    "manufacturer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturer"
 }

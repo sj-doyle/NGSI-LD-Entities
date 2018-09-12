@@ -29,38 +29,14 @@ The following NGSI-LD context definition applies to the **Market Price Forecast*
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "entity": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entity",
-        "@type": "Relationship"
-    },
-    "priceForecast": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/priceforecast",
-        "@type": "Property"
-    },
-    "address": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
-        "@type": "Property"
-    },
-    "marketScale": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/marketscale",
-        "@type": "Property"
-    },
-    "weatherForecast": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weatherforecast",
-        "@type": "Relationship"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "entity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entity",
+    "priceForecast": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/priceforecast",
+    "address": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
+    "marketScale": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/marketscale",
+    "weatherForecast": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weatherforecast"
 }
 ```
 ## Example of Market Price Forecast Entity

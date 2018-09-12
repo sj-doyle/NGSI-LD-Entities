@@ -24,34 +24,13 @@ The following NGSI-LD context definition applies to the **Fleet Vehicle** entity
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "vehicle": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicle",
-        "@type": "Relationship"
-    },
-    "fleetVehicleType": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehicletype",
-        "@type": "Property"
-    },
-    "operatingCompany": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operatingcompany",
-        "@type": "Property"
-    },
-    "operator": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
-        "@type": "Relationship"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "vehicle": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicle",
+    "fleetVehicleType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehicletype",
+    "operatingCompany": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operatingcompany",
+    "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator"
 }
 ```
 ## Example of Fleet Vehicle Entity

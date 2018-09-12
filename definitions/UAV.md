@@ -44,54 +44,18 @@ The following NGSI-LD context definition applies to the **UAV** entity
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "uavModel": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uavmodel",
-        "@type": "Relationship"
-    },
-    "owner": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
-        "@type": "Property"
-    },
-    "operator": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
-        "@type": "Property"
-    },
-    "operationMode": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationmode",
-        "@type": "Property"
-    },
-    "elevation": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/elevation",
-        "@type": "Property"
-    },
-    "flightStatus": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/flightstatus",
-        "@type": "Property"
-    },
-    "workStatus": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/workstatus",
-        "@type": "Property"
-    },
-    "groundSpeed": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/groundspeed",
-        "@type": "Property"
-    },
-    "fuel": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fuel",
-        "@type": "Property"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "uavModel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uavmodel",
+    "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
+    "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
+    "operationMode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationmode",
+    "elevation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/elevation",
+    "flightStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/flightstatus",
+    "workStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/workstatus",
+    "groundSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/groundspeed",
+    "fuel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fuel"
 }
 ```
 ## Example of UAV Entity

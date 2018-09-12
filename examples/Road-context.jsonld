@@ -1,30 +1,9 @@
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "country": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/country",
-        "@type": "Property"
-    },
-    "roadSegments": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/roadsegments",
-        "@type": "Relationship"
-    },
-    "roadClass": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/roadclass",
-        "@type": "Property"
-    },
-    "alternateName": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/alternatename",
-        "@type": "Property"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "country": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/country",
+    "roadSegments": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/roadsegments",
+    "roadClass": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/roadclass",
+    "alternateName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/alternatename"
 }

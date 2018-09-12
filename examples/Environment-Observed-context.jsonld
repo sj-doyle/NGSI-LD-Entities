@@ -1,30 +1,9 @@
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "POIs": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois",
-        "@type": "Relationship"
-    },
-    "weatherObserved": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weatherobserved",
-        "@type": "Relationship"
-    },
-    "airQualityObserved": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/airqualityobserved",
-        "@type": "Relationship"
-    },
-    "waterQualityObserved": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/waterqualityobserved",
-        "@type": "Relationship"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "POIs": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois",
+    "weatherObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weatherobserved",
+    "airQualityObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/airqualityobserved",
+    "waterQualityObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/waterqualityobserved"
 }

@@ -1,42 +1,12 @@
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "alternateName": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/alternatename",
-        "@type": "Property"
-    },
-    "agriSoil": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrisoil",
-        "@type": "Relationship"
-    },
-    "agriFertiliser": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrifertiliser",
-        "@type": "Relationship"
-    },
-    "agriPest": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agripest",
-        "@type": "Relationship"
-    },
-    "plantingFrom": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plantingfrom",
-        "@type": "Property"
-    },
-    "harvestingInterval": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/harvestinginterval",
-        "@type": "Property"
-    },
-    "wateringFrequency": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/wateringfrequency",
-        "@type": "Property"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "alternateName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/alternatename",
+    "agriSoil": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrisoil",
+    "agriFertiliser": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrifertiliser",
+    "agriPest": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agripest",
+    "plantingFrom": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plantingfrom",
+    "harvestingInterval": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/harvestinginterval",
+    "wateringFrequency": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/wateringfrequency"
 }

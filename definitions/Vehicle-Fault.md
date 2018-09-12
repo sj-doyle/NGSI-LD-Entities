@@ -26,42 +26,15 @@ The following NGSI-LD context definition applies to the **Vehicle Fault** entity
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "vehicle": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicle",
-        "@type": "Relationship"
-    },
-    "eventType": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventtype",
-        "@type": "Property"
-    },
-    "processingType": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/processingtype",
-        "@type": "Property"
-    },
-    "resolvedAt": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/resolvedat",
-        "@type": "TemporalProperty"
-    },
-    "dtCode": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dtcode",
-        "@type": "Property"
-    },
-    "faultLog": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/faultlog",
-        "@type": "Property"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "vehicle": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicle",
+    "eventType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventtype",
+    "processingType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/processingtype",
+    "resolvedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/resolvedat",
+    "dtCode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dtcode",
+    "faultLog": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/faultlog"
 }
 ```
 ## Example of Vehicle Fault Entity

@@ -23,30 +23,12 @@ The following NGSI-LD context definition applies to the **Building Type** entity
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "root": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
-        "@type": "Property"
-    },
-    "buildingTypeParent": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/buildingtypeparent",
-        "@type": "Relationship"
-    },
-    "buildingTypeChildren": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/buildingtypechildren",
-        "@type": "Relationship"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "root": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
+    "buildingTypeParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/buildingtypeparent",
+    "buildingTypeChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/buildingtypechildren"
 }
 ```
 ## Example of Building Type Entity

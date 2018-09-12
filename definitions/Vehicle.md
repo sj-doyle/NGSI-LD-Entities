@@ -26,50 +26,17 @@ The following NGSI-LD context definition applies to the **Vehicle** entity
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "vehicleType": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicletype",
-        "@type": "Relationship"
-    },
-    "fuelType": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fueltype",
-        "@type": "Property"
-    },
-    "displacement": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/displacement",
-        "@type": "Property"
-    },
-    "fuelEfficiency": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fuelefficiency",
-        "@type": "Property"
-    },
-    "vehicleModelDate": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehiclemodeldate",
-        "@type": "TemporalProperty"
-    },
-    "dateDiscontinued": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datediscontinued",
-        "@type": "TemporalProperty"
-    },
-    "vehicleIdentificationNumber": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicleidentificationnumber",
-        "@type": "Property"
-    },
-    "mileageFromOdometer": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mileagefromodometer",
-        "@type": "Property"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "vehicleType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicletype",
+    "fuelType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fueltype",
+    "displacement": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/displacement",
+    "fuelEfficiency": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fuelefficiency",
+    "vehicleModelDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehiclemodeldate",
+    "dateDiscontinued": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datediscontinued",
+    "vehicleIdentificationNumber": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicleidentificationnumber",
+    "mileageFromOdometer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mileagefromodometer"
 }
 ```
 ## Example of Vehicle Entity

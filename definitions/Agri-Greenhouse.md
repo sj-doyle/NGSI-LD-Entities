@@ -28,58 +28,19 @@ The following NGSI-LD context definition applies to the **Agri Greenhouse** enti
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "agriParcelParent": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelparent",
-        "@type": "Relationship"
-    },
-    "agriParcelChildren": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelchildren",
-        "@type": "Relationship"
-    },
-    "weatherObserved": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weatherobserved",
-        "@type": "Relationship"
-    },
-    "waterQualityObserved": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/waterqualityobserved",
-        "@type": "Relationship"
-    },
-    "relativeHumidity": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
-        "@type": "Property"
-    },
-    "leafTemperature": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/leaftemperature",
-        "@type": "Property"
-    },
-    "co2": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/co2",
-        "@type": "Property"
-    },
-    "dailyLight": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dailylight",
-        "@type": "Property"
-    },
-    "drainFlow": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/drainflow",
-        "@type": "Property"
-    },
-    "devices": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
-        "@type": "Relationship"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "agriParcelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelparent",
+    "agriParcelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelchildren",
+    "weatherObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weatherobserved",
+    "waterQualityObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/waterqualityobserved",
+    "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
+    "leafTemperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/leaftemperature",
+    "co2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/co2",
+    "dailyLight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dailylight",
+    "drainFlow": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/drainflow",
+    "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices"
 }
 ```
 ## Example of Agri Greenhouse Entity

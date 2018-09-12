@@ -31,62 +31,20 @@ The following NGSI-LD context definition applies to the **Building Operation** e
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "building": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/building",
-        "@type": "Relationship"
-    },
-    "operationType": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
-        "@type": "Property"
-    },
-    "result": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
-        "@type": "Property"
-    },
-    "plannedStartAt": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
-        "@type": "TemporalProperty"
-    },
-    "plannedEndAt": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
-        "@type": "TemporalProperty"
-    },
-    "operator": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
-        "@type": "Relationship"
-    },
-    "startedAt": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
-        "@type": "TemporalProperty"
-    },
-    "endedAt": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
-        "@type": "TemporalProperty"
-    },
-    "operationSequence": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationsequence",
-        "@type": "Property"
-    },
-    "relatedBuildingOperations": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedbuildingoperations",
-        "@type": "Relationship"
-    },
-    "relatedOperations": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedoperations",
-        "@type": "Relationship"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "building": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/building",
+    "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
+    "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
+    "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
+    "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
+    "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
+    "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
+    "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
+    "operationSequence": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationsequence",
+    "relatedBuildingOperations": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedbuildingoperations",
+    "relatedOperations": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedoperations"
 }
 ```
 ## Example of Building Operation Entity

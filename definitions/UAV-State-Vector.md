@@ -24,30 +24,12 @@ The following NGSI-LD context definition applies to the **UAV State Vector** ent
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "uav": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uav",
-        "@type": "Relationship"
-    },
-    "originator": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
-        "@type": "Relationship"
-    },
-    "stateVector": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/statevector",
-        "@type": "Property"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "uav": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uav",
+    "originator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
+    "stateVector": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/statevector"
 }
 ```
 ## Example of UAV State Vector Entity

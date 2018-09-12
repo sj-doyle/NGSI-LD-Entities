@@ -30,42 +30,15 @@ The following NGSI-LD context definition applies to the **Market Price Observed*
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "entity": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entity",
-        "@type": "Relationship"
-    },
-    "priceAverage5Year": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/priceaverage5Year",
-        "@type": "Property"
-    },
-    "priceObserved": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/priceobserved",
-        "@type": "Property"
-    },
-    "address": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
-        "@type": "Property"
-    },
-    "marketScale": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/marketscale",
-        "@type": "Property"
-    },
-    "weatherForecast": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weatherforecast",
-        "@type": "Relationship"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "entity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entity",
+    "priceAverage5Year": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/priceaverage5Year",
+    "priceObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/priceobserved",
+    "address": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
+    "marketScale": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/marketscale",
+    "weatherForecast": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weatherforecast"
 }
 ```
 ## Example of Market Price Observed Entity

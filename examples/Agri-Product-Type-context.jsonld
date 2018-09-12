@@ -1,26 +1,8 @@
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "root": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
-        "@type": "Property"
-    },
-    "agriProductParent": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproductparent",
-        "@type": "Relationship"
-    },
-    "agriProductChildren": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproductchildren",
-        "@type": "Relationship"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "root": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
+    "agriProductParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproductparent",
+    "agriProductChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproductchildren"
 }

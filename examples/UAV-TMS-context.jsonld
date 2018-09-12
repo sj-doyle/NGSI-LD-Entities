@@ -1,30 +1,9 @@
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "softwareApplication": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/softwareapplication",
-        "@type": "Property"
-    },
-    "operationalInstance": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationalinstance",
-        "@type": "uri"
-    },
-    "owner": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
-        "@type": "Property"
-    },
-    "operator": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
-        "@type": "Property"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "softwareApplication": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/softwareapplication",
+    "operationalInstance": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationalinstance",
+    "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
+    "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator"
 }

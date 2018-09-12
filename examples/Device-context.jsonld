@@ -1,82 +1,22 @@
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "deviceModel": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devicemodel",
-        "@type": "Relationship"
-    },
-    "serialNumber": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/serialnumber",
-        "@type": "Property"
-    },
-    "supplierName": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/suppliername",
-        "@type": "Property"
-    },
-    "countryOfManufacture": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/countryofmanufacture",
-        "@type": "Property"
-    },
-    "factory": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/factory",
-        "@type": "Property"
-    },
-    "dateFirstUsed": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefirstused",
-        "@type": "TemporalProperty"
-    },
-    "dateLastCalibration": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datelastcalibration",
-        "@type": "TemporalProperty"
-    },
-    "dateInstalled": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateinstalled",
-        "@type": "TemporalProperty"
-    },
-    "dateManufactured": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datemanufactured",
-        "@type": "TemporalProperty"
-    },
-    "owner": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
-        "@type": "Relationship"
-    },
-    "hardwareVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/hardwareversion",
-        "@type": "Property"
-    },
-    "firmwareVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/firmwareversion",
-        "@type": "Property"
-    },
-    "softwareVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/softwareversion",
-        "@type": "Property"
-    },
-    "osVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/osversion",
-        "@type": "Property"
-    },
-    "supportedProtocols": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/supportedprotocols",
-        "@type": "Property"
-    },
-    "online": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/online",
-        "@type": "Property"
-    },
-    "batteryLevel": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/batterylevel",
-        "@type": "Property"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "deviceModel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devicemodel",
+    "serialNumber": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/serialnumber",
+    "supplierName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/suppliername",
+    "countryOfManufacture": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/countryofmanufacture",
+    "factory": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/factory",
+    "dateFirstUsed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefirstused",
+    "dateLastCalibration": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datelastcalibration",
+    "dateInstalled": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateinstalled",
+    "dateManufactured": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datemanufactured",
+    "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
+    "hardwareVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/hardwareversion",
+    "firmwareVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/firmwareversion",
+    "softwareVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/softwareversion",
+    "osVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/osversion",
+    "supportedProtocols": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/supportedprotocols",
+    "online": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/online",
+    "batteryLevel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/batterylevel"
 }

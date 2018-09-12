@@ -28,54 +28,18 @@ The following NGSI-LD context definition applies to the **Fleet Vehicle Operatio
 
 ```JavaScript
 {
-    "source": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "@type": "Property"
-    },
-    "dataProvider": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "@type": "Property"
-    },
-    "entityVersion": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "@type": "Property"
-    },
-    "fleetVehicle": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehicle",
-        "@type": "Relationship"
-    },
-    "fleetVehicleStatus": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehiclestatus",
-        "@type": "Relationship"
-    },
-    "initiatingLocation": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/initiatinglocation",
-        "@type": "GeoProperty"
-    },
-    "startedAt": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
-        "@type": "TemporalProperty"
-    },
-    "endedAt": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
-        "@type": "TemporalProperty"
-    },
-    "operationType": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
-        "@type": "Property"
-    },
-    "result": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
-        "@type": "Property"
-    },
-    "responseTime": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/responsetime",
-        "@type": "Property"
-    },
-    "transportTime": {
-        "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/transporttime",
-        "@type": "Property"
-    }
+    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+    "fleetVehicle": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehicle",
+    "fleetVehicleStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehiclestatus",
+    "initiatingLocation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/initiatinglocation",
+    "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
+    "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
+    "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
+    "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
+    "responseTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/responsetime",
+    "transportTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/transporttime"
 }
 ```
 ## Example of Fleet Vehicle Operation Entity
