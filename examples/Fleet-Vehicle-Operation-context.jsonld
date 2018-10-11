@@ -1,14 +1,16 @@
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "fleetVehicle": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehicle",
-    "fleetVehicleStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehiclestatus",
-    "initiatingLocation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/initiatinglocation",
-    "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
-    "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
-    "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
-    "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
-    "responseTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/responsetime",
-    "transportTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/transporttime"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "fleetVehicle": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehicle",
+        "fleetVehicleStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehiclestatus",
+        "initiatingLocation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/initiatinglocation",
+        "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
+        "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
+        "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
+        "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
+        "responseTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/responsetime",
+        "transportTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/transporttime"
+    }
 }

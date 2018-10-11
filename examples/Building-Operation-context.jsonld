@@ -1,16 +1,18 @@
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "building": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/building",
-    "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
-    "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
-    "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
-    "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
-    "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
-    "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
-    "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
-    "operationSequence": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationsequence",
-    "relatedBuildingOperations": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedbuildingoperations",
-    "relatedOperations": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedoperations"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "building": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/building",
+        "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
+        "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
+        "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
+        "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
+        "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
+        "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
+        "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
+        "operationSequence": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationsequence",
+        "relatedBuildingOperations": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedbuildingoperations",
+        "relatedOperations": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedoperations"
+    }
 }
