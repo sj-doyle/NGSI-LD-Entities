@@ -63,7 +63,10 @@ The following is an example instance of the **Fleet Vehicle** entity
     },
     "operatingCompany": {
         "type": "Property",
-        "name": "NHS"
+        "value": {
+            "@type": "https://schema.org/Organization",
+            "name": "NHS"
+        }
     },
     "operator": {
         "type": "Relationship",
