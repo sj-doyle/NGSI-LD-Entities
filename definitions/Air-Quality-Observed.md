@@ -33,21 +33,23 @@ The following NGSI-LD context definition applies to the **Air Quality Observed**
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "POI": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/poi",
-    "stationCode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/stationcode",
-    "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
-    "airQualityIndex": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/airqualityindex",
-    "CO": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/co",
-    "NO": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/no",
-    "NO2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/no2",
-    "NOx": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/nox",
-    "O3": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o3",
-    "PM2.5": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pm2.5",
-    "PM10": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pm10",
-    "SO2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/so2"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "POI": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/poi",
+        "stationCode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/stationcode",
+        "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
+        "airQualityIndex": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/airqualityindex",
+        "CO": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/co",
+        "NO": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/no",
+        "NO2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/no2",
+        "NOx": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/nox",
+        "O3": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o3",
+        "PM2.5": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pm2.5",
+        "PM10": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pm10",
+        "SO2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/so2"
+    }
 }
 ```
 ## Example of Air Quality Observed Entity

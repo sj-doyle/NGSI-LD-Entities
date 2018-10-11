@@ -27,16 +27,18 @@ The following NGSI-LD context definition applies to the **Device Model** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "doc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/doc",
-    "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-    "manufacturerName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturername",
-    "brandName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/brandname",
-    "root": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
-    "deviceModelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devicemodelparent",
-    "deviceModelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devicemodelchildren"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "doc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/doc",
+        "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
+        "manufacturerName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturername",
+        "brandName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/brandname",
+        "root": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
+        "deviceModelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devicemodelparent",
+        "deviceModelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devicemodelchildren"
+    }
 }
 ```
 ## Example of Device Model Entity

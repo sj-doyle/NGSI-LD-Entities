@@ -30,19 +30,21 @@ The following NGSI-LD context definition applies to the **Device Operation** ent
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "device": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/device",
-    "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
-    "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
-    "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
-    "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
-    "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
-    "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
-    "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
-    "reportedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/reportedat",
-    "addressedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/addressedat"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "device": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/device",
+        "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
+        "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
+        "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
+        "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
+        "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
+        "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
+        "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
+        "reportedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/reportedat",
+        "addressedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/addressedat"
+    }
 }
 ```
 ## Example of Device Operation Entity

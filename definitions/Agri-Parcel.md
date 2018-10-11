@@ -29,18 +29,20 @@ The following NGSI-LD context definition applies to the **Agri Parcel** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "area": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/area",
-    "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-    "agriParcelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelparent",
-    "agriParcelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelchildren",
-    "agriCrop": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agricrop",
-    "cropStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/cropstatus",
-    "lastPlantedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastplantedat",
-    "agriSoil": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrisoil",
-    "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "area": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/area",
+        "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
+        "agriParcelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelparent",
+        "agriParcelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelchildren",
+        "agriCrop": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agricrop",
+        "cropStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/cropstatus",
+        "lastPlantedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastplantedat",
+        "agriSoil": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrisoil",
+        "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices"
+    }
 }
 ```
 ## Example of Agri Parcel Entity

@@ -32,21 +32,23 @@ The following NGSI-LD context definition applies to the **Agri Parcel Operation*
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "agriParcel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcel",
-    "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
-    "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
-    "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
-    "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
-    "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
-    "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
-    "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
-    "reportedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/reportedat",
-    "agriProduct": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproduct",
-    "quantity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/quantity",
-    "waterSource": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/watersource"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "agriParcel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcel",
+        "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
+        "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
+        "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
+        "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
+        "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
+        "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
+        "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
+        "reportedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/reportedat",
+        "agriProduct": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproduct",
+        "quantity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/quantity",
+        "waterSource": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/watersource"
+    }
 }
 ```
 ## Example of Agri Parcel Operation Entity

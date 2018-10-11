@@ -21,12 +21,14 @@ The following NGSI-LD context definition applies to the **Vehicle Type** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "model": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/model",
-    "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-    "manufacturer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturer"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "model": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/model",
+        "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
+        "manufacturer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturer"
+    }
 }
 ```
 ## Example of Vehicle Type Entity

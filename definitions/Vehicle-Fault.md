@@ -26,15 +26,17 @@ The following NGSI-LD context definition applies to the **Vehicle Fault** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "vehicle": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicle",
-    "eventType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventtype",
-    "processingType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/processingtype",
-    "resolvedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/resolvedat",
-    "dtCode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dtcode",
-    "faultLog": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/faultlog"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "vehicle": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicle",
+        "eventType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventtype",
+        "processingType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/processingtype",
+        "resolvedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/resolvedat",
+        "dtCode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dtcode",
+        "faultLog": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/faultlog"
+    }
 }
 ```
 ## Example of Vehicle Fault Entity

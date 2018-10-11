@@ -26,16 +26,18 @@ The following NGSI-LD context definition applies to the **Road Segment** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "road": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/road",
-    "startPoint": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startpoint",
-    "endPoint": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endpoint",
-    "relatedSegments": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedsegments",
-    "roadClass": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/roadclass",
-    "path": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/path",
-    "POIs": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "road": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/road",
+        "startPoint": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startpoint",
+        "endPoint": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endpoint",
+        "relatedSegments": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedsegments",
+        "roadClass": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/roadclass",
+        "path": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/path",
+        "POIs": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois"
+    }
 }
 ```
 ## Example of Road Segment Entity

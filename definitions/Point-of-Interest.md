@@ -22,11 +22,13 @@ The following NGSI-LD context definition applies to the **Point of Interest** en
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-    "place": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/place"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
+        "place": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/place"
+    }
 }
 ```
 ## Example of Point of Interest Entity

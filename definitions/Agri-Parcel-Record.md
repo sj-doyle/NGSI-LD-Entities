@@ -30,18 +30,20 @@ The following NGSI-LD context definition applies to the **Agri Parcel Record** e
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "agriParcel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcel",
-    "soilTemperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soiltemperature",
-    "soilMoistureVwc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soilmoisturevwc",
-    "soilMoistureEc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soilmoistureec",
-    "airTemperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/airtemperature",
-    "solarRadiation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/solarradiation",
-    "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
-    "atmosphericPressure": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/atmosphericpressure",
-    "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "agriParcel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcel",
+        "soilTemperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soiltemperature",
+        "soilMoistureVwc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soilmoisturevwc",
+        "soilMoistureEc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soilmoistureec",
+        "airTemperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/airtemperature",
+        "solarRadiation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/solarradiation",
+        "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
+        "atmosphericPressure": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/atmosphericpressure",
+        "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices"
+    }
 }
 ```
 ## Example of Agri Parcel Record Entity

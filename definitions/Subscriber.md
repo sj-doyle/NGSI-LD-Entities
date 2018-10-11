@@ -29,14 +29,16 @@ The following NGSI-LD context definition applies to the **Subscriber** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "subscription": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/subscription",
-    "startAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startat",
-    "endAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endat",
-    "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-    "users": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/users"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "subscription": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/subscription",
+        "startAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startat",
+        "endAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endat",
+        "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
+        "users": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/users"
+    }
 }
 ```
 ## Example of Subscriber Entity

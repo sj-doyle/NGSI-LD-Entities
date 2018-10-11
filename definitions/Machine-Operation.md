@@ -30,19 +30,21 @@ The following NGSI-LD context definition applies to the **Machine Operation** en
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "machine": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/machine",
-    "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
-    "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
-    "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
-    "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
-    "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
-    "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
-    "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
-    "commandSequence": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/commandsequence",
-    "operationOutput": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationoutput"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "machine": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/machine",
+        "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
+        "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
+        "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
+        "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
+        "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
+        "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
+        "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
+        "commandSequence": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/commandsequence",
+        "operationOutput": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationoutput"
+    }
 }
 ```
 ## Example of Machine Operation Entity

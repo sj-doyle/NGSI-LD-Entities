@@ -23,12 +23,14 @@ The following NGSI-LD context definition applies to the **Agri Product Type** en
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "root": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
-    "agriProductParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproductparent",
-    "agriProductChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproductchildren"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "root": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
+        "agriProductParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproductparent",
+        "agriProductChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproductchildren"
+    }
 }
 ```
 ## Example of Agri Product Type Entity

@@ -31,20 +31,22 @@ The following NGSI-LD context definition applies to the **Building** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "buildingType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/buildingtype",
-    "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-    "containedInPlace": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/containedinplace",
-    "address": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
-    "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
-    "occupier": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/occupier",
-    "subscriptionServices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/subscriptionservices",
-    "floorsAboveGround": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/floorsaboveground",
-    "floorsBelowGround": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/floorsbelowground",
-    "mapUri": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mapuri",
-    "notes": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/notes"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "buildingType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/buildingtype",
+        "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
+        "containedInPlace": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/containedinplace",
+        "address": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
+        "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
+        "occupier": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/occupier",
+        "subscriptionServices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/subscriptionservices",
+        "floorsAboveGround": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/floorsaboveground",
+        "floorsBelowGround": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/floorsbelowground",
+        "mapUri": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mapuri",
+        "notes": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/notes"
+    }
 }
 ```
 ## Example of Building Entity

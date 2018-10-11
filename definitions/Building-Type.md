@@ -23,12 +23,14 @@ The following NGSI-LD context definition applies to the **Building Type** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "root": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
-    "buildingTypeParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/buildingtypeparent",
-    "buildingTypeChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/buildingtypechildren"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "root": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
+        "buildingTypeParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/buildingtypeparent",
+        "buildingTypeChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/buildingtypechildren"
+    }
 }
 ```
 ## Example of Building Type Entity

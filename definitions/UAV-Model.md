@@ -32,22 +32,24 @@ The following NGSI-LD context definition applies to the **UAV Model** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "model": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/model",
-    "doc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/doc",
-    "manufacturerName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturername",
-    "brandName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/brandname",
-    "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-    "rotors": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rotors",
-    "fuelType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fueltype",
-    "maxFlightTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/maxflighttime",
-    "maxFlightAltitude": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/maxflightaltitude",
-    "maxGroundVelocity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/maxgroundvelocity",
-    "minWeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/minweight",
-    "minUnladenWeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/minunladenweight",
-    "maxLoad": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/maxload"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "model": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/model",
+        "doc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/doc",
+        "manufacturerName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturername",
+        "brandName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/brandname",
+        "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
+        "rotors": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rotors",
+        "fuelType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fueltype",
+        "maxFlightTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/maxflighttime",
+        "maxFlightAltitude": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/maxflightaltitude",
+        "maxGroundVelocity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/maxgroundvelocity",
+        "minWeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/minweight",
+        "minUnladenWeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/minunladenweight",
+        "maxLoad": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/maxload"
+    }
 }
 ```
 ## Example of UAV Model Entity

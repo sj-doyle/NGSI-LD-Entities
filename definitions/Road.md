@@ -23,13 +23,15 @@ The following NGSI-LD context definition applies to the **Road** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "country": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/country",
-    "roadSegments": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/roadsegments",
-    "roadClass": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/roadclass",
-    "alternateName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/alternatename"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "country": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/country",
+        "roadSegments": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/roadsegments",
+        "roadClass": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/roadclass",
+        "alternateName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/alternatename"
+    }
 }
 ```
 ## Example of Road Entity

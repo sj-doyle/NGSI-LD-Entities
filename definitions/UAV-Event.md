@@ -27,16 +27,18 @@ The following NGSI-LD context definition applies to the **UAV Event** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "uav": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uav",
-    "originator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
-    "elevation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/elevation",
-    "startAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startat",
-    "endAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endat",
-    "eventType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventtype",
-    "eventResult": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventresult"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "uav": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uav",
+        "originator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
+        "elevation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/elevation",
+        "startAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startat",
+        "endAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endat",
+        "eventType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventtype",
+        "eventResult": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventresult"
+    }
 }
 ```
 ## Example of UAV Event Entity

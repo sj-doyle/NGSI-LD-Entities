@@ -30,21 +30,23 @@ The following NGSI-LD context definition applies to the **Fleet Vehicle Status**
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "fleetVehicle": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehicle",
-    "fleetVehicleOperation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehicleoperation",
-    "restFuelAmount": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/restfuelamount",
-    "lastFuellingAmount": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastfuellingamount",
-    "currentStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/currentstatus",
-    "currentOperative": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/currentoperative",
-    "speed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/speed",
-    "bearing": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/bearing",
-    "lastKnownPosition": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownposition",
-    "lastKnownPositionUpdatedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownpositionupdatedat",
-    "inRestrictedArea": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/inrestrictedarea",
-    "mileageFromOdometer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mileagefromodometer"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "fleetVehicle": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehicle",
+        "fleetVehicleOperation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehicleoperation",
+        "restFuelAmount": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/restfuelamount",
+        "lastFuellingAmount": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastfuellingamount",
+        "currentStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/currentstatus",
+        "currentOperative": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/currentoperative",
+        "speed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/speed",
+        "bearing": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/bearing",
+        "lastKnownPosition": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownposition",
+        "lastKnownPositionUpdatedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownpositionupdatedat",
+        "inRestrictedArea": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/inrestrictedarea",
+        "mileageFromOdometer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mileagefromodometer"
+    }
 }
 ```
 ## Example of Fleet Vehicle Status Entity

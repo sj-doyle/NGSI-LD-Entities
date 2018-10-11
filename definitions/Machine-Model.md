@@ -30,19 +30,21 @@ The following NGSI-LD context definition applies to the **Machine Model** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "doc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/doc",
-    "manufacturerName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturername",
-    "brandName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/brandname",
-    "version": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/version",
-    "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-    "root": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
-    "machineModelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/machinemodelparent",
-    "machineModelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/machinemodelchildren",
-    "processDescription": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/processdescription",
-    "standardOperations": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/standardoperations"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "doc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/doc",
+        "manufacturerName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturername",
+        "brandName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/brandname",
+        "version": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/version",
+        "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
+        "root": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
+        "machineModelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/machinemodelparent",
+        "machineModelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/machinemodelchildren",
+        "processDescription": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/processdescription",
+        "standardOperations": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/standardoperations"
+    }
 }
 ```
 ## Example of Machine Model Entity

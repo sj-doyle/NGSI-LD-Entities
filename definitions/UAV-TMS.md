@@ -35,13 +35,15 @@ The following NGSI-LD context definition applies to the **UAV TMS** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "softwareApplication": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/softwareapplication",
-    "operationalInstance": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationalinstance",
-    "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
-    "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "softwareApplication": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/softwareapplication",
+        "operationalInstance": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationalinstance",
+        "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
+        "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator"
+    }
 }
 ```
 ## Example of UAV TMS Entity

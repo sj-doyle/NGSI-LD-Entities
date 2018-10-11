@@ -47,24 +47,26 @@ The following NGSI-LD context definition applies to the **Product** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "productType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/producttype",
-    "supplierName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/suppliername",
-    "gtin": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/gtin",
-    "gpcCategoryCode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/gpccategorycode",
-    "productName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/productname",
-    "brand": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/brand",
-    "inPackageWidth": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/inpackagewidth",
-    "inPackageDepth": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/inpackagedepth",
-    "inPackageHeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/inpackageheight",
-    "netWeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/netweight",
-    "grossWeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/grossweight",
-    "countryOfOrigin": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/countryoforigin",
-    "images": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/images",
-    "producerURI": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/produceruri",
-    "manufacturer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturer"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "productType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/producttype",
+        "supplierName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/suppliername",
+        "gtin": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/gtin",
+        "gpcCategoryCode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/gpccategorycode",
+        "productName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/productname",
+        "brand": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/brand",
+        "inPackageWidth": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/inpackagewidth",
+        "inPackageDepth": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/inpackagedepth",
+        "inPackageHeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/inpackageheight",
+        "netWeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/netweight",
+        "grossWeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/grossweight",
+        "countryOfOrigin": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/countryoforigin",
+        "images": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/images",
+        "producerURI": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/produceruri",
+        "manufacturer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturer"
+    }
 }
 ```
 ## Example of Product Entity

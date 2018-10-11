@@ -30,15 +30,17 @@ The following NGSI-LD context definition applies to the **Market Price Observed*
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "entity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entity",
-    "priceAverage5Year": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/priceaverage5Year",
-    "priceObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/priceobserved",
-    "address": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
-    "marketScale": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/marketscale",
-    "weatherForecast": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weatherforecast"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "entity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entity",
+        "priceAverage5Year": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/priceaverage5Year",
+        "priceObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/priceobserved",
+        "address": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
+        "marketScale": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/marketscale",
+        "weatherForecast": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weatherforecast"
+    }
 }
 ```
 ## Example of Market Price Observed Entity

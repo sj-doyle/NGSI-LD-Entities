@@ -31,17 +31,19 @@ The following NGSI-LD context definition applies to the **Product Record** entit
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "product": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/product",
-    "temperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/temperature",
-    "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
-    "atmosphericPressure": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/atmosphericpressure",
-    "weight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weight",
-    "netWeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/netweight",
-    "volume": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/volume",
-    "O2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o2"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "product": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/product",
+        "temperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/temperature",
+        "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
+        "atmosphericPressure": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/atmosphericpressure",
+        "weight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weight",
+        "netWeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/netweight",
+        "volume": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/volume",
+        "O2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o2"
+    }
 }
 ```
 ## Example of Product Record Entity

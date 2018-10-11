@@ -28,19 +28,21 @@ The following NGSI-LD context definition applies to the **Agri Greenhouse** enti
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "agriParcelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelparent",
-    "agriParcelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelchildren",
-    "weatherObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weatherobserved",
-    "waterQualityObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/waterqualityobserved",
-    "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
-    "leafTemperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/leaftemperature",
-    "co2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/co2",
-    "dailyLight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dailylight",
-    "drainFlow": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/drainflow",
-    "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "agriParcelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelparent",
+        "agriParcelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelchildren",
+        "weatherObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weatherobserved",
+        "waterQualityObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/waterqualityobserved",
+        "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
+        "leafTemperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/leaftemperature",
+        "co2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/co2",
+        "dailyLight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dailylight",
+        "drainFlow": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/drainflow",
+        "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices"
+    }
 }
 ```
 ## Example of Agri Greenhouse Entity

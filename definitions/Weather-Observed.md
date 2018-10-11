@@ -38,26 +38,28 @@ The following NGSI-LD context definition applies to the **Weather Observed** ent
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "POI": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/poi",
-    "stationCode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/stationcode",
-    "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
-    "weatherType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weathertype",
-    "visibility": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/visibility",
-    "address": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
-    "temperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/temperature",
-    "windDirection": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/winddirection",
-    "windSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/windspeed",
-    "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
-    "dewPoint": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dewpoint",
-    "atmosphericPressure": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/atmosphericpressure",
-    "pressureTendency": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pressuretendency",
-    "rainRate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rainrate",
-    "rainFall": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rainfall",
-    "evapoTranspiration": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/evapotranspiration",
-    "referenceEvapoTranspiration": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/referenceevapotranspiration"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "POI": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/poi",
+        "stationCode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/stationcode",
+        "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
+        "weatherType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weathertype",
+        "visibility": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/visibility",
+        "address": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
+        "temperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/temperature",
+        "windDirection": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/winddirection",
+        "windSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/windspeed",
+        "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
+        "dewPoint": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dewpoint",
+        "atmosphericPressure": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/atmosphericpressure",
+        "pressureTendency": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pressuretendency",
+        "rainRate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rainrate",
+        "rainFall": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rainfall",
+        "evapoTranspiration": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/evapotranspiration",
+        "referenceEvapoTranspiration": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/referenceevapotranspiration"
+    }
 }
 ```
 ## Example of Weather Observed Entity

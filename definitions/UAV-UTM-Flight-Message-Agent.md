@@ -25,15 +25,17 @@ The following NGSI-LD context definition applies to the **UAV UTM Flight Message
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "uav": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uav",
-    "originatedByUAV": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originatedbyuav",
-    "originator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
-    "flightMessage": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/flightmessage",
-    "validationResult": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/validationresult",
-    "flightControlPolicy": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/flightcontrolpolicy"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "uav": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uav",
+        "originatedByUAV": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originatedbyuav",
+        "originator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
+        "flightMessage": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/flightmessage",
+        "validationResult": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/validationresult",
+        "flightControlPolicy": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/flightcontrolpolicy"
+    }
 }
 ```
 ## Example of UAV UTM Flight Message Agent Entity

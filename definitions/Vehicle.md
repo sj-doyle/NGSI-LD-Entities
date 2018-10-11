@@ -26,17 +26,19 @@ The following NGSI-LD context definition applies to the **Vehicle** entity
 
 ```JavaScript
 {
-    "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-    "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-    "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-    "vehicleType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicletype",
-    "fuelType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fueltype",
-    "displacement": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/displacement",
-    "fuelEfficiency": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fuelefficiency",
-    "vehicleModelDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehiclemodeldate",
-    "dateDiscontinued": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datediscontinued",
-    "vehicleIdentificationNumber": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicleidentificationnumber",
-    "mileageFromOdometer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mileagefromodometer"
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "vehicleType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicletype",
+        "fuelType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fueltype",
+        "displacement": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/displacement",
+        "fuelEfficiency": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fuelefficiency",
+        "vehicleModelDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehiclemodeldate",
+        "dateDiscontinued": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datediscontinued",
+        "vehicleIdentificationNumber": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicleidentificationnumber",
+        "mileageFromOdometer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mileagefromodometer"
+    }
 }
 ```
 ## Example of Vehicle Entity
