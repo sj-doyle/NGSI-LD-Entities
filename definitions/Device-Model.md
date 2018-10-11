@@ -11,7 +11,7 @@ This entity contains a harmonised description of a generic device model and is t
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | name | Property | The name of this DeviceModel. | Mandatory |
-| doc | uri | Reference to Product Data Sheet or other manufacturer’s documentation about this device model including where relevant, details of the accuracy, trueness, precision and units of measure. | Recommended |
+| doc | Property | Reference to Product Data Sheet or other manufacturer’s documentation about this device model including where relevant, details of the accuracy, trueness, precision and units of measure. | Recommended |
 | category | Property | A choice from an enumerated list defining the category of this device including: **sensor, actuator, meter, appliance, heater, chiller, lighting, boiler, vessel, airHandlingUnit, consumer, other.** | Optional |
 | description | Property | Description of this device model. | Recommended |
 | manufacturerName | Property | The name of manufacturer of this DeviceModel. | Recommended |
@@ -64,8 +64,11 @@ The following is an example instance of the **Device Model** entity
         "value": "Sensor Model 501"
     },
     "doc": {
-        "type": "uri",
-        "value": "http://www.example.com"
+        "type": "Property",
+        "value": {
+            "@value": "https://example.com",
+            "@type": "https://schema.org/url"
+        }
     },
     "category": {
         "type": "Property",

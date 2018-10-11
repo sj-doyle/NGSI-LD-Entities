@@ -15,8 +15,11 @@
         "value": "CA1256b"
     },
     "doc": {
-        "type": "uri",
-        "value": "http://www.example.com"
+        "type": "Property",
+        "value": {
+            "@value": "https://example.com",
+            "@type": "https://schema.org/url"
+        }
     },
     "description": {
         "type": "Property",

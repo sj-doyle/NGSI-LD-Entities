@@ -16,39 +16,50 @@
     },
     "priceAverage5Year": {
         "type": "Property",
-        "value": 15,
-        "priceCurrency": "USD",
-        "validFrom": {
-            "value": "2012-08-23T10:18:16Z",
-            "type": "TemporalProperty"
-        },
-        "validThrough": {
-            "value": "2017-08-23T10:18:16Z",
-            "type": "TemporalProperty"
+        "value": {
+            "@type": "http://schema.org/PriceSpecification",
+            "value": 15,
+            "priceCurrency": "USD",
+            "validFrom": {
+                "value": "2012-08-23T10:18:16Z",
+                "@type": "TemporalProperty"
+            },
+            "validThrough": {
+                "value": "2017-08-23T10:18:16Z",
+                "@type": "TemporalProperty"
+            }
         }
     },
     "priceObserved": {
         "type": "Property",
-        "value": 5,
-        "priceCurrency": "USD",
-        "validFrom": {
-            "value": "2017-08-22T10:18:16Z",
-            "type": "TemporalProperty"
-        },
-        "validThrough": {
-            "value": "2017-08-22T10:18:16Z",
-            "type": "TemporalProperty"
+        "value": {
+            "@type": "http://schema.org/PriceSpecification",
+            "value": 5,
+            "priceCurrency": "USD",
+            "validFrom": {
+                "value": "2012-08-23T10:18:16Z",
+                "@type": "TemporalProperty"
+            },
+            "validThrough": {
+                "value": "2017-08-23T10:18:16Z",
+                "@type": "TemporalProperty"
+            }
         }
     },
     "address": {
         "type": "Property",
-        "addressCountry": "UK",
-        "addressLocality\"": "London"
+        "value": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "addressCountry": "UK"
+        }
     },
     "marketScale": {
         "type": "Property",
-        "value": "02",
-        "marketType": "Wholesale"
+        "value": {
+            "value": "02",
+            "marketType": "Wholesale"
+        }
     },
     "weatherForecast": {
         "type": "Relationship",

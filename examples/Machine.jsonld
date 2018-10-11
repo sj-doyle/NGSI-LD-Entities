@@ -34,15 +34,15 @@
         "type": "Property",
         "value": "N9"
     },
-    "dateFirstUsed": {
+    "firstUsedAt": {
         "type": "TemporalProperty",
         "value": "2017-05-04T10:18:16Z"
     },
-    "dateInstalled": {
+    "installedAt": {
         "type": "TemporalProperty",
         "value": "2017-05-04T10:18:16Z"
     },
-    "dateManufactured": {
+    "manufacturedAt": {
         "type": "TemporalProperty",
         "value": "2017-05-04T10:18:16Z"
     },
@@ -120,8 +120,10 @@
     },
     "installationNotes": {
         "type": "Property",
-        "value": "Installed according to manufacturer instructions.",
-        "docUri": "http://example.com/sample/machine-instructions.pdf"
+        "value": {
+            "value": "Installed according to manufacturer instructions.",
+            "docUri": "http://example.com/sample/machine-instructions.pdf"
+        }
     },
     "voltage": {
         "type": "Property",

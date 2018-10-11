@@ -12,23 +12,9 @@ This entity contains a harmonised description of a specific Unmanned Aerial Vehi
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | uavModel | Relationship | Reference to the UAV Model definition which describes the UAV in more detail. | Mandatory |
 | name | Property | A name given to this UAV. | Recommended |
-| owner | Property | A list detailing the owner or owners of the UAV.
-
-Refers to one or more Schema.org person or organization.
-
-https://schema.org/Person
-
-https://schema.org/Organization | Recommended |
-| operator | Property | A list detailing the operator or operators of the UAV.
-
-Refers to one or more Schema.org person or organization.
-
-https://schema.org/Person
-
-https://schema.org/Organization | Recommended |
-| operationMode | Property | Text describing the choice from "vlos", "evlos", "bvlos", "automated"
-
-Note: descriptions align with UTM Flight message. | Recommended |
+| owner | Property | A list detailing the owner or owners of the UAV.<br/><br/>Refers to one or more Schema.org person or organization.<br/><br/>https://schema.org/Person<br/><br/>https://schema.org/Organization | Recommended |
+| operator | Relationship | A list detailing the operator or operators of the UAV.<br/><br/>Refers to one or more Schema.org person or organization.<br/><br/>https://schema.org/Person<br/><br/>https://schema.org/Organization | Recommended |
+| operationMode | Property | Text describing the choice from "vlos", "evlos", "bvlos", "automated"<br/><br/>Note: descriptions align with UTM Flight message. | Recommended |
 | location | GeoProperty | The geo:json encoded current (/last known) GPS position of the UAV. | Mandatory |
 | elevation | Property | The elevation of the UAV (relative to ground level at the specified location). Specify value and units of measure. | Mandatory |
 | observedAt | TemporalProperty | Indicates the date/time of the latest monitoring report or update. | Mandatory |
@@ -94,7 +80,7 @@ The following is an example instance of the **UAV** entity
         ]
     },
     "operator": {
-        "type": "Property",
+        "type": "Relationship",
         "value": [
             "urn:ngsi-ld:Person:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
             "urn:ngsi-ld:Person:3d5f533e-5920-11e8-871b-534f1ae5f35d"

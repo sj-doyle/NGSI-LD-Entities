@@ -16,13 +16,19 @@
     },
     "softwareApplication": {
         "type": "Property",
-        "operatingSystem": "Linux",
-        "softwareVersion": "8.3",
-        "applicationCategory": "Guidance"
+        "value": {
+            "@type": "https://schema.org/SoftwareApplication",
+            "operatingSystem": "Linux",
+            "softwareVersion": "8.3",
+            "applicationCategory": "Guidance"
+        }
     },
     "operationalInstance": {
-        "type": "uri",
-        "value": "http://example.com/uavtms "
+        "type": "Property",
+        "value": {
+            "@value": "http://example.com/uavtms",
+            "@type": "https://schema.org/url"
+        }
     },
     "owner": {
         "type": "Property",

@@ -12,19 +12,8 @@ This entity contains a harmonised description of a generic product. This entity 
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | productType | Relationship | Refers to the relevant ProductType record that this entity is associated with. | Recommended |
 | supplierName | Property | The name of the supplier of this product. | Recommended |
-| gtin | Property | GS1 product code.
-
-A Global Trade Item Number (GTIN) is the 14 digit GS1 Identification Key used to identify products. The key comprises a GS1 Company Prefix followed by an Item Reference Number and a Check Digit.
-
-See http://www.gs1.org/gtin for more details.
-
-There are four GTIN formats. A uniform 14-digit format is required for this harmonised model, add leading zeros as required: 
-000000nnnnnnnn (GTIN-8) 
-00nnnnnnnnnnnn (GTIN-12) 
-0nnnnnnnnnnnnn (GTIN-13) | Optional |
-| gpcCategoryCode | Property | Product category code
-
-8-digit code (GPC "Brick Value") specifying a product category according to the GS1 Global Product Classification (GPC) standard. For more information see http://www.gs1.org/gpc | Recommended |
+| gtin | Property | GS1 product code.<br/><br/>A Global Trade Item Number (GTIN) is the 14 digit GS1 Identification Key used to identify products.<br/><br/>See http://www.gs1.org/gtin for more details. | Optional |
+| gpcCategoryCode | Property | Product category code<br/><br/>8-digit code (GPC "Brick Value") specifying a product category according to the GS1 Global Product Classification (GPC) standard.<br/><br/>For more information see http://www.gs1.org/gpc | Recommended |
 | productName | Property | The name of this product. | Recommended |
 | description | Property | A description of this product. | Recommended |
 | brand | Property | The brand name for this product. | Recommended |
@@ -34,10 +23,10 @@ There are four GTIN formats. A uniform 14-digit format is required for this harm
 | netWeight | Property | Used to identify the net weight of the product. Net Weight excludes all packaging material, including the packaging material of all lower-level GTINs. Example:11.5 kg | Optional |
 | grossWeight | Property | Used to identify the gross weight of the product. The gross weight includes all packaging materials of the product. At pallet level the gross weight includes the weight of the pallet itself. For example, 200 GRM, value - total pounds, total grams, etc. | Optional |
 | countryOfOrigin | Property | Country where the product was manufactured, harvested, mined etc. Code indicating the country of origin of the product. | Optional |
-| images | uri | List of URIs (URNs/URLs) of images of the product.
+| images | Property | List of URIs (URNs/URLs) of images of the product.
 
 Each URI links to a resource containing a visual representation of the product either as catalogue images or as actual images of the specific product. | Optional |
-| producerURI | uri | URI (URL/URN) to the producer of the product | Optional |
+| producerURI | Property | URI (URL/URN) to the producer of the product | Optional |
 | manufacturer | Property | Details of the product manufacturer according to http://schema.org/Organization | Optional |
 
 ## NGSI-LD Context Definition
@@ -117,48 +106,61 @@ The following is an example instance of the **Product** entity
     },
     "inPackageWidth": {
         "type": "Property",
-        "unitText": "inch",
-        "unitCode": "INH",
-        "value": 25
+        "value": {
+            "value": 25,
+            "unitText": "inch"
+        },
+        "unitCode": "INH"
     },
     "inPackageDepth": {
         "type": "Property",
-        "unitText": "inch",
-        "unitCode": "INH",
-        "value": 5
+        "value": {
+            "value": 5,
+            "unitText": "inch"
+        },
+        "unitCode": "INH"
     },
     "inPackageHeight": {
         "type": "Property",
-        "unitText": "inch",
-        "unitCode": "INH",
-        "value": 15
+        "value": {
+            "value": 15,
+            "unitText": "inch"
+        },
+        "unitCode": "INH"
     },
     "netWeight": {
         "type": "Property",
-        "unitText": "grammes",
-        "unitCode": "GRM",
-        "value": 2500
+        "value": {
+            "value": 2500,
+            "unitText": "grammes"
+        },
+        "unitCode": "GRM"
     },
     "grossWeight": {
         "type": "Property",
-        "unitText": "grammes",
-        "unitCode": "GRM",
-        "value": 3000
+        "value": {
+            "value": 3000,
+            "unitText": "grammes"
+        },
+        "unitCode": "GRM"
     },
     "countryOfOrigin": {
         "type": "Property",
         "value": "UK"
     },
     "images": {
-        "type": "uri",
+        "type": "Property",
         "value": [
             "http://example.com/productImg1.jpg",
             "http://example.com/productImg2.jpg"
         ]
     },
     "producerURI": {
-        "type": "uri",
-        "value": "http://www.example.com"
+        "type": "Property",
+        "value": {
+            "@value": "http://www.example.com",
+            "@type": "https://schema.org/url"
+        }
     },
     "manufacturer": {
         "type": "Property",

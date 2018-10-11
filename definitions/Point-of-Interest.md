@@ -71,14 +71,16 @@ The following is an example instance of the **Point of Interest** entity
     },
     "place": {
         "type": "Property",
-        "name": "GSMA Academy",
-        "address": {
-            "type": "PostalAddress",
-            "addressLocality": "London",
-            "postalCode": "EC4N 8AF",
-            "streetAddress": "25 Walbrook"
-        },
-        "telephone": "0212345678"
+        "value": {
+            "name": "GSMA Academy",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "London",
+                "postalCode": "EC4N 8AF",
+                "streetAddress": "25 Walbrook"
+            },
+            "telephone": "0212345678"
+        }
     }
 }
 ```

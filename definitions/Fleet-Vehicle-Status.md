@@ -93,8 +93,11 @@ The following is an example instance of the **Fleet Vehicle Status** entity
     },
     "currentOperative": {
         "type": "Property",
-        "givenName": "John Smith",
-        "jobTitle": "Ambulance Operator"
+        "value": {
+            "givenName": "John Smith",
+            "jobTitle": "Ambulance Operator",
+            "@type": "https://schema.org/Person"
+        }
     },
     "speed": {
         "type": "Property",

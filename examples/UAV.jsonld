@@ -26,7 +26,7 @@
         ]
     },
     "operator": {
-        "type": "Property",
+        "type": "Relationship",
         "value": [
             "urn:ngsi-ld:Person:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
             "urn:ngsi-ld:Person:3d5f533e-5920-11e8-871b-534f1ae5f35d"

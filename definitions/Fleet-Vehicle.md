@@ -67,8 +67,6 @@ The following is an example instance of the **Fleet Vehicle** entity
     },
     "operator": {
         "type": "Relationship",
-        "givenName": "John Smith",
-        "jobTitle": "Ambulance Operator",
         "object": "urn:ngsi-ld:Person:fe018d4e-46f8-11e8-ae6b-df5577f85836"
     }
 }

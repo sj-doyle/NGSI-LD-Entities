@@ -102,16 +102,20 @@ The following is an example instance of the **Product Record** entity
     },
     "weight": {
         "type": "Property",
-        "unitText": "grammes",
+        "value": {
+            "value": 2550,
+            "unitText": "grammes"
+        },
         "unitCode": "GRM",
-        "value": 2550,
         "observedAt": "2017-05-04T12:30:00Z"
     },
     "netWeight": {
         "type": "Property",
-        "unitText": "grammes",
+        "value": {
+            "value": 2500,
+            "unitText": "grammes"
+        },
         "unitCode": "GRM",
-        "value": 2500,
         "observedAt": "2017-05-04T12:30:00Z"
     },
     "volume": {
@@ -126,9 +130,11 @@ The following is an example instance of the **Product Record** entity
     },
     "O2": {
         "type": "Property",
-        "value": 300,
+        "value": {
+            "value": 300,
+            "unitText": "microgramme per cubic metre"
+        },
         "unitCode": "GQ",
-        "unitText": "microgramme per cubic metre",
         "observedAt": "2017-05-04T12:30:00Z"
     }
 }

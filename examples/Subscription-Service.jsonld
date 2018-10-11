@@ -16,8 +16,11 @@
     },
     "offer": {
         "type": "Property",
-        "priceCurrency": "USD",
-        "price": 50,
-        "description": "100 mbps fibre broadband service"
+        "value": {
+            "@type": "https://schema.org/Offer",
+            "priceCurrency": "USD",
+            "price": 50,
+            "description": "100 mbps fibre broadband service"
+        }
     }
 }

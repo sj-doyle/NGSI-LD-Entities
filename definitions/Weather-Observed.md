@@ -126,9 +126,12 @@ The following is an example instance of the **Weather Observed** entity
     },
     "address": {
         "type": "Property",
-        "addressLocality": "London",
-        "postalCode": "EC4N 8AF",
-        "streetAddress": "25 Walbrook"
+        "value": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "postalCode": "EC4N 8AF",
+            "streetAddress": "25 Walbrook"
+        }
     },
     "temperature": {
         "type": "Property",
@@ -166,24 +169,28 @@ The following is an example instance of the **Weather Observed** entity
     },
     "rainRate": {
         "type": "Property",
-        "value": 10,
-        "unitText": "ml/h"
+        "value": {
+            "value": 10,
+            "unitText": "ml/h"
+        }
     },
     "rainFall": {
         "type": "Property",
-        "value": 340,
-        "unitCode": "MMT",
-        "referencePeriod": "dayStart"
+        "value": {
+            "value": 340,
+            "referencePeriod": "dayStart"
+        },
+        "unitCode": "MMT"
     },
     "evapoTranspiration": {
         "type": "Property",
         "value": 40,
-        "unitCode": "MIL"
+        "unitCode": "C16"
     },
     "referenceEvapoTranspiration": {
         "type": "Property",
         "value": 100,
-        "unitCode": "MIL"
+        "unitCode": "C16"
     }
 }
 ```

@@ -11,7 +11,7 @@ This entity contains a harmonised description of a generic Unmanned Ariel Vehicl
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | model | Property | The UAV model's identifier, which may be a UAVModel name. | Mandatory |
-| doc | uri | None | Recommended |
+| doc | Property | URI reference (URL/URN) to Product Data Sheet or other manufacturer's documentation about this UAVModel. | Recommended |
 | description | Property | A description of this UAVModel. | Recommended |
 | manufacturerName | Property | The name of the manufacturer of this UAVModel. | Recommended |
 | brandName | Property | A description of the brand name of this UAVModel. | Recommended |
@@ -75,8 +75,11 @@ The following is an example instance of the **UAV Model** entity
         "value": "ACME Recon"
     },
     "doc": {
-        "type": "uri",
-        "value": "http://example.com/products-services/aircraft/the-recon.html "
+        "type": "Property",
+        "value": {
+            "@value": "http://example.com/products-services/aircraft/the-recon.html",
+            "@type": "https://schema.org/url"
+        }
     },
     "description": {
         "type": "Property",

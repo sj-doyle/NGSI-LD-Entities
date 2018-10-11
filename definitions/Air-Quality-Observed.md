@@ -107,64 +107,82 @@ The following is an example instance of the **Air Quality Observed** entity
     },
     "airQualityIndex": {
         "type": "Property",
-        "value": 238,
-        "unitText": "US EPA AQI",
+        "value": {
+            "value": 238,
+            "unitText": "US EPA AQI"
+        },
         "observedAt": "2017-05-04T12:30:00Z"
     },
     "CO": {
         "type": "Property",
-        "value": 0.8,
+        "value": {
+            "value": 0.8,
+            "unitText": "microgramme per cubic metre"
+        },
         "unitCode": "GQ",
-        "unitText": "microgramme per cubic metre",
         "observedAt": "2017-05-04T12:30:00Z"
     },
     "NO": {
         "type": "Property",
-        "value": 137,
+        "value": {
+            "value": 137,
+            "unitText": "microgramme per cubic metre"
+        },
         "unitCode": "GQ",
-        "unitText": "microgramme per cubic metre",
         "observedAt": "2017-05-04T12:30:00Z"
     },
     "NO2": {
         "type": "Property",
-        "value": 63,
+        "value": {
+            "value": 63,
+            "unitText": "microgramme per cubic metre"
+        },
         "unitCode": "GQ",
-        "unitText": "microgramme per cubic metre",
         "observedAt": "2017-05-04T12:30:00Z"
     },
     "NOx": {
         "type": "Property",
-        "value": 273,
+        "value": {
+            "value": 273,
+            "unitText": "microgramme per cubic metre"
+        },
         "unitCode": "GQ",
-        "unitText": "microgramme per cubic metre",
         "observedAt": "2017-05-04T12:30:00Z"
     },
     "O3": {
         "type": "Property",
-        "value": 300,
+        "value": {
+            "value": 300,
+            "unitText": "microgramme per cubic metre"
+        },
         "unitCode": "GQ",
-        "unitText": "microgramme per cubic metre",
         "observedAt": "2017-05-04T12:30:00Z"
     },
     "PM2.5": {
         "type": "Property",
-        "value": 187,
+        "value": {
+            "value": 187,
+            "unitText": "microgramme per cubic metre"
+        },
         "unitCode": "GQ",
-        "unitText": "microgramme per cubic metre",
         "observedAt": "2017-05-04T12:30:00Z"
     },
     "PM10": {
         "type": "Property",
-        "value": 50,
+        "value": {
+            "value": 50,
+            "unitText": "microgramme per cubic metre"
+        },
         "unitCode": "GQ",
-        "unitText": "microgramme per cubic metre",
         "observedAt": "2017-05-04T12:30:00Z"
     },
     "SO2": {
         "type": "Property",
-        "value": 7,
+        "value": {
+            "value": 7,
+            "unitText": "microgramme per cubic metre"
+        },
         "unitCode": "GQ",
-        "unitText": "microgramme per cubic metre",
         "observedAt": "2017-05-04T12:30:00Z"
     }
 }

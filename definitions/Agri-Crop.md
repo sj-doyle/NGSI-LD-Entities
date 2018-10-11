@@ -31,7 +31,7 @@ The following NGSI-LD context definition applies to the **Agri Crop** entity
         "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "alternateName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/alternatename",
+        "alternateName": "https://schema.org/alternateName",
         "agriSoil": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrisoil",
         "agriFertiliser": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrifertiliser",
         "agriPest": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agripest",

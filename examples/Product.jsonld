@@ -40,48 +40,61 @@
     },
     "inPackageWidth": {
         "type": "Property",
-        "unitText": "inch",
-        "unitCode": "INH",
-        "value": 25
+        "value": {
+            "value": 25,
+            "unitText": "inch"
+        },
+        "unitCode": "INH"
     },
     "inPackageDepth": {
         "type": "Property",
-        "unitText": "inch",
-        "unitCode": "INH",
-        "value": 5
+        "value": {
+            "value": 5,
+            "unitText": "inch"
+        },
+        "unitCode": "INH"
     },
     "inPackageHeight": {
         "type": "Property",
-        "unitText": "inch",
-        "unitCode": "INH",
-        "value": 15
+        "value": {
+            "value": 15,
+            "unitText": "inch"
+        },
+        "unitCode": "INH"
     },
     "netWeight": {
         "type": "Property",
-        "unitText": "grammes",
-        "unitCode": "GRM",
-        "value": 2500
+        "value": {
+            "value": 2500,
+            "unitText": "grammes"
+        },
+        "unitCode": "GRM"
     },
     "grossWeight": {
         "type": "Property",
-        "unitText": "grammes",
-        "unitCode": "GRM",
-        "value": 3000
+        "value": {
+            "value": 3000,
+            "unitText": "grammes"
+        },
+        "unitCode": "GRM"
     },
     "countryOfOrigin": {
         "type": "Property",
         "value": "UK"
     },
     "images": {
-        "type": "uri",
+        "type": "Property",
         "value": [
             "http://example.com/productImg1.jpg",
             "http://example.com/productImg2.jpg"
         ]
     },
     "producerURI": {
-        "type": "uri",
-        "value": "http://www.example.com"
+        "type": "Property",
+        "value": {
+            "@value": "http://www.example.com",
+            "@type": "https://schema.org/url"
+        }
     },
     "manufacturer": {
         "type": "Property",

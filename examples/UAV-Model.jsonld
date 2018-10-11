@@ -15,8 +15,11 @@
         "value": "ACME Recon"
     },
     "doc": {
-        "type": "uri",
-        "value": "http://example.com/products-services/aircraft/the-recon.html "
+        "type": "Property",
+        "value": {
+            "@value": "http://example.com/products-services/aircraft/the-recon.html",
+            "@type": "https://schema.org/url"
+        }
     },
     "description": {
         "type": "Property",

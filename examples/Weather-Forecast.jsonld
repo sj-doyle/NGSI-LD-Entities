@@ -59,39 +59,46 @@
     },
     "dayMinimum": {
         "type": "Property",
-        "temperature": {
-            "value": 30,
-            "unitCode": "CEL"
-        },
-        "feelsLikeTemperature": {
-            "value": 32,
-            "unitCode": "CEL"
-        },
-        "relativeHumidity": {
-            "value": 0.22,
-            "unitCode": "C62"
+        "value": {
+            "temperature": {
+                "value": 30,
+                "unitCode": "CEL"
+            },
+            "feelsLikeTemperature": {
+                "value": 32,
+                "unitCode": "CEL"
+            },
+            "relativeHumidity": {
+                "value": 0.22,
+                "unitCode": "C62"
+            }
         }
     },
     "dayMaximum": {
         "type": "Property",
-        "temperature": {
-            "value": 33,
-            "unitCode": "CEL"
-        },
-        "feelsLikeTemperature": {
-            "value": 38,
-            "unitCode": "CEL"
-        },
-        "relativeHumidity": {
-            "value": 0.52,
-            "unitCode": "C62"
+        "value": {
+            "temperature": {
+                "value": 33,
+                "unitCode": "CEL"
+            },
+            "feelsLikeTemperature": {
+                "value": 38,
+                "unitCode": "CEL"
+            },
+            "relativeHumidity": {
+                "value": 0.52,
+                "unitCode": "C62"
+            }
         }
     },
     "address": {
         "type": "Property",
-        "addressLocality": "London",
-        "postalCode": "EC4N 8AF",
-        "streetAddress": "25 Walbrook"
+        "value": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "postalCode": "EC4N 8AF",
+            "streetAddress": "25 Walbrook"
+        }
     },
     "temperature": {
         "type": "Property",

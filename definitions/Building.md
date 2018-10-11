@@ -21,7 +21,7 @@ This entity contains a harmonised description of a building. This entity is asso
 | floorsAboveGround | Property | The number of floors above ground level in this building. | Optional |
 | floorsBelowGround | Property | The number of floors above ground level in this building. | Optional |
 | description | Property | An optional description of this building. | Recommended |
-| mapUri | uri | A URI (URL/URN) to a mapping service which shows the location of the building. | Optional |
+| mapUri | Property | A URI (URL/URN) to a mapping service which shows the location of the building. | Optional |
 | notes | Property | Free format notes relating to the building e.g. published occupants, opening hours etc. | Optional |
 
 ## NGSI-LD Context Definition
@@ -135,9 +135,13 @@ The following is an example instance of the **Building** entity
     },
     "address": {
         "type": "Property",
-        "addressLocality": "London",
-        "postalCode": "EC4N 8AF",
-        "streetAddress": "25 Walbrook"
+        "value": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "addressCountry": "UK",
+            "postalCode": "EC4N 8AF",
+            "streetAddress": "25 Walbrook"
+        }
     },
     "owner": {
         "type": "Relationship",
@@ -173,8 +177,11 @@ The following is an example instance of the **Building** entity
         "value": "Multi-tenant office block"
     },
     "mapUri": {
-        "type": "uri",
-        "value": "https://www.google.co.uk/maps/place/The+Walbrook,+Walbrook,+London+EC4N+8AF/@51.5120758,-0.0920769"
+        "type": "Property",
+        "value": {
+            "@value": "https://www.google.co.uk/maps/place/The+Walbrook,+Walbrook,+London+EC4N+8AF/@51.5120758,-0.0920769",
+            "@type": "https://schema.org/url"
+        }
     },
     "notes": {
         "type": "Property",

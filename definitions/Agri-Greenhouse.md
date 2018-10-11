@@ -111,11 +111,13 @@ The following is an example instance of the **Agri Greenhouse** entity
     },
     "drainFlow": {
         "type": "Property",
-        "value": 33,
-        "maxValue": 50,
-        "minValue": 25,
+        "value": {
+            "value": 33,
+            "maxValue": 50,
+            "minValue": 25,
+            "unitText": "Litre per second"
+        },
         "unitCode": "G51",
-        "unitText": "Litre per second",
         "observedAt": "2016-08-22T19:20Z"
     },
     "devices": {

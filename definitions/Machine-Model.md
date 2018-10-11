@@ -11,7 +11,7 @@ This entity contains a harmonised description of a generic machine model. This e
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | name | Property | The name given to this MachineModel. | Mandatory |
-| doc | uri | Reference to data sheet or other manufacturer’s documentation about this MachineModel. | Recommended |
+| doc | Property | Reference to data sheet or other manufacturer’s documentation about this MachineModel. | Recommended |
 | description | Property | A description of this MachineModel. | Recommended |
 | manufacturerName | Property | The name of manufacturer of this MachineModel. | Recommended |
 | brandName | Property | The brand name of this MachineModel. | Recommended |
@@ -70,8 +70,11 @@ The following is an example instance of the **Machine Model** entity
         "value": "CA1256b"
     },
     "doc": {
-        "type": "uri",
-        "value": "http://www.example.com"
+        "type": "Property",
+        "value": {
+            "@value": "https://example.com",
+            "@type": "https://schema.org/url"
+        }
     },
     "description": {
         "type": "Property",

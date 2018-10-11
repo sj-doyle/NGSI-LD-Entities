@@ -52,9 +52,12 @@ The following is an example instance of the **Subscription Service** entity
     },
     "offer": {
         "type": "Property",
-        "priceCurrency": "USD",
-        "price": 50,
-        "description": "100 mbps fibre broadband service"
+        "value": {
+            "@type": "https://schema.org/Offer",
+            "priceCurrency": "USD",
+            "price": 50,
+            "description": "100 mbps fibre broadband service"
+        }
     }
 }
 ```

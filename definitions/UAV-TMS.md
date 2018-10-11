@@ -12,7 +12,7 @@ This entity contains a harmonised description of a specific Unmanned Aerial Vehi
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | name | Property | The name of this software application. | Recommended |
 | softwareApplication | Property | Details about the software application using the Schema.org definition https://schema.org/SoftwareApplication | Mandatory |
-| operationalInstance | uri | None | Mandatory |
+| operationalInstance | Property | URL linking to an operational instance (assumed to be web based) for the UAV Traffic Management Software. | Mandatory |
 | owner | Property | A list detailing the owner or owners of the TMS software.
 
 Refers to one or more Schema.org person or organization.
@@ -70,13 +70,19 @@ The following is an example instance of the **UAV TMS** entity
     },
     "softwareApplication": {
         "type": "Property",
-        "operatingSystem": "Linux",
-        "softwareVersion": "8.3",
-        "applicationCategory": "Guidance"
+        "value": {
+            "@type": "https://schema.org/SoftwareApplication",
+            "operatingSystem": "Linux",
+            "softwareVersion": "8.3",
+            "applicationCategory": "Guidance"
+        }
     },
     "operationalInstance": {
-        "type": "uri",
-        "value": "http://example.com/uavtms "
+        "type": "Property",
+        "value": {
+            "@value": "http://example.com/uavtms",
+            "@type": "https://schema.org/url"
+        }
     },
     "owner": {
         "type": "Property",
