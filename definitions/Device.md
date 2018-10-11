@@ -15,10 +15,10 @@ This entity contains a harmonised description of a generic device. This entity p
 | supplierName | Property | The name of the supplier of this device. | Recommended |
 | countryOfManufacture | Property | The country where this device was manufactured. | Recommended |
 | factory | Property | The factory name/code manufacturing this device. | Recommended |
-| dateFirstUsed | TemporalProperty | Indicates the date/time at which date and time the device was first used (nominally in UTC). | Recommended |
-| dateLastCalibration | TemporalProperty | Indicates the date/time at which date and time the device was last calibrated (nominally in UTC). | Recommended |
-| dateInstalled | TemporalProperty | Indicates the date/time at which date and time the device was installed (nominally in UTC). | Recommended |
-| dateManufactured | TemporalProperty | Indicates the date/time at which date and time the device was manufactured (nominally in UTC). | Recommended |
+| firstUsedAt | TemporalProperty | Indicates the date/time at which date and time the device was first used (nominally in UTC). | Recommended |
+| lastCalibrationAt | TemporalProperty | Indicates the date/time at which date and time the device was last calibrated (nominally in UTC). | Recommended |
+| installedAt | TemporalProperty | Indicates the date/time at which date and time the device was installed (nominally in UTC). | Recommended |
+| manufacturedAt | TemporalProperty | Indicates the date/time at which date and time the device was manufactured (nominally in UTC). | Recommended |
 | description | Property | An optional description of this device. | Recommended |
 | owner | Relationship | Reference to the owner or owners of the device as either a Schema.org person or organization.<br/><br/>https://schema.org/Person<br/><br/>https://schema.org/Organization | Optional |
 | hardwareVersion | Property | The (manufacturer specific) hardware version of this device. | Recommended |
@@ -48,10 +48,10 @@ The following NGSI-LD context definition applies to the **Device** entity
         "supplierName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/suppliername",
         "countryOfManufacture": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/countryofmanufacture",
         "factory": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/factory",
-        "dateFirstUsed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefirstused",
-        "dateLastCalibration": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datelastcalibration",
-        "dateInstalled": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateinstalled",
-        "dateManufactured": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datemanufactured",
+        "firstUsedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/firstusedat",
+        "lastCalibrationAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastcalibrationat",
+        "installedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/installedat",
+        "manufacturedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturedat",
         "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
         "hardwareVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/hardwareversion",
         "firmwareVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/firmwareversion",
@@ -101,19 +101,19 @@ The following is an example instance of the **Device** entity
         "type": "Property",
         "value": "56A8"
     },
-    "dateFirstUsed": {
+    "firstUsedAt": {
         "type": "TemporalProperty",
         "value": "2017-05-04T11:18:16Z"
     },
-    "dateLastCalibration": {
+    "lastCalibrationAt": {
         "type": "TemporalProperty",
         "value": "2017-05-04T10:18:16Z"
     },
-    "dateInstalled": {
+    "installedAt": {
         "type": "TemporalProperty",
         "value": "2017-05-04T10:18:16Z"
     },
-    "dateManufactured": {
+    "manufacturedAt": {
         "type": "TemporalProperty",
         "value": "2017-05-04T10:18:16Z"
     },
