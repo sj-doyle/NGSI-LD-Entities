@@ -24,6 +24,10 @@ This entity contains a harmonised description of a generic operations performed 
 | agriProduct | Relationship | Reference to the AgriProduct used/ applied. | Optional |
 | quantity | Property | The total quantity of water or product used/ applied. It is recommended this is measured in litres for liquids or kilogrammes for solids. | Optional |
 | waterSource | Property | If water was applied/ use this specifies the source. One of: **borehole, rainfall, river, rainwater capture, water dam, commercial supply.** | Recommended |
+| <em>startDate</em> | <em>TemporalProperty</em> | <em>The planned start date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **plannedStartAt**</em> | <em>Deprecated</em> |
+| <em>endDate</em> | <em>TemporalProperty</em> | <em>The planned end date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation finishes may be before or after the planned end.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **plannedEndAt**</em> | <em>Deprecated</em> |
+| <em>dateStarted</em> | <em>TemporalProperty</em> | <em>Timestamp when the operation actually started to be performed.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **startedAt**</em> | <em>Deprecated</em> |
+| <em>dateFinished</em> | <em>TemporalProperty</em> | <em>Timestamp when the operation actually finished.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **endedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Agri Parcel Operation** entity
@@ -38,16 +42,22 @@ The following NGSI-LD context definition applies to the **Agri Parcel Operation*
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "agriParcel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcel",
         "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
+        "description": "https://schema.org/description",
         "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
         "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
         "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
+        "status": "http://uri.etsi.org/ngsi-ld/status",
         "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
         "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
         "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
         "reportedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/reportedat",
         "agriProduct": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproduct",
         "quantity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/quantity",
-        "waterSource": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/watersource"
+        "waterSource": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/watersource",
+        "startDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startdate",
+        "endDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/enddate",
+        "dateStarted": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datestarted",
+        "dateFinished": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefinished"
     }
 }
 ```

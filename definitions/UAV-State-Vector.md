@@ -16,6 +16,7 @@ This entity contains a harmonised description of a generic UAV State Vector, whi
 | stateVector | Property | A state vector describing the current flight status based on the definition of opensky-network.org StateVector and encoded in JSON.
 
 See https://opensky-network.org/apidoc/javadoc/org/opensky/model/StateVector.html and https://opensky-network.org/apidoc/rest.html#response | Mandatory |
+| <em>dateObserved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **UAV State Vector** entity
@@ -30,7 +31,8 @@ The following NGSI-LD context definition applies to the **UAV State Vector** ent
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "uav": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uav",
         "originator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
-        "stateVector": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/statevector"
+        "stateVector": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/statevector",
+        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
     }
 }
 ```

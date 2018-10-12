@@ -37,6 +37,9 @@ This entity contains a harmonised description of an industrial machine for examp
 | current | Property | The nominal required supply current (at the nominal supply voltage), in amps. | Optional |
 | power | Property | The nominal rated power consumption of the machine in kW. | Optional |
 | rotationalSpeed | Property | The maximum rotational speed in rpm (for machines such as drills, lathes). | Optional |
+| <em>dateFirstUsed</em> | <em>TemporalProperty</em> | <em>Indicates the date/time at which date and time the machine was first used (nominally in UTC).<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **firstUsedAt**</em> | <em>Deprecated</em> |
+| <em>dateInstalled</em> | <em>TemporalProperty</em> | <em>Indicates the date/time at which date and time the machine was installed (nominally in UTC).<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **installedAt**</em> | <em>Deprecated</em> |
+| <em>dateManufactured</em> | <em>TemporalProperty</em> | <em>Indicates the date/time at which date and time the machine was manufactured (nominally in UTC).<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **manufacturedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Machine** entity
@@ -58,6 +61,7 @@ The following NGSI-LD context definition applies to the **Machine** entity
         "firstUsedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/firstusedat",
         "installedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/installedat",
         "manufacturedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturedat",
+        "description": "https://schema.org/description",
         "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
         "hardwareVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/hardwareversion",
         "firmwareVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/firmwareversion",
@@ -65,14 +69,19 @@ The following NGSI-LD context definition applies to the **Machine** entity
         "osVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/osversion",
         "supportedProtocols": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/supportedprotocols",
         "building": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/building",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "subscriptionServices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/subscriptionservices",
         "online": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/online",
+        "status": "http://uri.etsi.org/ngsi-ld/status",
         "batteryLevel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/batterylevel",
         "installationNotes": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/installationnotes",
         "voltage": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/voltage",
         "current": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/current",
         "power": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/power",
-        "rotationalSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rotationalspeed"
+        "rotationalSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rotationalspeed",
+        "dateFirstUsed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefirstused",
+        "dateInstalled": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateinstalled",
+        "dateManufactured": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datemanufactured"
     }
 }
 ```

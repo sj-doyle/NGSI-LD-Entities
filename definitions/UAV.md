@@ -22,6 +22,7 @@ This entity contains a harmonised description of a specific Unmanned Aerial Vehi
 | workStatus | Property | The work status of the UAV, including: **stop, prepare, work, finish** | Optional |
 | groundSpeed | Property | The latest reported ground speed of the UAV. Specify value and units of measure | Optional |
 | fuel | Property | Current fuel load of the UAV. Specify value and units of measure | Optional |
+| <em>dateObserved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **UAV** entity
@@ -35,14 +36,17 @@ The following NGSI-LD context definition applies to the **UAV** entity
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "uavModel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uavmodel",
+        "name": "https://schema.org/name",
         "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
         "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
         "operationMode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationmode",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "elevation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/elevation",
         "flightStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/flightstatus",
         "workStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/workstatus",
         "groundSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/groundspeed",
-        "fuel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fuel"
+        "fuel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fuel",
+        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
     }
 }
 ```

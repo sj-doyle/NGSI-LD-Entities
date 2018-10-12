@@ -3,6 +3,8 @@
         "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "name": "https://schema.org/name",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "POI": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/poi",
         "stationCode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/stationcode",
         "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
@@ -14,6 +16,7 @@
         "O3": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o3",
         "PM2.5": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pm2.5",
         "PM10": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pm10",
-        "SO2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/so2"
+        "SO2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/so2",
+        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
     }
 }

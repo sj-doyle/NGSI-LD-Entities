@@ -38,6 +38,7 @@ The following NGSI-LD context definition applies to the **UAV Model** entity
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "model": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/model",
         "doc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/doc",
+        "description": "https://schema.org/description",
         "manufacturerName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturername",
         "brandName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/brandname",
         "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",

@@ -11,6 +11,7 @@ This entity contains a harmonised description of a generic commodity, crop or pr
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | entity | Relationship | Reference to the entity this price forecast relates to e.g. an AgriProduct entity. | Mandatory |
+| observedAt | TemporalProperty | Indicates the date/time the observation was recorded. | Recommended |
 | priceAverage5Year | Property | The five year average market price observed represented using schema.org PriceSpecification attributes http://schema.org/PriceSpecification | Mandatory |
 | priceObserved | Property | The market price observed represented using schema.org PriceSpecification attributes http://schema.org/PriceSpecification | Mandatory |
 | address | Property | The market location for this observation encoded as a Schema.org PostalAddress. https://schema.org/PostalAddress | Mandatory |
@@ -64,6 +65,10 @@ The following is an example instance of the **Market Price Observed** entity
     "entity": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:AgriProduct:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84"
+    },
+    "observedAt": {
+        "type": "TemporalProperty",
+        "value": "2017-05-04T10:18:16Z"
     },
     "priceAverage5Year": {
         "type": "Property",

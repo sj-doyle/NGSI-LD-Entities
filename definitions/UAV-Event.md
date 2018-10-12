@@ -19,6 +19,8 @@ The UAVEvent records the incursion of a specific UAV into or near protected airs
 | eventType | Property | The type of the UAV event, a choice from: **illegal flight , close to unpermitted airspace, overspeed, over height, illegal work** | Recommended |
 | description | Property | A description for this event. | Recommended |
 | eventResult | Property | The handling result of the event, a choice from: **logged, notify, alarm, force land, force back, force hover** | Recommended |
+| <em>eventStart</em> | <em>TemporalProperty</em> | <em>Indicates the date/time of when the event started.<br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **startAt**</em> | <em>Deprecated</em> |
+| <em>eventEnd</em> | <em>TemporalProperty</em> | <em>Indicates the date/time of when the event ended (if it has ended).<br/><br/>Note that this is advisory and the actual time the operation finishes may be before or after the planned end.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **endAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **UAV Event** entity
@@ -33,11 +35,15 @@ The following NGSI-LD context definition applies to the **UAV Event** entity
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "uav": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uav",
         "originator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "elevation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/elevation",
         "startAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startat",
         "endAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endat",
         "eventType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventtype",
-        "eventResult": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventresult"
+        "description": "https://schema.org/description",
+        "eventResult": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventresult",
+        "eventStart": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventstart",
+        "eventEnd": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventend"
     }
 }
 ```

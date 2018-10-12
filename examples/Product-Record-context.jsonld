@@ -4,12 +4,15 @@
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "product": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/product",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "temperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/temperature",
         "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
         "atmosphericPressure": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/atmosphericpressure",
+        "description": "https://schema.org/description",
         "weight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weight",
         "netWeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/netweight",
         "volume": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/volume",
-        "O2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o2"
+        "O2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o2",
+        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
     }
 }

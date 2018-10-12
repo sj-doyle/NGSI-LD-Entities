@@ -17,6 +17,7 @@ This entity contains a harmonised description of a generic UAV Automatic Depende
 | UAVADSBroadcast | Property | A flight message describing the current flight status as a DBSB Message stored as a string of hexadecimal digits.
 
 See http://mode-s.org/decode/adsb.html | Mandatory |
+| <em>dateObserved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **UAV ADSB** entity
@@ -32,7 +33,8 @@ The following NGSI-LD context definition applies to the **UAV ADSB** entity
         "uav": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uav",
         "originatedByUAV": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originatedbyuav",
         "originator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
-        "UAVADSBroadcast": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uavadsbroadcast"
+        "UAVADSBroadcast": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uavadsbroadcast",
+        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
     }
 }
 ```

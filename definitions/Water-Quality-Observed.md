@@ -37,6 +37,7 @@ This entity contains a harmonised description of the water quality at a particul
 | O2 | Property | The level of free non-compound oxygen present. | Optional |
 | PC | Property | Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically. | Optional |
 | PE | Property | Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically. | Optional |
+| <em>dateObserved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Water Quality Observed** entity
@@ -51,6 +52,7 @@ The following NGSI-LD context definition applies to the **Water Quality Observed
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "POIs": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois",
         "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "depth": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/depth",
         "pressure": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pressure",
         "conductivity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/conductivity",
@@ -73,7 +75,8 @@ The following NGSI-LD context definition applies to the **Water Quality Observed
         "NO3": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/no3",
         "O2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o2",
         "PC": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pc",
-        "PE": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pe"
+        "PE": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pe",
+        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
     }
 }
 ```

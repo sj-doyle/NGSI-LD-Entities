@@ -15,6 +15,7 @@ This entity contains a harmonised description of a generic UAV UTM Flight Messag
 | originatedByUAV | Property | A logical indicator of source of the message. True indicates it is the UAV itself, false indicates that it is a different source, a listening station software application or a different UAV. | Mandatory |
 | originator | Relationship | Refers to a third party UAV instance or other entity (e.g. listening station) that reported the information in the case the message was not directly originated by the UAV. | Mandatory |
 | flightMessage | Property | A flight message describing the current flight status encoded as a Global UTM Message encoded as a JSON object. https://bitbucket.org/global_utm/flight-declaration-protocol | Mandatory |
+| <em>dateObserved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **UAV UTM Flight Message** entity
@@ -30,7 +31,8 @@ The following NGSI-LD context definition applies to the **UAV UTM Flight Message
         "uav": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uav",
         "originatedByUAV": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originatedbyuav",
         "originator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
-        "flightMessage": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/flightmessage"
+        "flightMessage": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/flightmessage",
+        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
     }
 }
 ```

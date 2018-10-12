@@ -23,6 +23,10 @@ This entity contains a harmonised description of a generic operation (related to
 | operationSequence | Property | The sequence of operations executed/ requested for the building in a representation format relevant to the building. | Optional |
 | relatedBuildingOperations | Relationship | Optional references to any related building operations. | Optional |
 | relatedOperations | Relationship | Optional references to any related operations (on devices, machines etc). | Optional |
+| <em>startDate</em> | <em>TemporalProperty</em> | <em>The planned start date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **plannedStartAt**</em> | <em>Deprecated</em> |
+| <em>endDate</em> | <em>TemporalProperty</em> | <em>The planned end date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation finishes may be before or after the planned end.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **plannedEndAt**</em> | <em>Deprecated</em> |
+| <em>dateStarted</em> | <em>TemporalProperty</em> | <em>Timestamp when the operation actually started to be performed.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **startedAt**</em> | <em>Deprecated</em> |
+| <em>dateFinished</em> | <em>TemporalProperty</em> | <em>Timestamp when the operation actually finished.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **endedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Building Operation** entity
@@ -37,15 +41,21 @@ The following NGSI-LD context definition applies to the **Building Operation** e
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "building": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/building",
         "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
+        "description": "https://schema.org/description",
         "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
         "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
         "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
+        "status": "http://uri.etsi.org/ngsi-ld/status",
         "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
         "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
         "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
         "operationSequence": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationsequence",
         "relatedBuildingOperations": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedbuildingoperations",
-        "relatedOperations": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedoperations"
+        "relatedOperations": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedoperations",
+        "startDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startdate",
+        "endDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/enddate",
+        "dateStarted": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datestarted",
+        "dateFinished": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefinished"
     }
 }
 ```

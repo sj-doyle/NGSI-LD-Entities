@@ -3,7 +3,9 @@
         "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "area": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/area",
+        "description": "https://schema.org/description",
         "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
         "agriParcelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelparent",
         "agriParcelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelchildren",
@@ -11,6 +13,7 @@
         "cropStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/cropstatus",
         "lastPlantedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastplantedat",
         "agriSoil": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrisoil",
-        "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices"
+        "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
+        "dateLastPlanted": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datelastplanted"
     }
 }

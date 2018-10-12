@@ -5,6 +5,7 @@
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "POIs": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois",
         "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "depth": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/depth",
         "pressure": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pressure",
         "conductivity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/conductivity",
@@ -27,6 +28,7 @@
         "NO3": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/no3",
         "O2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o2",
         "PC": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pc",
-        "PE": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pe"
+        "PE": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pe",
+        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
     }
 }

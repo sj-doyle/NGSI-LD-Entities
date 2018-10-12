@@ -4,10 +4,12 @@
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "POIs": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "retrievedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/retrievedat",
         "issuedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/issuedat",
         "weatherType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weathertype",
         "visibility": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/visibility",
+        "name": "https://schema.org/name",
         "validFrom": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/validfrom",
         "validThrough": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/validthrough",
         "dayMinimum": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dayminimum",
@@ -18,6 +20,8 @@
         "windSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/windspeed",
         "uVIndexMax": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uvindexmax",
         "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
-        "precipitationProbability": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/precipitationprobability"
+        "precipitationProbability": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/precipitationprobability",
+        "dateRetrieved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateretrieved",
+        "dateIssued": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateissued"
     }
 }

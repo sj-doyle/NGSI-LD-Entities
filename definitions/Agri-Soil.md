@@ -26,7 +26,9 @@ The following NGSI-LD context definition applies to the **Agri Soil** entity
         "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "name": "https://schema.org/name",
         "alternateName": "https://schema.org/alternateName",
+        "description": "https://schema.org/description",
         "agriProduct": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproduct"
     }
 }

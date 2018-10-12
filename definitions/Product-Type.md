@@ -27,6 +27,8 @@ The following NGSI-LD context definition applies to the **Product Type** entity
         "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "name": "https://schema.org/name",
+        "description": "https://schema.org/description",
         "root": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
         "parentType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/parenttype",
         "childrenTypes": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/childrentypes"

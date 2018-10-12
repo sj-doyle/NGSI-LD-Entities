@@ -25,6 +25,7 @@ This entity contains a harmonised description of the air quality observed at a p
 | PM2.5 | Property | Indicates the level of observed Particulate Matter (under 2.5 microns in size) nominally in units of microgrammes per cubic metre. | Optional |
 | PM10 | Property | Indicates the level of observed Particulate Matter (under 10 microns in size)  nominally in units of microgrammes per cubic metre. | Optional |
 | SO2 | Property | Indicates the level of observed Suplhur Dioxide nominally in units of microgrammes per cubic metre. | Optional |
+| <em>dateObserved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Air Quality Observed** entity
@@ -37,6 +38,8 @@ The following NGSI-LD context definition applies to the **Air Quality Observed**
         "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "name": "https://schema.org/name",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "POI": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/poi",
         "stationCode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/stationcode",
         "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
@@ -48,7 +51,8 @@ The following NGSI-LD context definition applies to the **Air Quality Observed**
         "O3": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o3",
         "PM2.5": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pm2.5",
         "PM10": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pm10",
-        "SO2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/so2"
+        "SO2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/so2",
+        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
     }
 }
 ```

@@ -30,6 +30,7 @@ This entity contains a harmonised description of the weather at a particular loc
 | rainFall | Property | Is the accumulated rain as is defined in the station (since rain started, since day started, since month started). referencePeriod enumerates the basis - one of **rainStart, dayStart, monthStart** | Recommended |
 | evapoTranspiration | Property | The sum of evaporation and plant transpiration from the Earth's land and ocean surface to the atmosphere. | Recommended |
 | referenceEvapoTranspiration | Property | Environmental demand for evapotranspiration. Represents the evapotranspiration rate of a short green crop (grass), completely shading the ground, of uniform height and with adequate water status in the soil profile | Recommended |
+| <em>dateObserved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Weather Observed** entity
@@ -42,6 +43,8 @@ The following NGSI-LD context definition applies to the **Weather Observed** ent
         "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "name": "https://schema.org/name",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "POI": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/poi",
         "stationCode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/stationcode",
         "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
@@ -58,7 +61,8 @@ The following NGSI-LD context definition applies to the **Weather Observed** ent
         "rainRate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rainrate",
         "rainFall": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rainfall",
         "evapoTranspiration": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/evapotranspiration",
-        "referenceEvapoTranspiration": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/referenceevapotranspiration"
+        "referenceEvapoTranspiration": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/referenceevapotranspiration",
+        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
     }
 }
 ```

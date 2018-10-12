@@ -21,6 +21,8 @@ Corresponds to a Schema.org person or organization.
 https://schema.org/Person
 
 https://schema.org/Organization | Optional |
+| <em>startDate</em> | <em>TemporalProperty</em> | <em>The start timestamp for the corresponding subscription service.<br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **startAt**</em> | <em>Deprecated</em> |
+| <em>endDate</em> | <em>TemporalProperty</em> | <em>The end timestamp for the corresponding subscription service.<br/><br/>Note that this is advisory and the actual time the operation finishes may be before or after the planned end.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **endAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Subscriber** entity
@@ -37,7 +39,9 @@ The following NGSI-LD context definition applies to the **Subscriber** entity
         "startAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startat",
         "endAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endat",
         "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-        "users": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/users"
+        "users": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/users",
+        "startDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startdate",
+        "endDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/enddate"
     }
 }
 ```

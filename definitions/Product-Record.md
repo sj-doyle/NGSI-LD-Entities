@@ -23,6 +23,7 @@ Used to identify the net weight of the product. Net Weight excludes all packagin
 | volume | Property | The current volume of the product including packaging. | Optional |
 | observedAt | TemporalProperty | Indicates the date/time the record was observed/ last observed. | Recommended |
 | O2 | Property | The level of gaseous oxygen (O2) present in the atmosphere as measured around the product. | Optional |
+| <em>dateObserved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Product Record** entity
@@ -36,13 +37,16 @@ The following NGSI-LD context definition applies to the **Product Record** entit
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "product": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/product",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "temperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/temperature",
         "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
         "atmosphericPressure": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/atmosphericpressure",
+        "description": "https://schema.org/description",
         "weight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weight",
         "netWeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/netweight",
         "volume": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/volume",
-        "O2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o2"
+        "O2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o2",
+        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
     }
 }
 ```

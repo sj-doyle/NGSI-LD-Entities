@@ -6,12 +6,14 @@
         "buildingType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/buildingtype",
         "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
         "containedInPlace": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/containedinplace",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "address": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
         "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
         "occupier": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/occupier",
         "subscriptionServices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/subscriptionservices",
         "floorsAboveGround": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/floorsaboveground",
         "floorsBelowGround": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/floorsbelowground",
+        "description": "https://schema.org/description",
         "mapUri": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mapuri",
         "notes": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/notes"
     }

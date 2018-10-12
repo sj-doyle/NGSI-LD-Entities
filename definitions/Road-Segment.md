@@ -35,6 +35,7 @@ The following NGSI-LD context definition applies to the **Road Segment** entity
         "endPoint": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endpoint",
         "relatedSegments": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedsegments",
         "roadClass": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/roadclass",
+        "name": "https://schema.org/name",
         "path": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/path",
         "POIs": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois"
     }

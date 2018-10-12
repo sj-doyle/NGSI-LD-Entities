@@ -14,6 +14,10 @@
         "type": "Relationship",
         "object": "urn:ngsi-ld:AgriProduct:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84"
     },
+    "observedAt": {
+        "type": "TemporalProperty",
+        "value": "2017-05-04T10:18:16Z"
+    },
     "priceAverage5Year": {
         "type": "Property",
         "value": {

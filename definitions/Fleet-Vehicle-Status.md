@@ -22,6 +22,7 @@ This entity contains a harmonised description of the status of a generic fleet v
 | lastKnownPositionUpdatedAt | TemporalProperty | The timestamp of the last known position update for the fleet vehicle. | Mandatory |
 | inRestrictedArea | Property | Indicates if the vehicle is known to be in a restricted area at the time of the status update. | Recommended |
 | mileageFromOdometer | Property | The total distance the fleet vehicle has travelled according to the on-board odometer in kilometres (unitCode KMT) or miles (unitCode SMI). See also Schema.org Vehicle/ mileageFromOdometer. The timestamp element records when the odometer reading was taken. | Mandatory |
+| <em>lastKnownPositionUpdate</em> | <em>TemporalProperty</em> | <em>The timestamp of the last known position update for the fleet vehicle.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **lastKnownPositionUpdatedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Fleet Vehicle Status** entity
@@ -45,7 +46,8 @@ The following NGSI-LD context definition applies to the **Fleet Vehicle Status**
         "lastKnownPosition": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownposition",
         "lastKnownPositionUpdatedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownpositionupdatedat",
         "inRestrictedArea": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/inrestrictedarea",
-        "mileageFromOdometer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mileagefromodometer"
+        "mileageFromOdometer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mileagefromodometer",
+        "lastKnownPositionUpdate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownpositionupdate"
     }
 }
 ```

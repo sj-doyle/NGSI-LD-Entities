@@ -24,6 +24,7 @@ The following NGSI-LD context definition applies to the **Subscription Service**
         "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "description": "https://schema.org/description",
         "offer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/offer"
     }
 }

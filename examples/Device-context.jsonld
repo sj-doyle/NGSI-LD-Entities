@@ -12,13 +12,21 @@
         "lastCalibrationAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastcalibrationat",
         "installedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/installedat",
         "manufacturedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturedat",
+        "description": "https://schema.org/description",
         "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
         "hardwareVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/hardwareversion",
         "firmwareVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/firmwareversion",
         "softwareVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/softwareversion",
         "osVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/osversion",
         "supportedProtocols": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/supportedprotocols",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "online": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/online",
-        "batteryLevel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/batterylevel"
+        "status": "http://uri.etsi.org/ngsi-ld/status",
+        "batteryLevel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/batterylevel",
+        "value": "http://uri.etsi.org/ngsi-ld/hasValue",
+        "dateFirstUsed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefirstused",
+        "dateInstalled": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateinstalled",
+        "dateLastCalibration": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datelastcalibration",
+        "dateManufactured": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datemanufactured"
     }
 }

@@ -48,6 +48,8 @@ Supports the inclusion of the nested attribute values, each of which will be a n
 | uVIndexMax | Property | The maximum UV index for the period, based on the World Health Organization's UV Index measure. | Optional |
 | relativeHumidity | Property | The relative humidity expressed a number between\n\n0 ≤ RelativeHumidity ≤ 1 representing the range 0% to 100% | Optional |
 | precipitationProbability | Property | The probability of precipitation, expressed as a number between\n\n0 ≤ precipitationProbability ≤ 1 representing the range 0% to 100% | Optional |
+| <em>dateRetrieved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the forecast was retrieved from the associated meteorological agency.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **retrievedAt**</em> | <em>Deprecated</em> |
+| <em>dateIssued</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the forecast was issued by the associated meteorological agency.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **issuedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Weather Forecast** entity
@@ -61,10 +63,12 @@ The following NGSI-LD context definition applies to the **Weather Forecast** ent
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "POIs": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "retrievedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/retrievedat",
         "issuedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/issuedat",
         "weatherType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weathertype",
         "visibility": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/visibility",
+        "name": "https://schema.org/name",
         "validFrom": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/validfrom",
         "validThrough": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/validthrough",
         "dayMinimum": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dayminimum",
@@ -75,7 +79,9 @@ The following NGSI-LD context definition applies to the **Weather Forecast** ent
         "windSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/windspeed",
         "uVIndexMax": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uvindexmax",
         "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
-        "precipitationProbability": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/precipitationprobability"
+        "precipitationProbability": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/precipitationprobability",
+        "dateRetrieved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateretrieved",
+        "dateIssued": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateissued"
     }
 }
 ```

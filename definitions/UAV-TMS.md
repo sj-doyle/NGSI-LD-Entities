@@ -39,6 +39,7 @@ The following NGSI-LD context definition applies to the **UAV TMS** entity
         "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "name": "https://schema.org/name",
         "softwareApplication": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/softwareapplication",
         "operationalInstance": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationalinstance",
         "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",

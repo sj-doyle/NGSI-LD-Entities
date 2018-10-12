@@ -21,6 +21,7 @@ This entity contains a harmonised description of a generic parcel of land. This 
 | lastPlantedAt | TemporalProperty | Indicates the date when the crop was last planted. | Recommended |
 | agriSoil | Relationship | Reference to the soil associated with this parcel of land. | Optional |
 | devices | Relationship | Reference to the IoT devices associated with this parcel i.e. sensors, controls. | Recommended |
+| <em>dateLastPlanted</em> | <em>TemporalProperty</em> | <em>Indicates the date when the crop was last planted.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **lastPlantedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Agri Parcel** entity
@@ -33,7 +34,9 @@ The following NGSI-LD context definition applies to the **Agri Parcel** entity
         "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "area": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/area",
+        "description": "https://schema.org/description",
         "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
         "agriParcelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelparent",
         "agriParcelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelchildren",
@@ -41,7 +44,8 @@ The following NGSI-LD context definition applies to the **Agri Parcel** entity
         "cropStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/cropstatus",
         "lastPlantedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastplantedat",
         "agriSoil": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrisoil",
-        "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices"
+        "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
+        "dateLastPlanted": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datelastplanted"
     }
 }
 ```

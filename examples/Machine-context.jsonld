@@ -12,6 +12,7 @@
         "firstUsedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/firstusedat",
         "installedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/installedat",
         "manufacturedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturedat",
+        "description": "https://schema.org/description",
         "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
         "hardwareVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/hardwareversion",
         "firmwareVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/firmwareversion",
@@ -19,13 +20,18 @@
         "osVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/osversion",
         "supportedProtocols": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/supportedprotocols",
         "building": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/building",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "subscriptionServices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/subscriptionservices",
         "online": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/online",
+        "status": "http://uri.etsi.org/ngsi-ld/status",
         "batteryLevel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/batterylevel",
         "installationNotes": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/installationnotes",
         "voltage": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/voltage",
         "current": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/current",
         "power": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/power",
-        "rotationalSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rotationalspeed"
+        "rotationalSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rotationalspeed",
+        "dateFirstUsed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefirstused",
+        "dateInstalled": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateinstalled",
+        "dateManufactured": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datemanufactured"
     }
 }

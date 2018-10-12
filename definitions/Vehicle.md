@@ -14,10 +14,12 @@ This entity contains a harmonised description of a Vehicle. This entity is prima
 | fuelType | Property | A choice from an enumerated list describing the power source. One of: **gasoline, petrol(unleaded), petrol(leaded), petrol, diesel, electric, hydrogen, lpg autogas, cng, biodiesel, ethanol, hybrid electric/petrol, hybrid electric/diesel, other** | Optional |
 | displacement | Property | A number indicating the cylinder capacity of the engine nominally in litres. | Optional |
 | fuelEfficiency | Property | The efficiency of the vehicle expressed as kilometres per litre or miles per gallon. | Optional |
-| vehicleModelDate | TemporalProperty | Indicates the date when the vehicle model was released in ISO 8601 format. | Optional |
-| dateDiscontinued | TemporalProperty | Indicates the date when the vehicle model was discontinued in ISO 8601 format. | Optional |
+| vehicleModelIntroducedAt | TemporalProperty | Indicates the date when the vehicle model was released in ISO 8601 format. | Optional |
+| vehicleProductionDiscontinuedAt | TemporalProperty | Indicates the date when the vehicle model was discontinued in ISO 8601 format. | Optional |
 | vehicleIdentificationNumber | Property | The Vehicle Identification Number (VIN) of the vehicle. | Optional |
 | mileageFromOdometer | Property | The total distance the car has travelled according to the on-board odometer in kilometres (unitCode KMT) or miles (unitCode SMI). If unitCode is omitted the units are assumed to be kilometres. | Optional |
+| <em>vehicleModelDate</em> | <em>TemporalProperty</em> | <em>Indicates the date when the vehicle model was released in ISO 8601 format.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **vehicleModelIntroducedAt**</em> | <em>Deprecated</em> |
+| <em>dateDiscontinued</em> | <em>TemporalProperty</em> | <em>Indicates the date when the vehicle model was discontinued in ISO 8601 format.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **vehicleProductionDiscontinuedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Vehicle** entity
@@ -34,10 +36,12 @@ The following NGSI-LD context definition applies to the **Vehicle** entity
         "fuelType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fueltype",
         "displacement": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/displacement",
         "fuelEfficiency": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fuelefficiency",
-        "vehicleModelDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehiclemodeldate",
-        "dateDiscontinued": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datediscontinued",
+        "vehicleModelIntroducedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehiclemodelintroducedat",
+        "vehicleProductionDiscontinuedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicleproductiondiscontinuedat",
         "vehicleIdentificationNumber": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicleidentificationnumber",
-        "mileageFromOdometer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mileagefromodometer"
+        "mileageFromOdometer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mileagefromodometer",
+        "vehicleModelDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehiclemodeldate",
+        "dateDiscontinued": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datediscontinued"
     }
 }
 ```
@@ -77,11 +81,11 @@ The following is an example instance of the **Vehicle** entity
         "value": 10.4,
         "unitCode": "km/l"
     },
-    "vehicleModelDate": {
+    "vehicleModelIntroducedAt": {
         "type": "TemporalProperty",
         "value": "2016-08-18T10:18:16Z"
     },
-    "dateDiscontinued": {
+    "vehicleProductionDiscontinuedAt": {
         "type": "TemporalProperty",
         "value": "2016-08-23T10:18:16Z"
     },

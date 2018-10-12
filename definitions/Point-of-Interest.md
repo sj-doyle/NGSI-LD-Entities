@@ -26,7 +26,9 @@ The following NGSI-LD context definition applies to the **Point of Interest** en
         "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
         "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
         "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
+        "description": "https://schema.org/description",
         "place": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/place"
     }
 }

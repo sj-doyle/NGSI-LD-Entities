@@ -22,6 +22,12 @@ This entity contains a harmonised description of a generic device operation enti
 | endedAt | TemporalProperty | Timestamp when the operation actually finished. | Recommended |
 | reportedAt | TemporalProperty | Timestamp when the event/ fault was reported. | Optional |
 | addressedAt | TemporalProperty | The timestamp when an event or fault was addressed or cleared. | Optional |
+| <em>startDate</em> | <em>TemporalProperty</em> | <em>The planned start date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **plannedStartAt**</em> | <em>Deprecated</em> |
+| <em>endDate</em> | <em>TemporalProperty</em> | <em>The planned end date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation finishes may be before or after the planned end.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **plannedEndAt**</em> | <em>Deprecated</em> |
+| <em>dateStarted</em> | <em>TemporalProperty</em> | <em>Timestamp when the operation actually started to be performed.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **startedAt**</em> | <em>Deprecated</em> |
+| <em>dateFinished</em> | <em>TemporalProperty</em> | <em>Timestamp when the operation actually finished.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **endedAt**</em> | <em>Deprecated</em> |
+| <em>dateReported</em> | <em>TemporalProperty</em> | <em>Timestamp when the event/ fault was reported.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **reportedAt**</em> | <em>Deprecated</em> |
+| <em>dateAddressed</em> | <em>TemporalProperty</em> | <em>The timestamp when an event or fault was addressed or cleared.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **addressedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Device Operation** entity
@@ -36,14 +42,22 @@ The following NGSI-LD context definition applies to the **Device Operation** ent
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "device": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/device",
         "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
+        "description": "https://schema.org/description",
         "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
         "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
         "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
+        "status": "http://uri.etsi.org/ngsi-ld/status",
         "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
         "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
         "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
         "reportedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/reportedat",
-        "addressedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/addressedat"
+        "addressedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/addressedat",
+        "startDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startdate",
+        "endDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/enddate",
+        "dateStarted": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datestarted",
+        "dateFinished": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefinished",
+        "dateReported": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datereported",
+        "dateAddressed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateaddressed"
     }
 }
 ```

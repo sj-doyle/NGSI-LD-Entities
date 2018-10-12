@@ -20,6 +20,8 @@ This entity contains a harmonised description of a generic fleet vehicle operati
 | result | Property | The final result of the event or operation. | Recommended |
 | responseTime | Property | Indicates the time to respond to an event, in seconds. The associated observedAt timestamp indicates when the last update was recorded. E.g. records the response time for an ambulance to reach to a patient. | Mandatory |
 | transportTime | Property | Indicates the time that the fleet vehicle has spent transporting people or supplies for the current operation. E.g. indicates the time an ambulance spent transporting a patient to a hospital emergency department. | Mandatory |
+| <em>eventStart</em> | <em>TemporalProperty</em> | <em>The start date and time when the event or operation was triggered.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **startedAt**</em> | <em>Deprecated</em> |
+| <em>eventEnd</em> | <em>TemporalProperty</em> | <em>The end date and time of the event when the event or operation is known to be over/ complete. Null/ omitted if not yet ended.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **endedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Fleet Vehicle Operation** entity
@@ -38,9 +40,12 @@ The following NGSI-LD context definition applies to the **Fleet Vehicle Operatio
         "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
         "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
         "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
+        "description": "https://schema.org/description",
         "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
         "responseTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/responsetime",
-        "transportTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/transporttime"
+        "transportTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/transporttime",
+        "eventStart": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventstart",
+        "eventEnd": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventend"
     }
 }
 ```

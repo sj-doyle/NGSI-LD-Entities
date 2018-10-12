@@ -30,6 +30,7 @@ The following NGSI-LD context definition applies to the **Road** entity
         "country": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/country",
         "roadSegments": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/roadsegments",
         "roadClass": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/roadclass",
+        "name": "https://schema.org/name",
         "alternateName": "https://schema.org/alternateName"
     }
 }

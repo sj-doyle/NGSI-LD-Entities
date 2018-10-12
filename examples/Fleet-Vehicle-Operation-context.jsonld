@@ -9,8 +9,11 @@
         "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
         "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
         "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
+        "description": "https://schema.org/description",
         "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
         "responseTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/responsetime",
-        "transportTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/transporttime"
+        "transportTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/transporttime",
+        "eventStart": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventstart",
+        "eventEnd": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventend"
     }
 }
