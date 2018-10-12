@@ -131,7 +131,7 @@ The following is an example instance of the **Weather Observed** entity
     "address": {
         "type": "Property",
         "value": {
-            "@type": "PostalAddress",
+            "@type": "https://schema.org/PostalAddress",
             "addressLocality": "London",
             "postalCode": "EC4N 8AF",
             "streetAddress": "25 Walbrook"

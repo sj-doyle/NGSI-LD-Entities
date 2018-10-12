@@ -76,7 +76,7 @@ The following is an example instance of the **Point of Interest** entity
         "value": {
             "name": "GSMA Academy",
             "address": {
-                "@type": "PostalAddress",
+                "@type": "https://schema.org/PostalAddress",
                 "addressLocality": "London",
                 "postalCode": "EC4N 8AF",
                 "streetAddress": "25 Walbrook"

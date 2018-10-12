@@ -81,7 +81,7 @@ The following is an example instance of the **Market Price Forecast** entity
     "address": {
         "type": "Property",
         "value": {
-            "@type": "PostalAddress",
+            "@type": "https://schema.org/PostalAddress",
             "addressLocality": "London",
             "addressCountry": "UK"
         }

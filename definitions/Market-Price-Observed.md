@@ -105,7 +105,7 @@ The following is an example instance of the **Market Price Observed** entity
     "address": {
         "type": "Property",
         "value": {
-            "@type": "PostalAddress",
+            "@type": "https://schema.org/PostalAddress",
             "addressLocality": "London",
             "addressCountry": "UK"
         }

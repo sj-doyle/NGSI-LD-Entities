@@ -138,7 +138,7 @@ The following is an example instance of the **Building** entity
     "address": {
         "type": "Property",
         "value": {
-            "@type": "PostalAddress",
+            "@type": "https://schema.org/PostalAddress",
             "addressLocality": "London",
             "addressCountry": "UK",
             "postalCode": "EC4N 8AF",
