@@ -1,0 +1,29 @@
+{
+    "@context": [
+        "https://forge.etsi.org/gitlab/NGSI-LD/NGSI-LD/raw/master/coreContext/ngsi-ld-core-context.json",
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Recogniser-Simple-Result-context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:RecogniserSimpleResult:4ec233e6-a135-11e8-8235-e73012e70d05",
+    "type": "RecogniserSimpleResult",
+    "createdAt": "2018-07-01T01:20:00Z",
+    "modifiedAt": "2018-07-04T12:30:00Z",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "entityVersion": 2.0,
+    "recogniserInput": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:RecogniserInput:4aad67e8-9ae2-11e8-a2a9-f77b8d50602c"
+    },
+    "processedAt": {
+        "type": "TemporalProperty",
+        "value": "2018-05-04T10:18:16Z"
+    },
+    "processedDuration": {
+        "type": "TemporalProperty",
+        "value": "000:01:35"
+    },
+    "result": {
+        "type": "Property",
+        "value": "Alert"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "@context": {
+        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
+        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
+        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
+        "contentType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/contenttype",
+        "mediaUri": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mediauri",
+        "mediaEncoded": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mediaencoded",
+        "observedLocation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/observedlocation",
+        "device": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/device",
+        "location": "http://uri.etsi.org/ngsi-ld/location",
+        "metadata": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/metadata"
+    }
+}
