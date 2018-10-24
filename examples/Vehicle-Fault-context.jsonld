@@ -7,10 +7,19 @@
         "eventType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventtype",
         "location": "http://uri.etsi.org/ngsi-ld/location",
         "processingType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/processingtype",
-        "resolvedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/resolvedat",
+        "resolvedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/resolvedat"
+        },
         "dtCode": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dtcode",
         "faultLog": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/faultlog",
-        "dateIdentified": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateidentified",
-        "dateProcessed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateprocessed"
+        "dateIdentified": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateidentified"
+        },
+        "dateProcessed": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateprocessed"
+        }
     }
 }

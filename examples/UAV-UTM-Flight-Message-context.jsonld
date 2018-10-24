@@ -7,6 +7,9 @@
         "originatedByUAV": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originatedbyuav",
         "originator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
         "flightMessage": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/flightmessage",
-        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        "dateObserved": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        }
     }
 }

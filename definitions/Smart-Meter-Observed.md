@@ -5,14 +5,14 @@ This entity contains a harmonised description of a Smart Meter Observation, gene
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | smartMeter | Relationship | Reference to the Smart Meter that this observation relates to. | Mandatory |
 | location | GeoProperty | The geo:json encoded current GPS position of the Smart Meter. The main purpose for this is with meters that are installed for example on mobile fuel supply vehicles (such as for heating oil). | Optional |
-| observedAt | TemporalProperty | Indicates the date/time the most recent observation was recorded. | Mandatory |
+| observedAt | DateTime | Indicates the date/time the most recent observation was recorded. | Mandatory |
 | totalConsumption | Property | The total amount of product supplied as recorded by the meter since installation. The relevant unitCode should be specified such as KWH (Kilo Watt Hours) for Electricity, LTR (Litre) or MTQ (Cubic Metre) for gases or liquids. | Mandatory |
 | photo | Property | A picture of the meter showing the reading. Comprises the text string encoded from the binary data of a JPEG format photo of the meter. The binary data must be converted to ASCII text using the base64 encoding standard. | Recommended |
 | peakConsumption | Property | The total amount of product supplied during 'peak' hours (particularly relevant to Electricity supply) as recorded by the meter since installation. The relevant unitCode should be specified such as KWH (Kilo Watt Hours) for Electricity, LTR (Litre) or MTQ (Cubic Metre) for gases or liquids. | Optional |
@@ -75,7 +75,7 @@ The following is an example instance of the **Smart Meter Observed** entity
         }
     },
     "observedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2018-05-04T10:18:16Z"
     },
     "totalConsumption": {

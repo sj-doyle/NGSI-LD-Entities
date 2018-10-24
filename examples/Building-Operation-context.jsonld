@@ -7,18 +7,42 @@
         "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
         "description": "https://schema.org/description",
         "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
-        "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
-        "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
+        "plannedStartAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat"
+        },
+        "plannedEndAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat"
+        },
         "status": "http://uri.etsi.org/ngsi-ld/status",
         "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
-        "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
-        "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
+        "startedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat"
+        },
+        "endedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat"
+        },
         "operationSequence": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationsequence",
         "relatedBuildingOperations": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedbuildingoperations",
         "relatedOperations": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relatedoperations",
-        "startDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startdate",
-        "endDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/enddate",
-        "dateStarted": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datestarted",
-        "dateFinished": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefinished"
+        "startDate": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startdate"
+        },
+        "endDate": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/enddate"
+        },
+        "dateStarted": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datestarted"
+        },
+        "dateFinished": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefinished"
+        }
     }
 }

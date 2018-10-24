@@ -29,11 +29,11 @@
         }
     },
     "startedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-22T10:18:16Z"
     },
     "endedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-28T10:18:16Z"
     },
     "operationType": {

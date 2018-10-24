@@ -13,6 +13,9 @@
         "netWeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/netweight",
         "volume": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/volume",
         "O2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o2",
-        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        "dateObserved": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        }
     }
 }

@@ -5,8 +5,8 @@ This entity contains a harmonised description of a specific Unmanned Aerial Vehi
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
@@ -17,12 +17,12 @@ This entity contains a harmonised description of a specific Unmanned Aerial Vehi
 | operationMode | Property | Text describing the choice from "vlos", "evlos", "bvlos", "automated"<br/><br/>Note: descriptions align with UTM Flight message. | Recommended |
 | location | GeoProperty | The geo:json encoded current (/last known) GPS position of the UAV. | Mandatory |
 | elevation | Property | The elevation of the UAV (relative to ground level at the specified location). Specify value and units of measure. | Mandatory |
-| observedAt | TemporalProperty | Indicates the date/time of the latest monitoring report or update. | Mandatory |
+| observedAt | DateTime | Indicates the date/time of the latest monitoring report or update. | Mandatory |
 | flightStatus | Property | The flight status of the UAV, including: **stop, takeoff, flight, hover, land** | Mandatory |
 | workStatus | Property | The work status of the UAV, including: **stop, prepare, work, finish** | Optional |
 | groundSpeed | Property | The latest reported ground speed of the UAV. Specify value and units of measure | Optional |
 | fuel | Property | Current fuel load of the UAV. Specify value and units of measure | Optional |
-| <em>dateObserved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
+| <em>dateObserved</em> | <em>DateTime</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **UAV** entity
@@ -46,7 +46,10 @@ The following NGSI-LD context definition applies to the **UAV** entity
         "workStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/workstatus",
         "groundSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/groundspeed",
         "fuel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fuel",
-        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        "dateObserved": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        }
     }
 }
 ```
@@ -110,7 +113,7 @@ The following is an example instance of the **UAV** entity
         "unitCode": "MTR"
     },
     "observedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-23T10:18:16Z"
     },
     "flightStatus": {

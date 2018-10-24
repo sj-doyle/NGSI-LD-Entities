@@ -9,9 +9,18 @@
         "supplierName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/suppliername",
         "countryOfManufacture": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/countryofmanufacture",
         "factory": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/factory",
-        "firstUsedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/firstusedat",
-        "installedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/installedat",
-        "manufacturedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturedat",
+        "firstUsedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/firstusedat"
+        },
+        "installedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/installedat"
+        },
+        "manufacturedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturedat"
+        },
         "description": "https://schema.org/description",
         "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
         "hardwareVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/hardwareversion",
@@ -30,8 +39,17 @@
         "current": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/current",
         "power": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/power",
         "rotationalSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rotationalspeed",
-        "dateFirstUsed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefirstused",
-        "dateInstalled": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateinstalled",
-        "dateManufactured": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datemanufactured"
+        "dateFirstUsed": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefirstused"
+        },
+        "dateInstalled": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateinstalled"
+        },
+        "dateManufactured": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datemanufactured"
+        }
     }
 }

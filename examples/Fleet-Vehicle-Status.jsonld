@@ -65,7 +65,7 @@
         }
     },
     "lastKnownPositionUpdatedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-28T10:18:16Z"
     },
     "inRestrictedArea": {

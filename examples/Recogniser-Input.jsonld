@@ -26,7 +26,7 @@
         "value": "iVBORw0KGgoAAAANSUhEUgAAAGcAAABkCAIAAAAUt...ErkJggg=="
     },
     "observedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2018-05-04T10:18:16Z"
     },
     "observedLocation": {

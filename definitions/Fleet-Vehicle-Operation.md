@@ -5,23 +5,23 @@ This entity contains a harmonised description of a generic fleet vehicle operati
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | fleetVehicle | Relationship | Reference to the FleetVehicle entity to which this operation relates. | Mandatory |
 | fleetVehicleStatus | Relationship | Reference to the FleetVehicleStatus entity to which this operation relates - this contains the real-time status information | Recommended |
 | initiatingLocation | GeoProperty | The geo location (point/ polygon) of the point from where the service was requested e.g. the location of the person who called for an ambulance. | Mandatory |
-| startedAt | TemporalProperty | The start date and time when the event or operation was triggered. | Recommended |
-| endedAt | TemporalProperty | The end date and time of the event when the event or operation is known to be over/ complete. Null/ omitted if not yet ended. | Recommended |
+| startedAt | DateTime | The start date and time when the event or operation was triggered. | Recommended |
+| endedAt | DateTime | The end date and time of the event when the event or operation is known to be over/ complete. Null/ omitted if not yet ended. | Recommended |
 | operationType | Property | The free text type of the event or operation e.g. e.g. Call for a patient transportation, postal collection, delivery, close to a restricted area, overspeed. | Mandatory |
 | description | Property | The description of the event or operation. | Recommended |
 | result | Property | The final result of the event or operation. | Recommended |
 | responseTime | Property | Indicates the time to respond to an event, in seconds. The associated observedAt timestamp indicates when the last update was recorded. E.g. records the response time for an ambulance to reach to a patient. | Mandatory |
 | transportTime | Property | Indicates the time that the fleet vehicle has spent transporting people or supplies for the current operation. E.g. indicates the time an ambulance spent transporting a patient to a hospital emergency department. | Mandatory |
-| <em>eventStart</em> | <em>TemporalProperty</em> | <em>The start date and time when the event or operation was triggered.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **startedAt**</em> | <em>Deprecated</em> |
-| <em>eventEnd</em> | <em>TemporalProperty</em> | <em>The end date and time of the event when the event or operation is known to be over/ complete. Null/ omitted if not yet ended.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **endedAt**</em> | <em>Deprecated</em> |
+| <em>eventStart</em> | <em>DateTime</em> | <em>The start date and time when the event or operation was triggered.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **startedAt**</em> | <em>Deprecated</em> |
+| <em>eventEnd</em> | <em>DateTime</em> | <em>The end date and time of the event when the event or operation is known to be over/ complete. Null/ omitted if not yet ended.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **endedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Fleet Vehicle Operation** entity
@@ -37,15 +37,27 @@ The following NGSI-LD context definition applies to the **Fleet Vehicle Operatio
         "fleetVehicle": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehicle",
         "fleetVehicleStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fleetvehiclestatus",
         "initiatingLocation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/initiatinglocation",
-        "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
-        "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
+        "startedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat"
+        },
+        "endedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat"
+        },
         "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
         "description": "https://schema.org/description",
         "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
         "responseTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/responsetime",
         "transportTime": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/transporttime",
-        "eventStart": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventstart",
-        "eventEnd": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventend"
+        "eventStart": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventstart"
+        },
+        "eventEnd": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventend"
+        }
     }
 }
 ```
@@ -86,11 +98,11 @@ The following is an example instance of the **Fleet Vehicle Operation** entity
         }
     },
     "startedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-22T10:18:16Z"
     },
     "endedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-28T10:18:16Z"
     },
     "operationType": {

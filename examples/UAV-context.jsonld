@@ -14,6 +14,9 @@
         "workStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/workstatus",
         "groundSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/groundspeed",
         "fuel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fuel",
-        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        "dateObserved": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        }
     }
 }

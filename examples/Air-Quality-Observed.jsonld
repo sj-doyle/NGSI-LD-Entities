@@ -42,7 +42,7 @@
         ]
     },
     "observedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2017-05-04T10:18:16Z"
     },
     "airQualityIndex": {

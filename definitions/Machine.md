@@ -5,8 +5,8 @@ This entity contains a harmonised description of an industrial machine for examp
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
@@ -16,9 +16,9 @@ This entity contains a harmonised description of an industrial machine for examp
 | supplierName | Property | The name of the supplier of this machine. | Recommended |
 | countryOfManufacture | Property | The country where this machine was manufactured. | Recommended |
 | factory | Property | The factory name/code manufacturing this machine. | Recommended |
-| firstUsedAt | TemporalProperty | Indicates the date/time at which date and time the machine was first used (nominally in UTC). | Recommended |
-| installedAt | TemporalProperty | Indicates the date/time at which date and time the machine was installed (nominally in UTC). | Recommended |
-| manufacturedAt | TemporalProperty | Indicates the date/time at which date and time the machine was manufactured (nominally in UTC). | Recommended |
+| firstUsedAt | DateTime | Indicates the date/time at which date and time the machine was first used (nominally in UTC). | Recommended |
+| installedAt | DateTime | Indicates the date/time at which date and time the machine was installed (nominally in UTC). | Recommended |
+| manufacturedAt | DateTime | Indicates the date/time at which date and time the machine was manufactured (nominally in UTC). | Recommended |
 | description | Property | An optional description of this machine. | Recommended |
 | owner | Relationship | Reference to the owner or owners of the machine as either a Schema.org person or organization.<br/><br/>https://schema.org/Person<br/><br/>https://schema.org/Organization | Optional |
 | hardwareVersion | Property | The (manufacturer specific) hardware version of this machine. | Recommended |
@@ -37,9 +37,9 @@ This entity contains a harmonised description of an industrial machine for examp
 | current | Property | The nominal required supply current (at the nominal supply voltage), in amps. | Optional |
 | power | Property | The nominal rated power consumption of the machine in kW. | Optional |
 | rotationalSpeed | Property | The maximum rotational speed in rpm (for machines such as drills, lathes). | Optional |
-| <em>dateFirstUsed</em> | <em>TemporalProperty</em> | <em>Indicates the date/time at which date and time the machine was first used (nominally in UTC).<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **firstUsedAt**</em> | <em>Deprecated</em> |
-| <em>dateInstalled</em> | <em>TemporalProperty</em> | <em>Indicates the date/time at which date and time the machine was installed (nominally in UTC).<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **installedAt**</em> | <em>Deprecated</em> |
-| <em>dateManufactured</em> | <em>TemporalProperty</em> | <em>Indicates the date/time at which date and time the machine was manufactured (nominally in UTC).<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **manufacturedAt**</em> | <em>Deprecated</em> |
+| <em>dateFirstUsed</em> | <em>DateTime</em> | <em>Indicates the date/time at which date and time the machine was first used (nominally in UTC).<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **firstUsedAt**</em> | <em>Deprecated</em> |
+| <em>dateInstalled</em> | <em>DateTime</em> | <em>Indicates the date/time at which date and time the machine was installed (nominally in UTC).<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **installedAt**</em> | <em>Deprecated</em> |
+| <em>dateManufactured</em> | <em>DateTime</em> | <em>Indicates the date/time at which date and time the machine was manufactured (nominally in UTC).<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **manufacturedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Machine** entity
@@ -58,9 +58,18 @@ The following NGSI-LD context definition applies to the **Machine** entity
         "supplierName": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/suppliername",
         "countryOfManufacture": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/countryofmanufacture",
         "factory": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/factory",
-        "firstUsedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/firstusedat",
-        "installedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/installedat",
-        "manufacturedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturedat",
+        "firstUsedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/firstusedat"
+        },
+        "installedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/installedat"
+        },
+        "manufacturedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/manufacturedat"
+        },
         "description": "https://schema.org/description",
         "owner": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/owner",
         "hardwareVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/hardwareversion",
@@ -79,9 +88,18 @@ The following NGSI-LD context definition applies to the **Machine** entity
         "current": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/current",
         "power": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/power",
         "rotationalSpeed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rotationalspeed",
-        "dateFirstUsed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefirstused",
-        "dateInstalled": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateinstalled",
-        "dateManufactured": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datemanufactured"
+        "dateFirstUsed": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefirstused"
+        },
+        "dateInstalled": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateinstalled"
+        },
+        "dateManufactured": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datemanufactured"
+        }
     }
 }
 ```
@@ -128,15 +146,15 @@ The following is an example instance of the **Machine** entity
         "value": "N9"
     },
     "firstUsedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2017-05-04T10:18:16Z"
     },
     "installedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2017-05-04T10:18:16Z"
     },
     "manufacturedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2017-05-04T10:18:16Z"
     },
     "description": {

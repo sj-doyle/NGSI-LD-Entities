@@ -27,11 +27,11 @@
         "value": "ok"
     },
     "plannedStartAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-22T10:18:16Z"
     },
     "plannedEndAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-28T10:18:16Z"
     },
     "status": {
@@ -43,11 +43,11 @@
         "object": "urn:ngsi-ld:Person:3ac33d78-4716-11e8-b332-3bfc33a871b7"
     },
     "startedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-22T10:18:16Z"
     },
     "endedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-28T10:18:16Z"
     },
     "operationSequence": {

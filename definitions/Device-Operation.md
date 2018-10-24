@@ -5,8 +5,8 @@ This entity contains a harmonised description of a generic device operation enti
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
@@ -14,20 +14,20 @@ This entity contains a harmonised description of a generic device operation enti
 | operationType | Property | A choice from an enumerated list including: **event, maintenance, fault, installation, upgrade, other.** | Recommended |
 | description | Property | A description of the operation. | Recommended |
 | result | Property | The result of the operation. One of **ok, aborted, failed.** | Recommended |
-| plannedStartAt | TemporalProperty | The planned start date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start. | Mandatory |
-| plannedEndAt | TemporalProperty | The planned end date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation finishes may be before or after the planned end. | Mandatory |
+| plannedStartAt | DateTime | The planned start date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start. | Mandatory |
+| plannedEndAt | DateTime | The planned end date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation finishes may be before or after the planned end. | Mandatory |
 | status | Property | A choice from an enumerated list describing the status. One of: **planned, ongoing, finished, scheduled, cancelled.** | Recommended |
 | operator | Relationship | Reference to the operator conducting the operation | Recommended |
-| startedAt | TemporalProperty | Timestamp when the operation actually started to be performed. | Recommended |
-| endedAt | TemporalProperty | Timestamp when the operation actually finished. | Recommended |
-| reportedAt | TemporalProperty | Timestamp when the event/ fault was reported. | Optional |
-| addressedAt | TemporalProperty | The timestamp when an event or fault was addressed or cleared. | Optional |
-| <em>startDate</em> | <em>TemporalProperty</em> | <em>The planned start date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **plannedStartAt**</em> | <em>Deprecated</em> |
-| <em>endDate</em> | <em>TemporalProperty</em> | <em>The planned end date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation finishes may be before or after the planned end.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **plannedEndAt**</em> | <em>Deprecated</em> |
-| <em>dateStarted</em> | <em>TemporalProperty</em> | <em>Timestamp when the operation actually started to be performed.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **startedAt**</em> | <em>Deprecated</em> |
-| <em>dateFinished</em> | <em>TemporalProperty</em> | <em>Timestamp when the operation actually finished.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **endedAt**</em> | <em>Deprecated</em> |
-| <em>dateReported</em> | <em>TemporalProperty</em> | <em>Timestamp when the event/ fault was reported.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **reportedAt**</em> | <em>Deprecated</em> |
-| <em>dateAddressed</em> | <em>TemporalProperty</em> | <em>The timestamp when an event or fault was addressed or cleared.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **addressedAt**</em> | <em>Deprecated</em> |
+| startedAt | DateTime | Timestamp when the operation actually started to be performed. | Recommended |
+| endedAt | DateTime | Timestamp when the operation actually finished. | Recommended |
+| reportedAt | DateTime | Timestamp when the event/ fault was reported. | Optional |
+| addressedAt | DateTime | The timestamp when an event or fault was addressed or cleared. | Optional |
+| <em>startDate</em> | <em>DateTime</em> | <em>The planned start date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **plannedStartAt**</em> | <em>Deprecated</em> |
+| <em>endDate</em> | <em>DateTime</em> | <em>The planned end date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation finishes may be before or after the planned end.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **plannedEndAt**</em> | <em>Deprecated</em> |
+| <em>dateStarted</em> | <em>DateTime</em> | <em>Timestamp when the operation actually started to be performed.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **startedAt**</em> | <em>Deprecated</em> |
+| <em>dateFinished</em> | <em>DateTime</em> | <em>Timestamp when the operation actually finished.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **endedAt**</em> | <em>Deprecated</em> |
+| <em>dateReported</em> | <em>DateTime</em> | <em>Timestamp when the event/ fault was reported.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **reportedAt**</em> | <em>Deprecated</em> |
+| <em>dateAddressed</em> | <em>DateTime</em> | <em>The timestamp when an event or fault was addressed or cleared.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **addressedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Device Operation** entity
@@ -44,20 +44,56 @@ The following NGSI-LD context definition applies to the **Device Operation** ent
         "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
         "description": "https://schema.org/description",
         "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
-        "plannedStartAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat",
-        "plannedEndAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat",
+        "plannedStartAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat"
+        },
+        "plannedEndAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat"
+        },
         "status": "http://uri.etsi.org/ngsi-ld/status",
         "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
-        "startedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat",
-        "endedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat",
-        "reportedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/reportedat",
-        "addressedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/addressedat",
-        "startDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startdate",
-        "endDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/enddate",
-        "dateStarted": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datestarted",
-        "dateFinished": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefinished",
-        "dateReported": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datereported",
-        "dateAddressed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateaddressed"
+        "startedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat"
+        },
+        "endedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endedat"
+        },
+        "reportedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/reportedat"
+        },
+        "addressedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/addressedat"
+        },
+        "startDate": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startdate"
+        },
+        "endDate": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/enddate"
+        },
+        "dateStarted": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datestarted"
+        },
+        "dateFinished": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datefinished"
+        },
+        "dateReported": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datereported"
+        },
+        "dateAddressed": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateaddressed"
+        }
     }
 }
 ```
@@ -98,11 +134,11 @@ The following is an example instance of the **Device Operation** entity
         "value": "ok"
     },
     "plannedStartAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-22T10:18:16Z"
     },
     "plannedEndAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-28T10:18:16Z"
     },
     "status": {
@@ -114,19 +150,19 @@ The following is an example instance of the **Device Operation** entity
         "object": "urn:ngsi-ld:Person:fe018d4e-46f8-11e8-ae6b-df5577f85836"
     },
     "startedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-22T10:18:16Z"
     },
     "endedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-28T10:18:16Z"
     },
     "reportedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-28T10:18:16Z"
     },
     "addressedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-28T10:18:16Z"
     }
 }

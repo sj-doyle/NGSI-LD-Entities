@@ -5,13 +5,13 @@ This entity contains a harmonised description of a generic commodity, crop or pr
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | entity | Relationship | Reference to the entity this price forecast relates to e.g. an AgriProduct entity. | Mandatory |
-| observedAt | TemporalProperty | Indicates the date/time the observation was recorded. | Recommended |
+| observedAt | DateTime | Indicates the date/time the observation was recorded. | Recommended |
 | priceAverage5Year | Property | The five year average market price observed represented using schema.org PriceSpecification attributes http://schema.org/PriceSpecification | Mandatory |
 | priceObserved | Property | The market price observed represented using schema.org PriceSpecification attributes http://schema.org/PriceSpecification | Mandatory |
 | address | Property | The market location for this observation encoded as a Schema.org PostalAddress. https://schema.org/PostalAddress | Mandatory |
@@ -67,7 +67,7 @@ The following is an example instance of the **Market Price Observed** entity
         "object": "urn:ngsi-ld:AgriProduct:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84"
     },
     "observedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2017-05-04T10:18:16Z"
     },
     "priceAverage5Year": {
@@ -78,11 +78,11 @@ The following is an example instance of the **Market Price Observed** entity
             "priceCurrency": "USD",
             "validFrom": {
                 "value": "2012-08-23T10:18:16Z",
-                "@type": "TemporalProperty"
+                "@type": "DateTime"
             },
             "validThrough": {
                 "value": "2017-08-23T10:18:16Z",
-                "@type": "TemporalProperty"
+                "@type": "DateTime"
             }
         }
     },
@@ -94,11 +94,11 @@ The following is an example instance of the **Market Price Observed** entity
             "priceCurrency": "USD",
             "validFrom": {
                 "value": "2012-08-23T10:18:16Z",
-                "@type": "TemporalProperty"
+                "@type": "DateTime"
             },
             "validThrough": {
                 "value": "2017-08-23T10:18:16Z",
-                "@type": "TemporalProperty"
+                "@type": "DateTime"
             }
         }
     },

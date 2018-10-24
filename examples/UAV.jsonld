@@ -52,7 +52,7 @@
         "unitCode": "MTR"
     },
     "observedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-23T10:18:16Z"
     },
     "flightStatus": {

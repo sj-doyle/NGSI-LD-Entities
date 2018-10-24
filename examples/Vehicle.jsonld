@@ -29,11 +29,11 @@
         "unitCode": "km/l"
     },
     "vehicleModelIntroducedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-18T10:18:16Z"
     },
     "vehicleProductionDiscontinuedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-23T10:18:16Z"
     },
     "vehicleIdentificationNumber": {

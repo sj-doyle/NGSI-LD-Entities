@@ -7,11 +7,23 @@
         "fuelType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fueltype",
         "displacement": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/displacement",
         "fuelEfficiency": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/fuelefficiency",
-        "vehicleModelIntroducedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehiclemodelintroducedat",
-        "vehicleProductionDiscontinuedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicleproductiondiscontinuedat",
+        "vehicleModelIntroducedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehiclemodelintroducedat"
+        },
+        "vehicleProductionDiscontinuedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicleproductiondiscontinuedat"
+        },
         "vehicleIdentificationNumber": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehicleidentificationnumber",
         "mileageFromOdometer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mileagefromodometer",
-        "vehicleModelDate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehiclemodeldate",
-        "dateDiscontinued": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datediscontinued"
+        "vehicleModelDate": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/vehiclemodeldate"
+        },
+        "dateDiscontinued": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datediscontinued"
+        }
     }
 }

@@ -5,8 +5,8 @@ This entity contains a harmonised description of the air quality observed at a p
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
@@ -15,7 +15,7 @@ This entity contains a harmonised description of the air quality observed at a p
 | POI | Relationship | A reference to the Point of Interest (i.e. monitoring station) that this observation was reported from. | Recommended |
 | stationCode | Property | The station code for the air quality monitoring device/ station. | Optional |
 | devices | Relationship | Reference to the IoT devices (i.e. sensors) which generated the air quality observations. | Recommended |
-| observedAt | TemporalProperty | Indicates the date/time the observation was recorded. | Recommended |
+| observedAt | DateTime | Indicates the date/time the observation was recorded. | Recommended |
 | airQualityIndex | Property | Indicates the subjective Air Quality Index nominally according to a specified standard such as the US EPA (https://www3.epa.gov/airnow/aqi_brochure_02_14.pdf). | Optional |
 | CO | Property | Indicates the level of observed Carbon Monoxide nominally in units of microgrammes per cubic metre. | Optional |
 | NO | Property | Indicates the level of observed Nitrogen Monoxide nominally in units of microgrammes per cubic metre. | Optional |
@@ -25,7 +25,7 @@ This entity contains a harmonised description of the air quality observed at a p
 | PM2.5 | Property | Indicates the level of observed Particulate Matter (under 2.5 microns in size) nominally in units of microgrammes per cubic metre. | Optional |
 | PM10 | Property | Indicates the level of observed Particulate Matter (under 10 microns in size)  nominally in units of microgrammes per cubic metre. | Optional |
 | SO2 | Property | Indicates the level of observed Suplhur Dioxide nominally in units of microgrammes per cubic metre. | Optional |
-| <em>dateObserved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
+| <em>dateObserved</em> | <em>DateTime</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Air Quality Observed** entity
@@ -52,7 +52,10 @@ The following NGSI-LD context definition applies to the **Air Quality Observed**
         "PM2.5": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pm2.5",
         "PM10": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pm10",
         "SO2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/so2",
-        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        "dateObserved": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        }
     }
 }
 ```
@@ -106,7 +109,7 @@ The following is an example instance of the **Air Quality Observed** entity
         ]
     },
     "observedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2017-05-04T10:18:16Z"
     },
     "airQualityIndex": {

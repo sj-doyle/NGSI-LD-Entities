@@ -17,6 +17,9 @@
         "PM2.5": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pm2.5",
         "PM10": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pm10",
         "SO2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/so2",
-        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        "dateObserved": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        }
     }
 }

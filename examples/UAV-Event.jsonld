@@ -34,11 +34,11 @@
         "unitCode": "MTR"
     },
     "startAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-23T10:18:16Z"
     },
     "endAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-23T10:19:16Z"
     },
     "eventType": {

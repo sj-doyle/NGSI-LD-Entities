@@ -5,15 +5,15 @@ This entity contains a harmonised description of the water quality at a particul
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | POIs | Relationship | A reference to associated Points of Interest (e.g. monitoring station, body of water) that this observation is related to. | Recommended |
 | devices | Relationship | Reference to the IoT devices (i.e. sensors) which generated the water quality observations. | Recommended |
 | location | GeoProperty | The geo location (point/ polygon) for this observation. | Mandatory |
-| observedAt | TemporalProperty | Indicates the date/time the observation was recorded. | Mandatory |
+| observedAt | DateTime | Indicates the date/time the observation was recorded. | Mandatory |
 | depth | Property | Depth below surface level where the observation was taken, nominally in metres. | Optional |
 | pressure | Property | Hydrostatic pressure where the observation was taken, nominally in Hector Pascals. | Optional |
 | conductivity | Property | Electrical conductivity, nominally in Siemens/metre. | Optional |
@@ -37,7 +37,7 @@ This entity contains a harmonised description of the water quality at a particul
 | O2 | Property | The level of free non-compound oxygen present. | Optional |
 | PC | Property | Concentration of pigment phycocyanin which can be measured to estimate cyanobacteria concentrations specifically. | Optional |
 | PE | Property | Concentration of pigment phycoerythrin which can be measured to estimate cyanobacteria concentrations specifically. | Optional |
-| <em>dateObserved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
+| <em>dateObserved</em> | <em>DateTime</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Water Quality Observed** entity
@@ -76,7 +76,10 @@ The following NGSI-LD context definition applies to the **Water Quality Observed
         "O2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o2",
         "PC": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pc",
         "PE": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pe",
-        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        "dateObserved": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        }
     }
 }
 ```
@@ -126,7 +129,7 @@ The following is an example instance of the **Water Quality Observed** entity
         }
     },
     "observedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2017-05-04T10:18:16Z"
     },
     "depth": {

@@ -15,11 +15,11 @@
         "value": "urn:ngsi-ld:SubscriptionService:65b1ccb0-ee32-41c1-9746-7ba83fb0f0f1"
     },
     "startAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-22T10:18:16Z"
     },
     "endAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2017-08-22T23:59:59Z"
     },
     "category": {

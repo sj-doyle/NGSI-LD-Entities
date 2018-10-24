@@ -15,7 +15,7 @@
         "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
     },
     "observedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-23T10:18:16Z"
     },
     "originatedByUAV": {

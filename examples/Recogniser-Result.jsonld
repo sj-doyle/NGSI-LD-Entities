@@ -15,11 +15,11 @@
         "object": "urn:ngsi-ld:RecogniserInput:4aad67e8-9ae2-11e8-a2a9-f77b8d50602c"
     },
     "processedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2018-05-04T10:18:16Z"
     },
     "processedDuration": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "000:01:35"
     },
     "recognisedFeatures": {

@@ -7,12 +7,24 @@
         "originator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
         "location": "http://uri.etsi.org/ngsi-ld/location",
         "elevation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/elevation",
-        "startAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startat",
-        "endAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endat",
+        "startAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startat"
+        },
+        "endAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/endat"
+        },
         "eventType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventtype",
         "description": "https://schema.org/description",
         "eventResult": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventresult",
-        "eventStart": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventstart",
-        "eventEnd": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventend"
+        "eventStart": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventstart"
+        },
+        "eventEnd": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/eventend"
+        }
     }
 }

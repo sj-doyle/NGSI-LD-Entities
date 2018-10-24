@@ -5,8 +5,8 @@ This entity contains a harmonised description of the status of a generic fleet v
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
@@ -19,10 +19,10 @@ This entity contains a harmonised description of the status of a generic fleet v
 | speed | Property | The current speed of the fleet vehicle (km/h). The timestamp element of the attribute should indicate when the reading was obtained. | Optional |
 | bearing | Property | The current bearing of the fleet vehicle in degrees relative to North. The timestamp element of the attribute should indicate when the reading was obtained. | Optional |
 | lastKnownPosition | GeoProperty | The last known geo location (point/ polygon) of the fleet vehicle. | Mandatory |
-| lastKnownPositionUpdatedAt | TemporalProperty | The timestamp of the last known position update for the fleet vehicle. | Mandatory |
+| lastKnownPositionUpdatedAt | DateTime | The timestamp of the last known position update for the fleet vehicle. | Mandatory |
 | inRestrictedArea | Property | Indicates if the vehicle is known to be in a restricted area at the time of the status update. | Recommended |
 | mileageFromOdometer | Property | The total distance the fleet vehicle has travelled according to the on-board odometer in kilometres (unitCode KMT) or miles (unitCode SMI). See also Schema.org Vehicle/ mileageFromOdometer. The timestamp element records when the odometer reading was taken. | Mandatory |
-| <em>lastKnownPositionUpdate</em> | <em>TemporalProperty</em> | <em>The timestamp of the last known position update for the fleet vehicle.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **lastKnownPositionUpdatedAt**</em> | <em>Deprecated</em> |
+| <em>lastKnownPositionUpdate</em> | <em>DateTime</em> | <em>The timestamp of the last known position update for the fleet vehicle.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **lastKnownPositionUpdatedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Fleet Vehicle Status** entity
@@ -44,10 +44,16 @@ The following NGSI-LD context definition applies to the **Fleet Vehicle Status**
         "speed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/speed",
         "bearing": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/bearing",
         "lastKnownPosition": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownposition",
-        "lastKnownPositionUpdatedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownpositionupdatedat",
+        "lastKnownPositionUpdatedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownpositionupdatedat"
+        },
         "inRestrictedArea": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/inrestrictedarea",
         "mileageFromOdometer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mileagefromodometer",
-        "lastKnownPositionUpdate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownpositionupdate"
+        "lastKnownPositionUpdate": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownpositionupdate"
+        }
     }
 }
 ```
@@ -124,7 +130,7 @@ The following is an example instance of the **Fleet Vehicle Status** entity
         }
     },
     "lastKnownPositionUpdatedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-28T10:18:16Z"
     },
     "inRestrictedArea": {

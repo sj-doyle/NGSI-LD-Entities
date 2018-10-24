@@ -25,7 +25,7 @@
         }
     },
     "observedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2018-05-04T10:18:16Z"
     },
     "totalConsumption": {

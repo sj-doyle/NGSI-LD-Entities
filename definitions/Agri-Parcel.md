@@ -5,8 +5,8 @@ This entity contains a harmonised description of a generic parcel of land. This 
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
@@ -18,10 +18,10 @@ This entity contains a harmonised description of a generic parcel of land. This 
 | agriParcelChildren | Relationship | An optional reference to lower level (child) AgriParcel records to which this entity relates. | Optional |
 | agriCrop | Relationship | Reference to the crop associated with this parcel | Mandatory |
 | cropStatus | Property | A choice from an enumerated list describing the crop planting status One of: **seeded, justBorn, growing, maturing, readyForHarvesting.** | Recommended |
-| lastPlantedAt | TemporalProperty | Indicates the date when the crop was last planted. | Recommended |
+| lastPlantedAt | DateTime | Indicates the date when the crop was last planted. | Recommended |
 | agriSoil | Relationship | Reference to the soil associated with this parcel of land. | Optional |
 | devices | Relationship | Reference to the IoT devices associated with this parcel i.e. sensors, controls. | Recommended |
-| <em>dateLastPlanted</em> | <em>TemporalProperty</em> | <em>Indicates the date when the crop was last planted.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **lastPlantedAt**</em> | <em>Deprecated</em> |
+| <em>dateLastPlanted</em> | <em>DateTime</em> | <em>Indicates the date when the crop was last planted.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **lastPlantedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Agri Parcel** entity
@@ -42,10 +42,16 @@ The following NGSI-LD context definition applies to the **Agri Parcel** entity
         "agriParcelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelchildren",
         "agriCrop": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agricrop",
         "cropStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/cropstatus",
-        "lastPlantedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastplantedat",
+        "lastPlantedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastplantedat"
+        },
         "agriSoil": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrisoil",
         "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
-        "dateLastPlanted": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datelastplanted"
+        "dateLastPlanted": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datelastplanted"
+        }
     }
 }
 ```
@@ -128,7 +134,7 @@ The following is an example instance of the **Agri Parcel** entity
         "value": "seeded"
     },
     "lastPlantedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-23T10:18:16Z"
     },
     "agriSoil": {

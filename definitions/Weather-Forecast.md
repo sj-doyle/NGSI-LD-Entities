@@ -5,20 +5,20 @@ This entity contains a harmonised description of a Weather Forecast. This entity
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | POIs | Relationship | A reference to associated Points of Interest (e.g. monitoring station) that this forecast is related to. | Recommended |
 | location | GeoProperty | The geo location (point/ polygon) for this forecast. | Mandatory |
-| retrievedAt | TemporalProperty | Indicates the date/time the forecast was retrieved from the associated meteorological agency. | Mandatory |
-| issuedAt | TemporalProperty | Indicates the date/time the forecast was issued by the associated meteorological agency. | Recommended |
+| retrievedAt | DateTime | Indicates the date/time the forecast was retrieved from the associated meteorological agency. | Mandatory |
+| issuedAt | DateTime | Indicates the date/time the forecast was issued by the associated meteorological agency. | Recommended |
 | weatherType | Property | The weather type. A choice from an enumerated list. One of: **notAvailable, clearNight, sunnyDay, partlyCloudy, mist, fog, cloudy, overcast, lightRainShower, drizzle, lightRain, heavy RainShower, heavyRain, sleetShower, sleet, hailShower, hail, lightSnow Shower, lightSnow, heavySnowShower,heavySnow, thunderShower, thunder.** | Recommended |
 | visibility | Property | Defines the forecast visibility nominally in metres or in an alternative measurement according to specified unitCode | Recommended |
 | name | Property | The name of the weather forecast location. | Mandatory |
-| validFrom | TemporalProperty | The date and time the forecast is valid from. | Recommended |
-| validThrough | TemporalProperty | The date and time the forecast is valid to. | Recommended |
+| validFrom | DateTime | The date and time the forecast is valid from. | Recommended |
+| validThrough | DateTime | The date and time the forecast is valid to. | Recommended |
 | dayMinimum | Property | Defines the minimum forecast values for defined attributes.
 
 Supports the inclusion of the nested attribute values, each of which will be a number. The units of the respective values will match the respective main attributes for temperature/ relative humidity.
@@ -48,8 +48,8 @@ Supports the inclusion of the nested attribute values, each of which will be a n
 | uVIndexMax | Property | The maximum UV index for the period, based on the World Health Organization's UV Index measure. | Optional |
 | relativeHumidity | Property | The relative humidity expressed a number between\n\n0 ≤ RelativeHumidity ≤ 1 representing the range 0% to 100% | Optional |
 | precipitationProbability | Property | The probability of precipitation, expressed as a number between\n\n0 ≤ precipitationProbability ≤ 1 representing the range 0% to 100% | Optional |
-| <em>dateRetrieved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the forecast was retrieved from the associated meteorological agency.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **retrievedAt**</em> | <em>Deprecated</em> |
-| <em>dateIssued</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the forecast was issued by the associated meteorological agency.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **issuedAt**</em> | <em>Deprecated</em> |
+| <em>dateRetrieved</em> | <em>DateTime</em> | <em>Indicates the date/time the forecast was retrieved from the associated meteorological agency.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **retrievedAt**</em> | <em>Deprecated</em> |
+| <em>dateIssued</em> | <em>DateTime</em> | <em>Indicates the date/time the forecast was issued by the associated meteorological agency.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **issuedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Weather Forecast** entity
@@ -64,13 +64,25 @@ The following NGSI-LD context definition applies to the **Weather Forecast** ent
         "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "POIs": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pois",
         "location": "http://uri.etsi.org/ngsi-ld/location",
-        "retrievedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/retrievedat",
-        "issuedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/issuedat",
+        "retrievedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/retrievedat"
+        },
+        "issuedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/issuedat"
+        },
         "weatherType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weathertype",
         "visibility": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/visibility",
         "name": "https://schema.org/name",
-        "validFrom": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/validfrom",
-        "validThrough": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/validthrough",
+        "validFrom": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/validfrom"
+        },
+        "validThrough": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/validthrough"
+        },
         "dayMinimum": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dayminimum",
         "dayMaximum": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/daymaximum",
         "address": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/address",
@@ -80,8 +92,14 @@ The following NGSI-LD context definition applies to the **Weather Forecast** ent
         "uVIndexMax": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uvindexmax",
         "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
         "precipitationProbability": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/precipitationprobability",
-        "dateRetrieved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateretrieved",
-        "dateIssued": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateissued"
+        "dateRetrieved": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateretrieved"
+        },
+        "dateIssued": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateissued"
+        }
     }
 }
 ```
@@ -122,11 +140,11 @@ The following is an example instance of the **Weather Forecast** entity
         }
     },
     "retrievedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2017-05-04T10:18:16Z"
     },
     "issuedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2017-05-04T10:18:16Z"
     },
     "weatherType": {
@@ -143,11 +161,11 @@ The following is an example instance of the **Weather Forecast** entity
         "value": "London City"
     },
     "validFrom": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-10T10:18:16Z"
     },
     "validThrough": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-29T10:18:16Z"
     },
     "dayMinimum": {

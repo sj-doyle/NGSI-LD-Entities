@@ -12,9 +12,15 @@
         "speed": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/speed",
         "bearing": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/bearing",
         "lastKnownPosition": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownposition",
-        "lastKnownPositionUpdatedAt": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownpositionupdatedat",
+        "lastKnownPositionUpdatedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownpositionupdatedat"
+        },
         "inRestrictedArea": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/inrestrictedarea",
         "mileageFromOdometer": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/mileagefromodometer",
-        "lastKnownPositionUpdate": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownpositionupdate"
+        "lastKnownPositionUpdate": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastknownpositionupdate"
+        }
     }
 }

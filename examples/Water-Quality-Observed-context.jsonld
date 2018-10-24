@@ -29,6 +29,9 @@
         "O2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o2",
         "PC": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pc",
         "PE": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/pe",
-        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        "dateObserved": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        }
     }
 }

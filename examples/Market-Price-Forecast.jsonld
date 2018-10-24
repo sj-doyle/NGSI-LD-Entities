@@ -21,11 +21,11 @@
             "priceCurrency": "USD",
             "validFrom": {
                 "value": "2017-08-22T10:18:16Z",
-                "@type": "TemporalProperty"
+                "@type": "DateTime"
             },
             "validThrough": {
                 "value": "2017-08-22T10:18:16Z",
-                "@type": "TemporalProperty"
+                "@type": "DateTime"
             }
         }
     },

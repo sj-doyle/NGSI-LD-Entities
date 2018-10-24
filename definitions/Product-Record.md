@@ -5,8 +5,8 @@ This entity contains a harmonised description of the conditions recorded as a pr
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
@@ -21,9 +21,9 @@ This entity contains a harmonised description of the conditions recorded as a pr
 
 Used to identify the net weight of the product. Net Weight excludes all packaging material, including the packaging material of all lower-level GTINs. Example:11.5 kg | Optional |
 | volume | Property | The current volume of the product including packaging. | Optional |
-| observedAt | TemporalProperty | Indicates the date/time the record was observed/ last observed. | Recommended |
+| observedAt | DateTime | Indicates the date/time the record was observed/ last observed. | Recommended |
 | O2 | Property | The level of gaseous oxygen (O2) present in the atmosphere as measured around the product. | Optional |
-| <em>dateObserved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
+| <em>dateObserved</em> | <em>DateTime</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Product Record** entity
@@ -46,7 +46,10 @@ The following NGSI-LD context definition applies to the **Product Record** entit
         "netWeight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/netweight",
         "volume": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/volume",
         "O2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/o2",
-        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        "dateObserved": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        }
     }
 }
 ```
@@ -129,7 +132,7 @@ The following is an example instance of the **Product Record** entity
         "observedAt": "2017-05-04T12:30:00Z"
     },
     "observedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2017-05-04T10:18:16Z"
     },
     "O2": {

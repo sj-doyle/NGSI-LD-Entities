@@ -5,18 +5,18 @@ This entity contains a harmonised description of a generic UAV State Vector, whi
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | uav | Relationship | Reference to the UAV entity to which this state vector relates. | Mandatory |
-| observedAt | TemporalProperty | Indicates the date/time of the state vector record. | Mandatory |
+| observedAt | DateTime | Indicates the date/time of the state vector record. | Mandatory |
 | originator | Relationship | Refers to a third party UAV instance or other entity (e.g. listening station) that reported the information in the case the message was not directly originated by the UAV. | Mandatory |
 | stateVector | Property | A state vector describing the current flight status based on the definition of opensky-network.org StateVector and encoded in JSON.
 
 See https://opensky-network.org/apidoc/javadoc/org/opensky/model/StateVector.html and https://opensky-network.org/apidoc/rest.html#response | Mandatory |
-| <em>dateObserved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
+| <em>dateObserved</em> | <em>DateTime</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **UAV State Vector** entity
@@ -32,7 +32,10 @@ The following NGSI-LD context definition applies to the **UAV State Vector** ent
         "uav": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/uav",
         "originator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/originator",
         "stateVector": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/statevector",
-        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        "dateObserved": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        }
     }
 }
 ```
@@ -59,7 +62,7 @@ The following is an example instance of the **UAV State Vector** entity
         "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
     },
     "observedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2016-08-23T10:18:16Z"
     },
     "originator": {

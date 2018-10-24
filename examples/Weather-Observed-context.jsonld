@@ -22,6 +22,9 @@
         "rainFall": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rainfall",
         "evapoTranspiration": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/evapotranspiration",
         "referenceEvapoTranspiration": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/referenceevapotranspiration",
-        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        "dateObserved": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        }
     }
 }

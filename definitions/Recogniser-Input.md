@@ -5,15 +5,15 @@ This entity contains a generic model for an input to an AI/ Machine Learning bas
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
 | contentType | Property | The IETF MIME format of the source content being provided | Mandatory |
 | mediaUri | Property | The media content referenced by a URI.<br/><br/>Either mediaEncoded or mediaUri should be provided but not both, if both are provided mediaUri should be prioritised. | Recommended |
 | mediaEncoded | Property | The media content, generally encoded from binary source data e.g. a JPEG format photo to produce ASCII format text. The binary data must be converted to ASCII text using the base64 encoding standard.<br/><br/>Either mediaEncoded or mediaUri should be provided but not both, if both are provided mediaUri should be prioritised. | Optional |
-| observedAt | TemporalProperty | Indicates the date/time when the content was obtained. | Mandatory |
+| observedAt | DateTime | Indicates the date/time when the content was obtained. | Mandatory |
 | observedLocation | GeoProperty | The geo:json encoded GPS position of the observed location when the content was obtained. | Optional |
 | device | Relationship | Reference to the IoT device (such as a CCTV camera or microphone) which generated the data. | Optional |
 | location | GeoProperty | The geo:json encoded GPS position of the source device when the content was obtained. | Optional |
@@ -74,7 +74,7 @@ The following is an example instance of the **Recogniser Input** entity
         "value": "iVBORw0KGgoAAAANSUhEUgAAAGcAAABkCAIAAAAUt...ErkJggg=="
     },
     "observedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2018-05-04T10:18:16Z"
     },
     "observedLocation": {

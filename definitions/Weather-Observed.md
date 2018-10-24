@@ -5,8 +5,8 @@ This entity contains a harmonised description of the weather at a particular loc
 |:--- |:--- |:--- |:---:|
 | id | @id | Provides a unique identifier for an instance of the entity either in the form of a URI (i.e. either a publicly accessible URL or a URN). | Mandatory |
 | type | @type | Defines the type of the entity. | Mandatory |
-| createdAt | DateTime | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
-| modifiedAt | DateTime | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
+| createdAt | TemporalProperty | Indicates the date/ time that the instance of the entity was created in ISO 8601 format. The value of this will be set by the server when the entity was created. | Mandatory |
+| modifiedAt | TemporalProperty | Indicates the date/ time when the entity was last modified in ISO 8601 format. The value of this will be set by the server when the entity was modified, if the entity has not been modified it may have a null value. | Optional |
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
@@ -15,7 +15,7 @@ This entity contains a harmonised description of the weather at a particular loc
 | POI | Relationship | A reference to the Point of Interest (i.e. monitoring station) that this observation was reported from. | Recommended |
 | stationCode | Property | The station code for the weather monitoring device/ station. | Optional |
 | devices | Relationship | Reference to the IoT devices (i.e. sensors) which generated the weather observations. | Recommended |
-| observedAt | TemporalProperty | Indicates the date/time the observation was observed by the associated meteorological agency. | Mandatory |
+| observedAt | DateTime | Indicates the date/time the observation was observed by the associated meteorological agency. | Mandatory |
 | weatherType | Property | The weather type. A choice from an enumerated list. One of: **notAvailable, clearNight, sunnyDay, partlyCloudy, mist, fog, cloudy, overcast, lightRainShower, drizzle, lightRain, heavy RainShower, heavyRain, sleetShower, sleet, hailShower, hail, lightSnow Shower, lightSnow, heavySnowShower,heavySnow, thunderShower, thunder.** | Recommended |
 | visibility | Property | Defines the observed visibility nominally in metres or in an alternative measurement according to specified unitCode | Recommended |
 | address | Property | The weather forecast location encoded as a Schema.org PostalAddress. https://schema.org/PostalAddress | Recommended |
@@ -30,7 +30,7 @@ This entity contains a harmonised description of the weather at a particular loc
 | rainFall | Property | Is the accumulated rain as is defined in the station (since rain started, since day started, since month started). referencePeriod enumerates the basis - one of **rainStart, dayStart, monthStart** | Recommended |
 | evapoTranspiration | Property | The sum of evaporation and plant transpiration from the Earth's land and ocean surface to the atmosphere. | Recommended |
 | referenceEvapoTranspiration | Property | Environmental demand for evapotranspiration. Represents the evapotranspiration rate of a short green crop (grass), completely shading the ground, of uniform height and with adequate water status in the soil profile | Recommended |
-| <em>dateObserved</em> | <em>TemporalProperty</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
+| <em>dateObserved</em> | <em>DateTime</em> | <em>Indicates the date/time the observation was recorded.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **observedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Weather Observed** entity
@@ -62,7 +62,10 @@ The following NGSI-LD context definition applies to the **Weather Observed** ent
         "rainFall": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/rainfall",
         "evapoTranspiration": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/evapotranspiration",
         "referenceEvapoTranspiration": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/referenceevapotranspiration",
-        "dateObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        "dateObserved": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dateobserved"
+        }
     }
 }
 ```
@@ -116,7 +119,7 @@ The following is an example instance of the **Weather Observed** entity
         ]
     },
     "observedAt": {
-        "type": "TemporalProperty",
+        "type": "Property",
         "value": "2017-05-04T10:18:16Z"
     },
     "weatherType": {
