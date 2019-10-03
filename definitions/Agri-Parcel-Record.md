@@ -10,7 +10,7 @@ This entity contains a harmonised description of the conditions recorded on a ge
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
-| agriParcel | Relationship | Reference to the AgriParcel to which this entity relates. | Mandatory |
+| hasAgriParcel | Relationship | Reference to the AgriParcel to which this entity relates. | Mandatory |
 | location | GeoProperty | The geo:json encoded polygon / multi-polygon describing the parcel which this record relates to. | Mandatory |
 | soilTemperature | Property | The observed soil temperature nominally in degrees centigrade. | Optional |
 | soilMoistureVwc | Property | Measured as Volumetric Water Content, VWC as a percentage.<br/><br/>0 ≤soilMoistureVwc ≤ 1 | Optional |
@@ -20,7 +20,7 @@ This entity contains a harmonised description of the conditions recorded on a ge
 | relativeHumidity | Property | Relative Humidity a number between 0 and 1 representing the range of 0% to 100%.<br/><br/>0 ≤ relativeHumidity ≤ 1  | Optional |
 | atmosphericPressure | Property | Atmospheric Pressure nominally in units of hecto Pascals. | Recommended |
 | description | Property | A description of this record | Recommended |
-| devices | Relationship | Reference to the IoT devices associated with this greenhouse i.e. sensors, controls. | Recommended |
+| hasDevice | Relationship | Reference to the IoT devices associated with this greenhouse i.e. sensors, controls. | Recommended |
 | observedAt | DateTime | Indicates the date/time the record was observed/ last observed. | Recommended |
 
 ## NGSI-LD Context Definition
@@ -31,20 +31,11 @@ The following NGSI-LD context definition applies to the **Agri Parcel Record** e
 ```JavaScript
 {
     "@context": {
-        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "agriParcel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcel",
-        "location": "http://uri.etsi.org/ngsi-ld/location",
-        "soilTemperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soiltemperature",
-        "soilMoistureVwc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soilmoisturevwc",
-        "soilMoistureEc": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/soilmoistureec",
-        "airTemperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/airtemperature",
-        "solarRadiation": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/solarradiation",
-        "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
-        "atmosphericPressure": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/atmosphericpressure",
         "description": "https://schema.org/description",
-        "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices"
+        "observedAt": {
+            "@type": "DateTime",
+            "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/observedat"
+        }
     }
 }
 ```
@@ -66,7 +57,7 @@ The following is an example instance of the **Agri Parcel Record** entity
     "source": "https://source.example.com",
     "dataProvider": "https://provider.example.com",
     "entityVersion": 2.0,
-    "agriParcel": {
+    "hasAgriParcel": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:AgriParcel:d3676010-d815-468c-9e01-25739c5a25ed"
     },
@@ -144,7 +135,7 @@ The following is an example instance of the **Agri Parcel Record** entity
         "type": "Property",
         "value": "Monthly fertiliser application"
     },
-    "devices": {
+    "hasDevice": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:Device:4a40aeba-4474-11e8-86bf-03d82e958ce6",

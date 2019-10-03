@@ -1,12 +1,6 @@
 {
     "@context": {
-        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "agriParcel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcel",
-        "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
         "description": "https://schema.org/description",
-        "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
         "plannedStartAt": {
             "@type": "DateTime",
             "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat"
@@ -15,8 +9,6 @@
             "@type": "DateTime",
             "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat"
         },
-        "status": "http://uri.etsi.org/ngsi-ld/status",
-        "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
         "startedAt": {
             "@type": "DateTime",
             "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat"
@@ -29,9 +21,6 @@
             "@type": "DateTime",
             "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/reportedat"
         },
-        "agriProduct": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproduct",
-        "quantity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/quantity",
-        "waterSource": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/watersource",
         "startDate": {
             "@type": "DateTime",
             "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startdate"

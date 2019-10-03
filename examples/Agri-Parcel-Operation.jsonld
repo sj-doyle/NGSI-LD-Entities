@@ -10,7 +10,7 @@
     "source": "https://source.example.com",
     "dataProvider": "https://provider.example.com",
     "entityVersion": 2.0,
-    "agriParcel": {
+    "hasAgriParcel": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:AgriParcel:318366a9-7643-4d8e-9a11-c76a8c29d8eb"
     },
@@ -38,7 +38,7 @@
         "type": "Property",
         "value": "finished"
     },
-    "operator": {
+    "hasOperator": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:Person:fce9dcbc-4479-11e8-9de1-cb228de7a15c"
     },
@@ -54,9 +54,9 @@
         "type": "Property",
         "value": "2016-08-28T10:18:16Z"
     },
-    "agriProduct": {
+    "hasAgriProductType": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:AgriProduct:a8f616b8-13fb-473a-8e61-b7a80c6c93ec"
+        "object": "urn:ngsi-ld:AgriProductType:a8f616b8-13fb-473a-8e61-b7a80c6c93ec"
     },
     "quantity": {
         "type": "Property",

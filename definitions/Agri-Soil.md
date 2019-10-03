@@ -13,7 +13,7 @@ This entity contains a harmonised description of soil. This entity is primarily 
 | name | Property | The name of this soil type. | Mandatory |
 | alternateName | Property | Alternative name of this soil type. | Optional |
 | description | Property | A description of this soil. | Recommended |
-| agriProduct | Relationship | Reference to the recommended types of product (such as fertiliser) that can be used to condition this soil type. | Optional |
+| hasAgriProductType | Relationship | Reference to the recommended types of product (such as fertiliser) that can be used to condition this soil type. | Optional |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Agri Soil** entity
@@ -23,13 +23,9 @@ The following NGSI-LD context definition applies to the **Agri Soil** entity
 ```JavaScript
 {
     "@context": {
-        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "name": "https://schema.org/name",
         "alternateName": "https://schema.org/alternateName",
-        "description": "https://schema.org/description",
-        "agriProduct": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproduct"
+        "description": "https://schema.org/description"
     }
 }
 ```
@@ -63,11 +59,11 @@ The following is an example instance of the **Agri Soil** entity
         "type": "Property",
         "value": "Fine grained, poor draining soil. Particle size less than 0.002mm"
     },
-    "agriProduct": {
+    "hasAgriProductType": {
         "type": "Relationship",
         "object": [
-            "urn:ngsi-ld:AgriProduct:ea54eedf-d5a7-4e44-bddd-50e9935237c0",
-            "urn:ngsi-ld:AgriProduct:275b4c08-5e52-4bb7-8523-74ce5d0007de"
+            "urn:ngsi-ld:AgriProductType:ea54eedf-d5a7-4e44-bddd-50e9935237c0",
+            "urn:ngsi-ld:AgriProductType:275b4c08-5e52-4bb7-8523-74ce5d0007de"
         ]
     }
 }
