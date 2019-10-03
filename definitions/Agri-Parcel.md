@@ -14,13 +14,13 @@ This entity contains a harmonised description of a generic parcel of land. This 
 | area | Property | The area of the parcel nominally in square meters. | Mandatory |
 | description | Property | Home Farm - North West field. | Recommended |
 | category | Property | The category of the parcel of land e.g.: **arable, grassland, vineyard, orchard, mixed crop, lowland, upland, set-aside, forestry, wetland.** | Recommended |
-| agriParcelParent | Relationship | An optional reference to a higher level (parent) AgriParcel entity to which this entity relates. | Optional |
-| agriParcelChildren | Relationship | An optional reference to lower level (child) AgriParcel records to which this entity relates. | Optional |
-| agriCrop | Relationship | Reference to the crop associated with this parcel | Mandatory |
+| hasAgriParcelParent | Relationship | An optional reference to a higher level (parent) AgriParcel entity to which this entity relates. | Optional |
+| hasAgriParcelChildren | Relationship | An optional reference to lower level (child) AgriParcel records to which this entity relates. | Optional |
+| hasAgriCrop | Relationship | Reference to the crop associated with this parcel | Mandatory |
 | cropStatus | Property | A choice from an enumerated list describing the crop planting status One of: **seeded, justBorn, growing, maturing, readyForHarvesting.** | Recommended |
 | lastPlantedAt | DateTime | Indicates the date when the crop was last planted. | Recommended |
-| agriSoil | Relationship | Reference to the soil associated with this parcel of land. | Optional |
-| devices | Relationship | Reference to the IoT devices associated with this parcel i.e. sensors, controls. | Recommended |
+| hasAgriSoil | Relationship | Reference to the soil associated with this parcel of land. | Optional |
+| hasDevice | Relationship | Reference to the IoT devices associated with this parcel i.e. sensors, controls. | Recommended |
 | <em>dateLastPlanted</em> | <em>DateTime</em> | <em>Indicates the date when the crop was last planted.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **lastPlantedAt**</em> | <em>Deprecated</em> |
 
 ## NGSI-LD Context Definition
@@ -31,23 +31,11 @@ The following NGSI-LD context definition applies to the **Agri Parcel** entity
 ```JavaScript
 {
     "@context": {
-        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "location": "http://uri.etsi.org/ngsi-ld/location",
-        "area": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/area",
         "description": "https://schema.org/description",
-        "category": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/category",
-        "agriParcelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelparent",
-        "agriParcelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelchildren",
-        "agriCrop": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agricrop",
-        "cropStatus": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/cropstatus",
         "lastPlantedAt": {
             "@type": "DateTime",
             "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/lastplantedat"
         },
-        "agriSoil": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrisoil",
-        "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices",
         "dateLastPlanted": {
             "@type": "DateTime",
             "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/datelastplanted"
@@ -114,18 +102,18 @@ The following is an example instance of the **Agri Parcel** entity
         "type": "Property",
         "value": "arable"
     },
-    "agriParcelParent": {
+    "hasAgriParcelParent": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:AgriParcel:1ea0f120-4474-11e8-9919-672036642081"
     },
-    "agriParcelChildren": {
+    "hasAgriParcelChildren": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:AgriParcel:26ba4be0-4474-11e8-8ec1-ab9e0ea93835",
             "urn:ngsi-ld:AgriParcel:2d5b8874-4474-11e8-8d6b-dbe14425b5e4"
         ]
     },
-    "agriCrop": {
+    "hasAgriCrop": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:AgriCrop:36021150-4474-11e8-a721-af07c5fae7c8"
     },
@@ -137,11 +125,11 @@ The following is an example instance of the **Agri Parcel** entity
         "type": "Property",
         "value": "2016-08-23T10:18:16Z"
     },
-    "agriSoil": {
+    "hasAgriSoil": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:AgriSoil:429d1338-4474-11e8-b90a-d3e34ceb73df"
     },
-    "devices": {
+    "hasDevice": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:Device:4a40aeba-4474-11e8-86bf-03d82e958ce6",

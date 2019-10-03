@@ -10,16 +10,16 @@ This entity contains a harmonised description of the conditions recorded within 
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
-| agriParcelParent | Relationship | Reference to the AgriParcel entity to which this entity relates. | Mandatory |
-| agriParcelChildren | Relationship | Related sub AgriParcel records to which this entity relates. | Optional |
-| weatherObserved | Relationship | Reference to the weather observation record current for this entity. | Recommended |
-| waterQualityObserved | Relationship | Reference to one or more water quality observation records current for this entity. | Recommended |
+| hasAgriParcelParent | Relationship | Reference to the AgriParcel entity to which this entity relates. | Mandatory |
+| hasAgriParcelChildren | Relationship | Related sub AgriParcel records to which this entity relates. | Optional |
+| hasWeatherObserved | Relationship | Reference to the weather observation record current for this entity. | Recommended |
+| hasWaterQualityObserved | Relationship | Reference to one or more water quality observation records current for this entity. | Recommended |
 | relativeHumidity | Property | The inside relative humidity expressed as a number between 0 and 1 representing the range 0% to 100 (%).<br/><br/>0 ≤ relativeHumidity ≤ 1 | Recommended |
 | leafTemperature | Property | The average greenhouse air temperature nominally in degrees centigrade. | Recommended |
 | co2 | Property | The measured interior C02 concentration nominally in mg/L. | Optional |
 | dailyLight | Property | Daily Accumulated light measured in kW per square metre | Optional |
 | drainFlow | Property | The observed drain flow rate in litres per second | Optional |
-| devices | Relationship | Reference to the IoT devices associated with this greenhouse i.e. sensors, controls. | Recommended |
+| hasDevice | Relationship | Reference to the IoT devices associated with this greenhouse i.e. sensors, controls. | Recommended |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Agri Greenhouse** entity
@@ -28,21 +28,7 @@ The following NGSI-LD context definition applies to the **Agri Greenhouse** enti
 
 ```JavaScript
 {
-    "@context": {
-        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "agriParcelParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelparent",
-        "agriParcelChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcelchildren",
-        "weatherObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/weatherobserved",
-        "waterQualityObserved": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/waterqualityobserved",
-        "relativeHumidity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/relativehumidity",
-        "leafTemperature": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/leaftemperature",
-        "co2": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/co2",
-        "dailyLight": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dailylight",
-        "drainFlow": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/drainflow",
-        "devices": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/devices"
-    }
+    "@context": {}
 }
 ```
 ## Example of Agri Greenhouse Entity
@@ -63,22 +49,22 @@ The following is an example instance of the **Agri Greenhouse** entity
     "source": "https://source.example.com",
     "dataProvider": "https://provider.example.com",
     "entityVersion": 2.0,
-    "agriParcelParent": {
+    "hasAgriParcelParent": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:AgriParcel:c8b475e5-84a8-4346-ad79-cde1d2a4028b"
     },
-    "agriParcelChildren": {
+    "hasAgriParcelChildren": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:AgriParcel:8c3a525d-b42e-4048-bcdd-a119d8ddb0a5",
             "urn:ngsi-ld:AgriParcel:178d74c1-e6fe-4042-b955-2c164fc90b83"
         ]
     },
-    "weatherObserved": {
+    "hasWeatherObserved": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:WeatherObserved:c720cec5-ac6f-40b7-8e89-becb75702d0d"
     },
-    "waterQualityObserved": {
+    "hasWaterQualityObserved": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:WaterQualityObserved:49f86e0b-bb90-4751-a1c3-d5a891920807",
@@ -120,7 +106,7 @@ The following is an example instance of the **Agri Greenhouse** entity
         "unitCode": "G51",
         "observedAt": "2016-08-22T19:20Z"
     },
-    "devices": {
+    "hasDevice": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:Device:4a40aeba-4474-11e8-86bf-03d82e958ce6",

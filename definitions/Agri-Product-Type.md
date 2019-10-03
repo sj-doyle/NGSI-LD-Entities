@@ -13,8 +13,8 @@ This entity contains a harmonised description of a generic agricultural product 
 | name | Property | The name of this product type. | Mandatory |
 | description | Property | A description of this product type. | Mandatory |
 | root | Property | A logical indicator that this product is the root of an AgriProductType hierarchy. Logical true indicates it is the root. | Mandatory |
-| agriProductParent | Relationship | Reference to the parent product type i.e. immediately above the entity in the hierarchy. | Optional |
-| agriProductChildren | Relationship | Reference to child product types i.e. immediately below this entity in the hierarchy. | Optional |
+| hasAgriProductTypeParent | Relationship | Reference to the parent product type i.e. immediately above the entity in the hierarchy. | Optional |
+| hasAgriProductTypeChildren | Relationship | Reference to child product types i.e. immediately below this entity in the hierarchy. | Optional |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Agri Product Type** entity
@@ -24,14 +24,8 @@ The following NGSI-LD context definition applies to the **Agri Product Type** en
 ```JavaScript
 {
     "@context": {
-        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "name": "https://schema.org/name",
-        "description": "https://schema.org/description",
-        "root": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/root",
-        "agriProductParent": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproductparent",
-        "agriProductChildren": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproductchildren"
+        "description": "https://schema.org/description"
     }
 }
 ```
@@ -65,11 +59,11 @@ The following is an example instance of the **Agri Product Type** entity
         "type": "Property",
         "value": true
     },
-    "agriProductParent": {
+    "hasAgriProductTypeParent": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:AgriProductType:b99c940d-7156-4280-9a2b-4a9e533cd20e"
     },
-    "agriProductChildren": {
+    "hasAgriProductTypeChildren": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:AgriProductType:836258d0-448b-11e8-84ec-ef61d9425fe8",

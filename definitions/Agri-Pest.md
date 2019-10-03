@@ -13,7 +13,7 @@ This entity contains a harmonised description of an agricultural pest. This enti
 | name | Property | The name of this agricultural pest. | Mandatory |
 | alternateName | Property | Alternative name of this agricultural pest. | Optional |
 | description | Property | A description of this agricultural pest. | Recommended |
-| agriProduct | Relationship | Reference to the recommended types of product that can be used to treat this pest. | Optional |
+| hasAgriProductType | Relationship | Reference to the recommended types of product that can be used to treat this pest. | Optional |
 
 ## NGSI-LD Context Definition
 The following NGSI-LD context definition applies to the **Agri Pest** entity
@@ -23,13 +23,9 @@ The following NGSI-LD context definition applies to the **Agri Pest** entity
 ```JavaScript
 {
     "@context": {
-        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "name": "https://schema.org/name",
         "alternateName": "https://schema.org/alternateName",
-        "description": "https://schema.org/description",
-        "agriProduct": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproduct"
+        "description": "https://schema.org/description"
     }
 }
 ```
@@ -63,12 +59,12 @@ The following is an example instance of the **Agri Pest** entity
         "type": "Property",
         "value": "Common European grasshopper"
     },
-    "agriProduct": {
+    "hasAgriProductType": {
         "type": "Relationship",
         "object": [
-            "urn:ngsi-ld:AgriProduct:06afffde-4488-11e8-861a-cfcf50aaa9cc",
-            "urn:ngsi-ld:AgriProduct:0c094486-4488-11e8-a15f-afa816790c64",
-            "urn:ngsi-ld:AgriProduct:14bf9f26-4488-11e8-9e3d-bfb78de66dd3"
+            "urn:ngsi-ld:AgriProductType:06afffde-4488-11e8-861a-cfcf50aaa9cc",
+            "urn:ngsi-ld:AgriProductType:0c094486-4488-11e8-a15f-afa816790c64",
+            "urn:ngsi-ld:AgriProductTypes:14bf9f26-4488-11e8-9e3d-bfb78de66dd3"
         ]
     }
 }

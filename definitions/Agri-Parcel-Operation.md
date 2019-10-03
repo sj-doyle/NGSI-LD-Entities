@@ -10,18 +10,18 @@ This entity contains a harmonised description of a generic operations performed 
 | source | Property | Specifies the URL to the source of this data (either organisation or where relevant more specific source) | Recommended |
 | dataProvider | Property | Specifies the URL to information about the provider of this information | Recommended |
 | entityVersion | Property | The entity specification version as a number. A version number of 2.0 or later denotes the entity is represented using NGSI-LD | Recommended |
-| agriParcel | Relationship | Reference to the AgriParcel to which this entity relates. | Mandatory |
+| hasAgriParcel | Relationship | Reference to the AgriParcel to which this entity relates. | Mandatory |
 | operationType | Property | A choice from an enumerated list describing the operation performed on the parcel. One of: **fertiliser, inspection, pesticide, water, other.** | Recommended |
 | description | Property | A description of the operation. | Recommended |
 | result | Property | A description of the results of the operation. One of: **ok, aborted, failed.** | Recommended |
 | plannedStartAt | DateTime | The planned start date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start. | Mandatory |
 | plannedEndAt | DateTime | The planned end date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation finishes may be before or after the planned end. | Mandatory |
 | status | Property | A choice from an enumerated list describing the status. One of: **planned, ongoing, finished, scheduled, cancelled.** | Recommended |
-| operator | Relationship | Reference to the operator conducting the operation | Recommended |
+| hasOperator | Relationship | Reference to the operator conducting the operation | Recommended |
 | startedAt | DateTime | Timestamp when the operation actually started to be performed. | Recommended |
 | endedAt | DateTime | Timestamp when the operation actually finished. | Recommended |
 | reportedAt | DateTime | Timestamp when the event/ fault was reported. | Recommended |
-| agriProduct | Relationship | Reference to the AgriProduct used/ applied. | Optional |
+| hasAgriProductType | Relationship | Reference to the AgriProductType used/ applied. | Optional |
 | quantity | Property | The total quantity of water or product used/ applied. It is recommended this is measured in litres for liquids or kilogrammes for solids. | Optional |
 | waterSource | Property | If water was applied/ use this specifies the source. One of: **borehole, rainfall, river, rainwater capture, water dam, commercial supply.** | Recommended |
 | <em>startDate</em> | <em>DateTime</em> | <em>The planned start date/timestamp for the operation. <br/><br/>Note that this is advisory and the actual time the operation starts may be before or after the planned start.<br/><br/>Note this field was defined for use with NGSIv2 and is now deprecated. For new entities and applications replace with **plannedStartAt**</em> | <em>Deprecated</em> |
@@ -37,13 +37,7 @@ The following NGSI-LD context definition applies to the **Agri Parcel Operation*
 ```JavaScript
 {
     "@context": {
-        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
-        "agriParcel": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriparcel",
-        "operationType": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operationtype",
         "description": "https://schema.org/description",
-        "result": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/result",
         "plannedStartAt": {
             "@type": "DateTime",
             "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedstartat"
@@ -52,8 +46,6 @@ The following NGSI-LD context definition applies to the **Agri Parcel Operation*
             "@type": "DateTime",
             "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plannedendat"
         },
-        "status": "http://uri.etsi.org/ngsi-ld/status",
-        "operator": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/operator",
         "startedAt": {
             "@type": "DateTime",
             "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startedat"
@@ -66,9 +58,6 @@ The following NGSI-LD context definition applies to the **Agri Parcel Operation*
             "@type": "DateTime",
             "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/reportedat"
         },
-        "agriProduct": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agriproduct",
-        "quantity": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/quantity",
-        "waterSource": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/watersource",
         "startDate": {
             "@type": "DateTime",
             "@id": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/startdate"
@@ -106,7 +95,7 @@ The following is an example instance of the **Agri Parcel Operation** entity
     "source": "https://source.example.com",
     "dataProvider": "https://provider.example.com",
     "entityVersion": 2.0,
-    "agriParcel": {
+    "hasAgriParcel": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:AgriParcel:318366a9-7643-4d8e-9a11-c76a8c29d8eb"
     },
@@ -134,7 +123,7 @@ The following is an example instance of the **Agri Parcel Operation** entity
         "type": "Property",
         "value": "finished"
     },
-    "operator": {
+    "hasOperator": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:Person:fce9dcbc-4479-11e8-9de1-cb228de7a15c"
     },
@@ -150,9 +139,9 @@ The following is an example instance of the **Agri Parcel Operation** entity
         "type": "Property",
         "value": "2016-08-28T10:18:16Z"
     },
-    "agriProduct": {
+    "hasAgriProductType": {
         "type": "Relationship",
-        "object": "urn:ngsi-ld:AgriProduct:a8f616b8-13fb-473a-8e61-b7a80c6c93ec"
+        "object": "urn:ngsi-ld:AgriProductType:a8f616b8-13fb-473a-8e61-b7a80c6c93ec"
     },
     "quantity": {
         "type": "Property",

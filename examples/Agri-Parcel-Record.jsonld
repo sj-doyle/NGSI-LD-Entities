@@ -10,7 +10,7 @@
     "source": "https://source.example.com",
     "dataProvider": "https://provider.example.com",
     "entityVersion": 2.0,
-    "agriParcel": {
+    "hasAgriParcel": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:AgriParcel:d3676010-d815-468c-9e01-25739c5a25ed"
     },
@@ -88,7 +88,7 @@
         "type": "Property",
         "value": "Monthly fertiliser application"
     },
-    "devices": {
+    "hasDevice": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:Device:4a40aeba-4474-11e8-86bf-03d82e958ce6",

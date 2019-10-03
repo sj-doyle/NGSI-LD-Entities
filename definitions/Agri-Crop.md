@@ -13,9 +13,9 @@ This entity contains a harmonised description of a generic crop. This entity is 
 | name | Property | The name of this crop. | Mandatory |
 | alternateName | Property | An alternative name for this crop. | Optional |
 | description | Property | A description of this crop. | Recommended |
-| agriSoil | Relationship | Reference to the recommended types of soil suitable for growing this crop. | Optional |
-| agriFertiliser | Relationship | Reference to the recommended types of fertiliser suitable for growing this crop. | Optional |
-| agriPest | Relationship | Reference to the pests known to attack this crop. | Optional |
+| hasAgriSoil | Relationship | Reference to the recommended types of soil suitable for growing this crop. | Optional |
+| hasAgriFertiliser | Relationship | Reference to the recommended types of fertiliser suitable for growing this crop. | Optional |
+| hasAgriPest | Relationship | Reference to the pests known to attack this crop. | Optional |
 | plantingFrom | Property | A list of the recommended planting interval date(s) for this crop. Specified using ISO8601 repeating date intervals: <br/><br/>**interval, description**<br/><br/>Where **interval** is in the form of **start date/end date**<br/><br/>--MM-DD/--MM-DD<br/><br/>Meaning repeat each year from this start date to this end date. | Optional |
 | harvestingInterval | Property | A list of the recommended harvesting interval date(s) for this crop. Specified using ISO8601 repeating date intervals: <br/><br/>**interval, description**<br/><br/>Where **interval** is in the form of **start date/end date**<br/><br/>--MM-DD/--MM-DD<br/><br/>Meaning repeat each year from this start date to this end date. | Optional |
 | wateringFrequency | Property | A description of the recommended watering schedule. A choice from an enumerated list. One of: **daily, weekly, biweekly, monthly, onDemand, other** | Optional |
@@ -28,18 +28,9 @@ The following NGSI-LD context definition applies to the **Agri Crop** entity
 ```JavaScript
 {
     "@context": {
-        "source": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/source",
-        "dataProvider": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/dataprovider",
-        "entityVersion": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/entityversion",
         "name": "https://schema.org/name",
         "alternateName": "https://schema.org/alternateName",
-        "description": "https://schema.org/description",
-        "agriSoil": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrisoil",
-        "agriFertiliser": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agrifertiliser",
-        "agriPest": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/agripest",
-        "plantingFrom": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/plantingfrom",
-        "harvestingInterval": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/harvestinginterval",
-        "wateringFrequency": "https://www.gsma.com/iot/iot-big-data/ngsi-ld/wateringfrequency"
+        "description": "https://schema.org/description"
     }
 }
 ```
@@ -73,21 +64,21 @@ The following is an example instance of the **Agri Crop** entity
         "type": "Property",
         "value": "Spring wheat"
     },
-    "agriSoil": {
+    "hasAgriSoil": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:AgriSoil:00411b56-bd1b-4551-96e0-a6e7fde9c840",
             "urn:ngsi-ld:AgriSoil:e8a8389a-edf5-4345-8d2c-b98ac1ce8e2a"
         ]
     },
-    "agriFertiliser": {
+    "hasAgriFertiliser": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:AgriFertiliser:1b0d6cf7-320c-4a2b-b2f1-4575ea850c73",
             "urn:ngsi-ld:AgriFertiliser:380973c8-4d3b-4723-a899-0c0c5cc63e7e"
         ]
     },
-    "agriPest": {
+    "hasAgriPest": {
         "type": "Relationship",
         "object": [
             "urn:ngsi-ld:AgriPest:1b0d6cf7-320c-4a2b-b2f1-4575ea850c73",
